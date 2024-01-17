@@ -31,7 +31,7 @@ body {
 }
 
 .link {
-    @apply capitalize font-heading leading-none font-semibold
+    @apply capitalize font-heading leading-none font-semibold transition-opacity ease-in delay-150 hover:opacity-75
 }
 
 .link-sub {

@@ -23,6 +23,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url('assets/images/hero-image.jpg')",
+        'climbing': "url('assets/images/climbing-image.jpg')",
+        'hiking': "url('assets/images/hiking-image.jpg')",
       },
       screens: {
         "wide": "1440px"

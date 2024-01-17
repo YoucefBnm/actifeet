@@ -1,5 +1,7 @@
-import { FeaturesContent } from "@/constants/data";
-
+import { StaggerContainer } from "@/components";
+import { featuresContent } from "@/constants/data";
+import { fadeVariants } from "@/libs/motion/motion.variants";
+import { motion } from "framer-motion";
 interface FeatureCardProps {
   featureImage: string;
   featureDescription: string
@@ -7,19 +9,19 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ featureImage, featureDescription }: FeatureCardProps) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-y-6">
+    <motion.div variants={fadeVariants('bottom')} className="flex flex-col justify-center items-center gap-y-6">
       <img className="align-middle" src={featureImage} alt={featureDescription} />
       <p className=" font-heading font-semibold text-lg">{featureDescription}</p>
-    </div>
+    </motion.div>
   )
 }
 
 const Features = () => {
   return (
     <section className="px-default py-8">
-      <div className="flex gap-y-9 gap-x-4 flex-wrap justify-evenly items-start">
+      <StaggerContainer style="flex gap-y-9 gap-x-4 flex-wrap justify-evenly items-start">
         {
-          FeaturesContent.map(featureItem => (
+          featuresContent.map(featureItem => (
             <FeatureCard 
               key={featureItem.id}
               featureImage={featureItem.icon}
@@ -27,7 +29,7 @@ const Features = () => {
             />
           ))
         }
-      </div>
+      </StaggerContainer>
 
     </section>
   )
