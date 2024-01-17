@@ -14,6 +14,10 @@ import IconFacebook from './icons/icon-facebook.svg'
 import CtaCrossTrainingImage from './images/cross-training-image.jpg'
 import CtaRunningImage from './images/running-image.jpg'
 
+import NavMenImage from './images/nav-men-image.jpg'
+import NavWomenImage from './images/nav-women-image.jpg'
+import NavSportsImage from './images/nav-sports-image.jpg'
+
 export {
     HeroImage,
     LogoDark,
@@ -27,4 +31,7 @@ export {
     IconFacebook,
     CtaCrossTrainingImage,
     CtaRunningImage,
+    NavMenImage,
+    NavWomenImage,
+    NavSportsImage,
 }
