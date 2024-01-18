@@ -1,4 +1,4 @@
-import { CtaCrossTrainingImage, CtaRunningImage, IconDelivery, IconFacebook, IconInstagram, IconPayment, IconPinterest, IconReturn, IconX, LogoLight } from "@/assets"
+import { CategoryClimbingImage, CategoryCrossTrainingImage, CategoryHikingImage, CategoryMenImage, CategoryRunningImage, CategoryWomenImage, CtaCrossTrainingImage, CtaRunningImage, IconDelivery, IconFacebook, IconInstagram, IconPayment, IconPinterest, IconReturn, IconX, LogoLight } from "@/assets"
 
 export const heroContent = {
     paragraph: "Where adventure meets performance! Discover a wide range of running, climbing, and cross-training shoes designed to elevate your athletic journey, Whether you're hitting the trails, scaling new heights, or pushing your limits in the gym.",
@@ -233,3 +233,42 @@ export const runningContent = {
     link: '/shop/running',
     image: CtaRunningImage
 }
+
+export const categories = [
+    {
+        id: 'category-men',
+        title: 'men',
+        image: CategoryMenImage,
+        link: '/shop/men'
+    },
+    {
+        id: 'category-women',
+        title: 'women',
+        image: CategoryWomenImage,
+        link: '/shop/women'
+    },
+    {
+        id: 'category-running',
+        title: 'running',
+        image: CategoryRunningImage,
+        link: '/shop/running'
+    },
+    {
+        id: 'category-cross-training',
+        title: 'cross training',
+        image: CategoryCrossTrainingImage,
+        link: '/shop/cross training'
+    },
+    {
+        id: 'category-climbing',
+        title: 'climbing',
+        image: CategoryClimbingImage,
+        link: '/shop/climbing'
+    },
+    {
+        id: 'category-hiking',
+        title: 'hiking',
+        image: CategoryHikingImage,
+        link: '/shop/hiking'
+    },
+]

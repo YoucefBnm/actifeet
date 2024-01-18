@@ -26,6 +26,9 @@ body {
 .heading-xl {
     @apply text-7xl
 }
+.heading-md {
+    @apply text-4xl
+}
 .heading-sm {
     @apply text-xl font-bold
 }

@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="px-default py-8 bg-black">
-      <div className="flex  items-start gap-y-8 flex-wrap">
+      <div className="flex  items-start gap-y-8 justify-between flex-wrap">
        
         <div className="flex flex-col gap-y-6">
           <img width={112} height={20} className="align-middle" alt='actifeet logo' src={intro.image} />

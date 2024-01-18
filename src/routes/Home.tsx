@@ -1,5 +1,6 @@
 import { Categories, Cta, Features, Hero } from "@/layouts"
 import { heroContent, climbingContent, hikingContent, crossTrainingContent, runningContent } from "@/constants/data"
+import ProductsCarousel from "@/layouts/ProductsCarousel"
 
 
 const Home = () => {
@@ -22,6 +23,8 @@ const Home = () => {
         imageUrl={crossTrainingContent.image}
       />
 
+      <ProductsCarousel />
+      
       <Hero
         bg="bg-climbing"
         heading={climbingContent.heading}
@@ -29,6 +32,8 @@ const Home = () => {
         btnLink="/shop/climbing"
         btnVariant='outline'
       />
+      
+      <ProductsCarousel />
 
       <Cta
         heading={runningContent.heading}
@@ -37,6 +42,8 @@ const Home = () => {
         imageUrl={runningContent.image}
       />
       
+      <ProductsCarousel />
+
       <Hero
         bg="bg-hiking"
         heading={hikingContent.heading}

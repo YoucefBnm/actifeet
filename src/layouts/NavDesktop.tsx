@@ -1,4 +1,5 @@
 import { LogoDark } from "@/assets"
+import { NavbarUtils } from "@/components";
 import { navbarLinks } from "@/constants/navbarLinks";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuTrigger } from "@/libs/shadcn/ui/navigation-menu"
 import { NavigationMenuItem, NavigationMenuList } from "@radix-ui/react-navigation-menu"
@@ -85,6 +86,8 @@ const NavDesktop = () => {
           ))
         }
       </nav>
+
+      <NavbarUtils />
     </header>
   )
 }
