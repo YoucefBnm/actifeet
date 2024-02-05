@@ -15,6 +15,15 @@
     .px-default {
         @apply px-12 md:px-9 sm:px-6
     }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
 }
 body {
     @apply font-body font-normal leading-relaxed text-base;
@@ -30,7 +39,7 @@ body {
     @apply text-4xl
 }
 .heading-sm {
-    @apply text-xl font-bold
+    @apply text-xl
 }
 
 .link {
@@ -41,3 +50,22 @@ body {
     @apply text-sm 
 }
 
+body:has(.shop) {
+    @apply no-scrollbar
+}
+
+.group-gender,
+.group-category,
+.group-brand,
+.group-colors {
+    @apply w-28 rounded-none
+}
+.group-sizes {
+    @apply w-[54px] py-2
+}
+.group-colors {
+    @apply items-center justify-start gap-x-2 py-0.5 px-0
+}
+.input-colors {
+    @apply relative w-5 h-5 border-none rounded-full
+}

@@ -34,7 +34,7 @@ const Cta = ({ heading, paragraph, link, imageUrl }:CtaProps) => {
            </StaggerContainer>
 
             <StaggerContainer style='overflow-hidden'>
-                <motion.div variants={maskVariants} transition={{duration: 1, delay: 1}}>
+                <motion.div variants={maskVariants} transition={{duration: .5, delay: .5}}>
                     <img width={418} height={449} className='align-middle' loading='lazy' src={imageUrl} />
                 </motion.div>
             </StaggerContainer>

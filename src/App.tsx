@@ -10,7 +10,7 @@ function App() {
 
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/shop/:collection" element={<Shop />} />
+          <Route path="/shop/:gender?/category?/:category?/badges?/:badges?/brand?/:brand?" element={<Shop />} />
         </Routes>
 
       <Footer />

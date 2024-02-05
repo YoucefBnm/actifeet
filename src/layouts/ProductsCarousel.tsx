@@ -1,10 +1,11 @@
 import { SHOP_DATA } from "@/assets/shop_data"
 import { ProductCard } from "@/components"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/libs/shadcn/ui/carousel"
 
 const ProductsCarousel = () => {
   return (
-    <section className="px-default py-8">
-      <ProductCard product={SHOP_DATA[2]}/>
+    <section className="py-8">
+     product carousel
     </section>
   )
 }

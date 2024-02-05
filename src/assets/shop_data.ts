@@ -1,6 +1,7 @@
+import { ProductProps } from '@/types/product';
 import { v4 as uuidv4 } from 'uuid';
  
-export const SHOP_DATA = [
+export const SHOP_DATA:ProductProps[] = [
     {
         id: uuidv4().toString().replace(/-/g, ''),
         gender: 'men',
@@ -303,14 +304,14 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: "Scarpa Boostic Rock",
         amazonLink: "https://www.amazon.com/SCARPA-Boostic-Climbing-Shoes-Bouldering/dp/B08WJXPMJ2/ref=sr_1_8?crid=24HCFFWF5F6VX&keywords=scarpa+climbing+shoes&qid=1703448078&refinements=p_n_availability%3A2661601011&rnid=2661599011&sprefix=scarpa+%2Caps%2C203&sr=8-8",
         badges: ['new'],
         price: 218.95,
-        sizes: [7,7.5,8,8.5,9,10,11.5],
+        sizes: [6.5,7,7.5,8,8.5,9,10,11.5],
         colors: ['black'],
         images: [
             {
@@ -339,7 +340,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: "Scarpa Quantix SF Rorck",
@@ -487,7 +488,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: "Scarpa Instinct",
@@ -1357,7 +1358,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'running',
         brand: 'adidas',
         name: "Adizero SL",
@@ -1480,7 +1481,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'climbing',
         brand: 'black diamond',
         name: "Shadow LV",
@@ -1737,7 +1738,7 @@ export const SHOP_DATA = [
         badges: ['new'],
         price: 195,
         sizes: [7,7.5,8.5,9,9.5,10,10.5,13],
-        colors: ['blue','red'],
+        colors: ['blue'],
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
@@ -1749,16 +1750,7 @@ export const SHOP_DATA = [
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61FY9Di9wWL._AC_SX695_.jpg'
                 ]
             },
-            {
-                id: uuidv4().toString().replace(/-/g, ''),
-                color: 'red',
-                imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/6189fYyNUFL._AC_SY695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61apMzPdx3L._AC_SY695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/511YX4a3ujL._AC_SY695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61oIhS0JncL._AC_SY695_.jpg'
-                ]
-            }
+            
         ],
         details: [
             "Fabric type Mesh",
@@ -1964,7 +1956,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'black diamond',
         name: 'Zone LV',
@@ -2084,7 +2076,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'running',
         brand: 'adidas',
         name: "Alpha Magma Guard",
@@ -3491,7 +3483,7 @@ export const SHOP_DATA = [
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
-                color: '',
+                color: 'orange',
                 imagesUrls: [
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81yaVwK5LcL._AC_SY695_.jpg',
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61VLhhdUxFL._AC_SY695_.jpg'
@@ -5014,7 +5006,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: 'Sport Rock',
@@ -5047,7 +5039,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: "Sport LV Rock",
@@ -5113,7 +5105,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'climb x',
         name: 'E Motion',
@@ -5808,7 +5800,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'la sportiva',
         name: 'Katana Lace',
@@ -6651,14 +6643,14 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
-        brand: 'x climbing',
+        brand: 'climbx',
         name: 'CLIMBX Rave',
         amazonLink: 'https://www.amazon.com/Climb-Ravestrap-Climbing-Phantom-Blacs/dp/B0C2DYW4PG/ref=sr_1_54?crid=2K1ACE565N1D4&keywords=climbing%2Bshoes&qid=1704132252&refinements=p_n_availability%3A2661601011&rnid=2661599011&sprefix=climbing%2Bshoes%2Caps%2C197&sr=8-54&th=1',
         badges: ['best seller'],
         price: 99.95,
-        sizes: [3,3.5,4.5,5,5.5,6,7,7.5,8,8.5,9],
+        sizes: [5,5.5,6,7,7.5,8,8.5,9],
         colors: ['grey','blue','red'],
         images: [
             {
@@ -6811,7 +6803,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'black diamond',
         name: 'Shadow',
@@ -6884,7 +6876,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'climbing',
         brand: 'scarpa',
         name: 'Instinct VS',
@@ -6949,7 +6941,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: 'Boostic Rock',
@@ -6983,7 +6975,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'scarpa',
         name: 'Instinct VSR',
@@ -7224,7 +7216,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'cross training',
+        gender: 'men',
         brand: 'adidas',
         category: 'cross training',
         name: 'Adidas ZGM',
@@ -7774,7 +7766,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'cross training',
         brand: 'asics',
         name: 'Quantum Lyte',
@@ -8437,7 +8429,7 @@ export const SHOP_DATA = [
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
-                color: '',
+                color: 'slateblue',
                 imagesUrls: [
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61VaVJDROrL._AC_SY695_.jpg',
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61gMXw-b5KL._AC_SY695_.jpg',
@@ -8707,7 +8699,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'hiking',
         brand: 'brooks',
         name: 'Catamount Agil',
@@ -9490,7 +9482,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'climbing',
         brand: 'red chili',
         name: 'Fusion',
@@ -9522,7 +9514,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'climbing',
         brand: 'red chili',
         name: 'Ventic Air',
@@ -9585,7 +9577,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'climbing',
         brand: 'red chili',
         name: 'Voltage',
@@ -9822,7 +9814,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'climbing',
         brand: 'scarpa',
         name: 'Generator V',
@@ -9971,7 +9963,7 @@ export const SHOP_DATA = [
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
-                color: '',
+                color: 'black',
                 imagesUrls: [
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51im9ztVaqL._AC_SY695_.jpg',
                     'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/514FLibIkDL._AC_SY695_.jpg',
@@ -11274,7 +11266,7 @@ export const SHOP_DATA = [
 
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'men',
         category: 'climbing',
         brand: 'scarpa',
         name: 'Origin',
@@ -11335,7 +11327,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'cross training',
         brand: 'under armour',
         name: 'Project Rock 2',
@@ -11402,7 +11394,7 @@ export const SHOP_DATA = [
     },
     {
         id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'unisex',
+        gender: 'women',
         category: 'cross training',
         brand: 'under armour',
         name: 'HOVR Revenant Camo',
@@ -11432,8 +11424,1388 @@ export const SHOP_DATA = [
             "Where we started? It all started with an idea to build a superior T-shirt",
             "The technology behind Under Armour's diverse product assortment for men, women and youth is complex, but the program for reaping the benefits is simple: wear HeatGear when it's hot, ColdGear when it's cold, and AllSeasonGear between the extremes.",
         ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'salomon',
+        name: 'XA Rogg 2 GTX',
+        amazonLink: 'https://amazon.com/Salomon-Spectur-Running-Estate-Dazzling/dp/B0992G6CB8/ref=sr_1_38?crid=1XQ90G8JFLMXK&dib=eyJ2IjoiMSJ9.SIW1oSPYMKV00b6QDaynagLGM_Qg08nLbMAgD9w6GgMsdT28jk3oow0q0sP3lHF2RO3LzmJ1u9_qGkgk-pJ5ywoADs3OXTF5hvGtVSMvp0V7xiW0YAmwAjVeW90657OYOqnfsM5ps53pqwNw-3h2Mek25WrLpCC82xaTEugKeQ_fsONrXPCrpIeqioXHl-X_D8qJU4Tb9vPXL8oMNH6h-3aXkQJ-x-BONw0tWpA0yo-D5HqOdLY-YwjIJEjBkuGd7yLSDWltK0khDxvD2XBcV5JSw_9slal5UCrEXaAl7xk._ahb9ZdY6f5VSqI_efBDHs8j1i6FuLApGMWAR2yRZnw&dib_tag=se&keywords=salomon+shoes&qid=1705709069&refinements=p_n_availability%3A2661601011&rnid=2941120011&s=apparel&sprefix=salomon+shoe%2Caps%2C224&sr=1-38',
+        badges: ['new'],
+        price: 120,
+        sizes: [8,8.5,9,9.5,10,10.5,11],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/71K+WqMeHnL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71STH4ev1VL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61dXh+nyJhL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61G3FA2B9eL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71cyu0jAxhL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71nDH5EuGTL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71bUefyEdEL._AC_SX695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Outer material Synthetic",
+            "Closure type Lace-Up",
+            "Energy Blade-powered propulsion for snappy toe-off and an easier, more fluid stride.",
+            "Energy Surge is a lightweight, resilient and soft foam compound that evens out the impact and delivers a smoother foot strike.",
+            "Lightweight, responsive foam created by combining EVA and Olefin [OBC] to deliver long-lasting cushion and bouncy energy return.",
+            "Energy Blade is a built into the midsole to boost forward propulsion. The joined efforts of the blade, midsole foam and sole geometry make for a snappy, propulsive running machine.",
+            "Engineered mesh is a structure that varies the weave to offer more support and durability or flexibility and breathability, according to the specific needs of the shoe.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'nike',
+        name: 'SuperRep Go',
+        amazonLink: 'https://www.amazon.com/Nike-Superrep-Training-Shoe-Cj0773-010/dp/B09LRJB4YD/ref=sr_1_64?content-id=amzn1.sym.9bbe09a5-e2ce-4594-80e8-ad6153d0ea3e%3Aamzn1.sym.9bbe09a5-e2ce-4594-80e8-ad6153d0ea3e&dib=eyJ2IjoiMSJ9.KsLpWWEMdqaIeT2xTYzCLMLbQI1-Je6HRFVB3jFF3Bmu9NRw9PSeguff7Mvknx5jIkL9p13A4tOoyeC4Yn0dzkwt8OGCOh9vBdVr1dTZNcpyxfK1Q9jfHRzTWhaAROHPFLFFB9rQ51r0ULhZgJgKY4BI5maYKWh55yGY-ijqXvGTLN8lmynoT4r8duElsR9AH6usck4O2uXAX1kok19Z57dXCDQX8Tt7h90lcWclDaa2Ye3pg3cMsw5QIg5ur3Ebig2MdAOru0X61r1RKSE7s59-EkEzvirbIVuMH27kyVQ.PxRUMGK0W3J5lwvB6PFo9qUKGfrD7eWMeFCnbB0AfHo&dib_tag=se&keywords=nike%2Bgo%2Bflyease%2Bwomen&pd_rd_r=148b3fb7-815b-48d4-98dc-76fdab846140&pd_rd_w=AcrbQ&pd_rd_wg=dlQp3&pf_rd_p=9bbe09a5-e2ce-4594-80e8-ad6153d0ea3e&pf_rd_r=D6NJC9TMMHHJXKY2P9G4&qid=1705710242&refinements=p_89%3ANike&rnid=2528832011&s=apparel&sr=1-64&th=1',
+        badges: ['best seller'],
+        price: 125,
+        sizes: [7,7.5,8,8.5,9,10,11,11.5,12.5,13],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/616Xq2TwEAL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61qtLy3y6YL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/712AG8MZjEL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61KE9sSy-QL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81ZlpOAnUJL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61XR61qdjCL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/91TMMH7dRbL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Synthetic",
+            "Inner material Canvas",
+            "Closure type Lace-Up",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'under armour',
+        name: 'Tri Base Reign 6',
+        amazonLink: 'https://www.amazon.com/Under-Armour-TriBase-Reign-Castlerock/dp/B0CN33H92P/ref=zg_bs_g_679271011_d_sccl_25/132-4220382-8388525?th=1',
+        badges: ['best seller'],
+        price: 164.99,
+        sizes: [7,7.5,8,8.5,9,9.5,10,11,11.5,12,12.5,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/61BrFyP97PL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61-BIrVOwmL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61v7j0IzuYL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71VVYqXzIuL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61+X8tDe5mL._AC_SY695_.jpg',
+                ]
+            }
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'adidas',
+        name: 'Amplimove',
+        amazonLink: 'https://www.amazon.com/adidas-Amplimove-Trainer-Sneaker-Black/dp/B0C131CPWR/ref=zg_bs_g_679271011_d_sccl_26/132-4220382-8388525?psc=1',
+        badges: ['sale'],
+        price: 90,
+        discount: 20,
+        sizes: [6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/712vHCm0iFL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71eutO7AR1L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71cSuzgvKNL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71igFPf2WML._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71UjZrf2e6L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71okp8HP1wL._AC_SY695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Origin Made in the USA or Imported",
+            "Sole material Rubber",
+            "Outer material Synthetic",
+            "Closure type Lace-Up",
+            "Men's versatile trainers with a forefoot focus for HIIT workouts",
+            "SNUG FIT: Adjustable laces provide a secure fit",
+            "MESH UPPER: Mesh upper for breathability and light weight",
+            "LIGHTWEIGHT CUSHIONING: Sculpted Vis-Tech EVA midsole offers a comfortable step-in feel",
+            "HIGH TRACTION: Multidirectional rubber outsole delivers great grip",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'climbing',
+        brand: 'la sportiva',
+        name: 'Miura',
+        amazonLink: 'https://www.amazon.com/Sportiva-Mens-Miura-Climbing-Shoe/dp/B078KRSXDH/ref=sr_1_13?crid=2BSW2THKCMH1N&dib=eyJ2IjoiMSJ9.BvRr1LVJRK7P9zAMwSgoKvoJIJkHzfcFk9pINnUPKvB5pqr19RMZsGKU81R-kzrk7ij4mRVYcOGQXGIsQgAB9VnTunACCG60NNcS6YtlGev-emCqaUhurC1OauebouKmLJQJvXOvjlEGDx-lLdaNUx-dZqJjuFQ4xh0uOnx-Up8W318-HtDigVNFJH-2v0I0hSD9ydkMX_09Ujs08NM7umFAGUZzeTuYDzRulydPCbv82PnS08hmtwyO52rv8aXWzDw1K4EMTemW03safKP_6XKcVuMkftCTxBYROguQJ4s.IAptrR7HS18fGbiwdzTVeEepyX3tAJfwkXUSCQawWNc&dib_tag=se&keywords=la+sportiva+climbing+shoes&qid=1705758887&sprefix=la+sportiva+climbi%2Caps%2C203&sr=8-13',
+        badges: ['best seller'],
+        price: 188.95,
+        sizes: [4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.],
+        colors: ['yellow'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'yellow',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/610SDZu-JnL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61BilFdqRfL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61F66G8ns8L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/6101h4ieNOL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61PPl6eeovL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61+HVFy+UUL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/615EdHl9NeL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructionsMachine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "FAST LACING SYSTEM - Quick-pull lacing harness allows for precise regulation of inner volumes; Wrapping the foot snugly for excellent support, fit, and comfort",
+            "ADVANCED CONTROL - A grippy 4mm Vibram XS Edge rubber sole and a highly tensioned Slingshot Rand that transfers power to the toes let climbers smear, hook, and edge like pros; Asymmetric build is ideal for precision pocket climbing",
+            "CLIMB IN COMFORT - From the gym to the crags, the classic leather upper is soft yet supportive; Moisture-wicking Dentex lining keeps feet dry and comfortable all day long",
+            "BUILT TO LAST - The indoor/outdoor Miura is constructed from industry-leading materials for high performance and durability; 1.1mm LaspoFlex forefoot midsole is lightweight and is designed for maximum torsion rigidity",
+            "TIPS FOR BUYING - Rock climbing shoes are designed to fit differently than other footwear; Be sure to reference the La Sportiva size chart in the product images for more accurate sizing; The fit should be tight, but not painful, and without pressure points",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'nike',
+        name: 'Flex Control TR3',
+        amazonLink: 'https://www.amazon.com/Nike-Control-Trainer-White-Dark-Regular/dp/B07RJTMPM6/ref=sr_1_6?crid=NTZ9BNMEID2T&dib=eyJ2IjoiMSJ9.xCqzYhrgnAyT36mhUYmaPe5iHnMvhmCM1myu6bzg2uxJhrSSbDV9U4l2xizPBnCAXeyhvJnCwuQF_4ivUQFmIaCvMtV2Sj7qeNAsvYUlGB5q27tPu08fOdA-OUJBCgIRjlgc4TcepUQzHexoNwH5iK4KdSWzu_N0wYpqhQ0gKkelI-pmXQfm2wy-2JPU8TV64bz2Hjbar5ruTnN6cGa71miGTHLDNyUUAX6uJeb9vPuXlmR2EasdqVwmlTod4yKA_jnxWvSLL7PhhaKMXC2Ke_V4cguWbsLPYrXgPL3IWr0.hPXLTVzE8GJdiOsTjSeRpAcsPVZ4abfXgG7yXGRF18w&dib_tag=se&keywords=cross%2Btraining%2Bshoes&qid=1705846231&sprefix=cross%2Btraining%2Bshoes%2Caps%2C225&sr=8-6&th=1',
+        badges: ['best seller'],
+        price: 85,
+        sizes: [7,8,8.5,9,9.5,10,10.5,11,11.5,12,13],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/618IK6sSdmL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51-AxSjXSML._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51EbaPUtTpL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Origin Imported",
+            "Sole material Rubber",
+            "Shaft height Low-top",
+            "Outer material Mesh",
+            "Mesh upper provides lightweight breathability. A durable overlay wraps from the midfoot around the heel for added support",
+            "Segmented rubber outrigger on the forefoot of the sole gives you stability during side-to-side movements. Overlays above the outrigger add durability",
+            "Nike Flex sole lets your foot move naturally. Textured rubber tread outlines the sole for durable traction and stability",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudswift 3',
+        amazonLink: 'https://www.amazon.com/Womens-Cloudswift-Sneaker-Black-Medium/dp/B0B2F4DQ18/ref=sr_1_10?keywords=On&qid=1705849374&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sr=1-10&th=1',
+        badges: ['best seller'],
+        price: 159.99,
+        sizes: [6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/51yK4h3CzwL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51u9M-FgCSL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/517MD9-JlML._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51QyrD4VZZL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51xaFupTbPL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51HDRnDoilL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "Rubber sole",
+            "Structured arch support and removable insole, Lightweight design , Reflective accents, Helion superfoam injected CloudTec sole for cushioned, yet responsive movement, Supportive side panels, Integrated collar and tongue",
+            "Lace-up closure",
+            "Round toe",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudswift',
+        amazonLink: 'https://www.amazon.com/Running-Mens-Cloudswift-Black-Running/dp/B07DFPZ75K/ref=sr_1_57?keywords=On&qid=1705849429&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sr=1-57&th=1',
+        badges: ['best seller'],
+        price: 150,
+        sizes: [7.5,8,9,10,10.5,11.5,12,12.5],
+        colors: ['blue','grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/71UR3HvAq9L._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61UwFBxtr-L._AC_SX695_.jpg',
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/71-LxgxSOML._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71Xsud-1ZoL._AC_SX695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Mesh",
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Mesh",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudswift 3',
+        amazonLink: 'https://www.amazon.com/Cloudswift-Textile-Synthetic-Wisteria-Trainers/dp/B0C7C4ZBTJ/ref=sr_1_51?keywords=On&qid=1705849429&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sr=1-51&th=1',
+        badges: ['best seller'],
+        price: 149.07,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10],
+        colors: ['lightblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'lightblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/617DLcvPH9L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51z-GuLtCxL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51hQ1Rnk0TL._AC_SY695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Synthetic",
+            "Inner material Fabric",
+            "Closure type Lace-Up",
+            "Crafted with premium and durable mesh and synthetic upper",
+            "Soft and breathable textile lining for comfort",
+            "Textile lined, foam padded insole for cushioning and support",
+            "Traditional lacing system for secure fit",
+            "Durable rubber sole for grip and traction",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudswift',
+        amazonLink: 'https://www.amazon.com/Cloudswift-Sneakers-Glacier-Silver-Medium/dp/B0B2F4SDV2/ref=sr_1_78?crid=G4XSSMAZ2ZIG&keywords=On+cloud&qid=1705851068&refinements=p_n_availability%3A2661601011&rnid=2661599011&sprefix=on+cloud%2Caps%2C188&sr=8-78',
+        price: 115,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/71YWKOFINvL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71-OBebgMrL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61nEYrsUe3L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/615gbSYiJvL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/81a3nNC8iSL._AC_SX695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'under armour',
+        name: 'Project Rock',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Project-Training-Matter/dp/B0B2RCG4QT/ref=sr_1_97?crid=1B1SAE0QTEEMC&keywords=men+cross+training+shoes&qid=1705872285&refinements=p_n_feature_eighteen_browse-bin%3A14630392011%2Cp_n_availability%3A2661601011&rnid=2661599011&s=apparel&sprefix=men+cross+training+shoes%2Caps%2C195&sr=1-97',
+        badges: ['sale'],
+        price: 159,
+        discount: 6,
+        sizes: [10.5],
+        colors: ['beige'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'beige',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/617EwhKRHdL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/616OvToy+WL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71A+ncq2KQL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71BnREen+3L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61s-bKLH8lL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'hiking',
+        brand: 'new balance',
+        name: "Garoe V1",
+        amazonLink: 'https://www.amazon.com/New-Balance-Running-Natural-Electric/dp/B09H3QHYQ5/ref=sr_1_554?crid=M2LEH3ZOHIEF&keywords=women%2Bcross%2Btrainer%2Bshoes&qid=1706025808&refinements=p_n_feature_eighteen_browse-bin%3A14630392011%2Cp_72%3A2661618011&rnid=2661617011&s=apparel&sprefix=women%2Bcross%2Btr%2Caps%2C189&sr=1-554&th=1',
+        badges: ['best seller'],
+        price: 89.99,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9],
+        colors: ['darkblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'darkblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/71K+JOhntHL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/I/710gIuicl7L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/I/71rXzBIdjsL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/I/81E-uCYyf1L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/I/719dwWydZ-L._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "Outer material Synthetic material",
+            "Fresh Foam midsole cushioning is precision engineered to deliver an ultra-cushioned, lightweight ride",
+            "Supportive synthetic upper",
+            "Upper features no-sew overlays for a sleek fit and feel",
+            "AT Tread outsole provides versatile traction during both on and off-road activities",
+            "Unique marbled outsole",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'new balance',
+        name: 'NB 847 V4',
+        amazonLink: 'https://www.amazon.com/New-Balance-Walking-Aluminum-Carolina/dp/B0815WJQTF/ref=sr_1_770?crid=M2LEH3ZOHIEF&keywords=women%2Bcross%2Btrainer%2Bshoes&qid=1706026534&refinements=p_n_feature_eighteen_browse-bin%3A14630392011%2Cp_72%3A2661618011&rnid=2661617011&s=apparel&sprefix=women%2Bcross%2Btr%2Caps%2C189&sr=1-770&th=1',
+        badges: ['best seller'],
+        price: 81.88,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/51xvgiZ97aL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/51sTvpJo4dL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/61-09gbX+PL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/51hhqTTm6LL._AC_SL1000_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Fabric type 50% Mesh, 50% Synthetic",
+            "Care instructions Machine Wash",
+            "Origin Made in the USA or Imported",
+            "Sole material Rubber",
+            "TRUFUSE midsole cushioning combines two different foams to deliver responsive, durable cushioning",
+            "ROLLBAR stability post system helps control rear-foot movement for enhanced support",
+            "Synthetic leather construction offers unmatched durability and a lightweight feel built for all-day comfort",
+            "Mesh upper offers a lightweight feel for enhanced breathability and air flow",
+            "TPU heel insert provides added support for increased balance and stability",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'under armour',
+        name: 'TriBase Reign 3NM',
+        amazonLink: 'https://www.amazon.com/Under-Armour-TriBase-Concrete-Footwear/dp/B09HTY62PL/ref=sr_1_23?crid=3FK1S6HZYN820&keywords=ua%2Bshoes&qid=1706053641&sprefix=ua%2Bshoes%2Caps%2C208&sr=8-23&th=1',
+        price: 129.99,
+        sizes: [11,11.5,12],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/71nzj0oelnL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/I/71xs1SCmEpL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/I/61GcyMIJw0L._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/I/81xUdEcMnxL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/I/71bWuqv9inL._AC_SL1425_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Origin Imported",
+            "Sole material Polyester",
+            "Outer material Polyester",
+            "Closure type Pull-On",
+            "UA WARP upper technology provides ultimate lockdown & durability throughout dynamic movements External heel clip & internal heel counter for added stability & support Full-length Micro G foam midsole for the ultimate in responsive cushioning UA TriBase maximizes ground contact, promotes natural motion & provides flexibility to grip during lifts",
+            "Full-rubber outsole wraps up the sides for durability & added abrasion resistance with medial rope grip Strategic rubber build under the toe box for a more powerful floor grip Low to the ground build allows for greater feel & power transfer Lace type: Standard tie",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'under armour',
+        name: "UA Charged Phantom",
+        amazonLink: 'https://www.amazon.com/Under-Armour-Charged-Phantom-Marine/dp/B0CHN1B9JS/ref=sr_1_59?crid=3FK1S6HZYN820&keywords=ua%2Bshoes&qid=1706053677&sprefix=ua%2Bshoes%2Caps%2C208&sr=8-59&th=1',
+        price: 115.04,
+        sizes: [8,9,9.5,10,11,12],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/61mjKN+e70L._AC_SL1360_.jpg',
+                    'https://m.media-amazon.com/images/I/518q6OT0prL._AC_SL1360_.jpg',
+                    'https://m.media-amazon.com/images/I/61lB-xjo8cL._AC_SL1360_.jpg',
+                    'https://m.media-amazon.com/images/I/71B91VB4dlL._AC_SL1408_.jpg',
+                    'https://m.media-amazon.com/images/I/61VBWrrfF6L._AC_SL1360_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Ethylene Vinyl Acetate",
+            "Outer material Ethylene Vinyl Acetate (EVA)",
+            "Closure type Lace-Up",
+            "Under Armour",
+            "Charged Phantom SL",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'under armour',
+        name: 'UA Flow Velociti',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Velociti-us_Footwear_Size_System-Numeric_9_Point_5/dp/B0C3JF5J14/ref=sr_1_97?crid=3FK1S6HZYN820&keywords=ua+shoes&qid=1706053710&sprefix=ua+shoes%2Caps%2C208&sr=8-97',
+        price: 139.99,
+        sizes: [8,9,9.5,10,11,11.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/61PpU1iVSdL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/61YXzRrqwiL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/61zbzFEv7LL._AC_SL1000_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "Closure type Pull-On",
+            "Upper has a strategic knit design for a locked-in fit & added comfort with internal molding FLOW technology eliminates the rubber outsole, creating a more lightweight & seamless ride on any surface Bootie construction for elevated ease of entry combined with a contoured fit",
+            "Outsole material is super-durable & increases ground traction One-piece Flow midsole provides responsive & long-lasting cushioning Flow technology eliminates the rubber outsole, creating a more lightweight & seamless ride on any surface",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'under armour',
+        name: 'Charged Commit 4',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Charged-Trainer-Distant/dp/B0BZXL3LH9/ref=sr_1_2?keywords=women%2Bgym%2Bshoes&qid=1706054879&refinements=p_n_feature_eighteen_browse-bin%3A14630392011&rnid=14630382011&s=apparel&sr=1-2&th=1',
+        badges: ['sale'],
+        price: 71.99,
+        discount: 12,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5],
+        colors: ['beige'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'beige',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/51rtyptaXVL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/61n5gxzLO+L._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/61lLKcMTFLL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/51Winwq0x2L._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/I/51tWERG8rZL._AC_SL1000_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Origin Made in the USA or Imported",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "Under Armour’s mission is simple: to make you better.",
+            "That means if you set a goal, we’ll help you crush it.",
+            "We do that with performance innovation and game-changing shoes, shirts, and digital tools that push the limits of what you thought possible.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudgo',
+        amazonLink: 'https://www.amazon.ae/%E3%82%AA%E3%83%B3-65-98231-Cloudgo-Black-Shale/dp/B0B2F41782/ref=sr_1_24?crid=WANHH5HRH1DE&keywords=on%2Bshoes&qid=1706117052&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on%2Bshoe%2Caps%2C131&sr=1-24&th=1',
+        price: 171.18,
+        sizes: [8,8.5,9,9.5,10,10.5,11],
+        colors: ['slateblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'slateblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/81ulCZH3-3L._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71DAxQqMElL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71DzJCmTnvL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71F3QA5EyGL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71Z8g74o6fL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71nK7Emx15L._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/81uj-m+y4-L._AC_SX695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Polyester",
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "Sole Thickness: 1.2 inches (3 cm)",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudventure',
+        amazonLink: 'https://www.amazon.ae/Cloudventure-32-99256-Womens-Running-Marina/dp/B097R5H62C/ref=sr_1_36?crid=WANHH5HRH1DE&keywords=on+shoes&qid=1706117052&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on+shoe%2Caps%2C131&sr=1-36',
+        price: 305.52,
+        sizes: [11],
+        colors: ['lightblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'lightblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/61M+hzxznGL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71hIgpAog7L._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61eGeJpg8uL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61v41snCWdL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61AuLhf3jRL._AC_SX695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Package Dimensions: 32.28 x 22.71 x 11.91 cm; 240 Grams",
+            "Date First Available: 8 January 2024",
+            "ASIN: B097R5H62C",
+            "Item model number: 32.99256",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudflyer',
+        amazonLink: 'https://www.amazon.ae/ON-Cloudflyer-Black-White-5-5/dp/B0728J11RT/ref=sr_1_110?crid=WANHH5HRH1DE&keywords=on+shoes&qid=1706117102&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on+shoe%2Caps%2C131&sr=1-110',
+        price: 255.35,
+        sizes: [5.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/617XfNiODKL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/81fJigZVKHL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Lk-wuUdeL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71DQHGY5pTL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71W1UXdMlTL._AC_SX695_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Closure type: Lace-Up"
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloud X 3',
+        amazonLink: 'https://www.amazon.ae/Running-Cloud-Shift-Womens-Trainers/dp/B0BS1DB556/ref=sr_1_200?crid=WANHH5HRH1DE&keywords=on%2Bshoes&qid=1706117839&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on%2Bshoe%2Caps%2C131&sr=1-200&th=1',
+        price: 416.62,
+        sizes: [7,8,9,10],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/61Z7s6PcyyL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61bZTeZm9-L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61p95hLRREL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61xH2U-m8kL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Ultra-light comfort and strong performance – designed for those who want to stay in motion and do not want to stand still",
+            "ULTRA LIGHT COMFORT & STRONG PERFORMANCE - Designed for those who stay in motion and don't want to stand still.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloud 5',
+        amazonLink: 'https://www.amazon.ae/Cloud-Black-black-7-5-US/dp/B0CB5YJHK6/ref=sr_1_220?crid=WANHH5HRH1DE&keywords=on+shoes&qid=1706117839&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on+shoe%2Caps%2C131&sr=1-220',
+        price: 297.31,
+        sizes: [7.5],
+        colors: ['green'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'green',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/51kBgD8BlmL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51JO14Rb-8L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51W7-o00S6L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61kTl8OLUiL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Closure type Lace-Up",
+            "Brand: On",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudace',
+        amazonLink: 'https://www.amazon.ae/Cloudace-Black-Eclipse-10/dp/B08XXJF7W2/ref=sr_1_348?crid=WANHH5HRH1DE&keywords=on+shoes&qid=1706118801&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on+shoe%2Caps%2C131&sr=1-348',
+        price: 338.42,
+        sizes: [10],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/51rANiu4U0L._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61A5jJr4eIL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/51dcWE1xDaL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61pLIbFdnbL._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/51xyGoZ8k0L._AC_SX695_.jpg',
+                    'https://m.media-amazon.com/images/I/6163XJWCUnL._AC_SX695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Brand: on",
+            "Closure Type: Lace-Up"
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloud 5',
+        amazonLink: 'https://www.amazon.ae/Sneakers-Stellar-Eclipse-Footwear-Numeric/dp/B0BQR6TL5B/ref=sr_1_351?crid=WANHH5HRH1DE&keywords=on%2Bshoes&qid=1706118801&refinements=p_89%3AOn&rnid=15703921031&s=fashion&sprefix=on%2Bshoe%2Caps%2C131&sr=1-351&th=1',
+        price: 217.76,
+        sizes: [6.5,7.5,8.5,9.5,10.5,12.5],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/I/61GdByUWKaL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61xALtgICeL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51HfA9B-3bL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61S7gIiPoaL._AC_SY695_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Material composition Textile Synthetic",
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Mesh",
+            "Fabric: Mesh",
+            "Rubber sole",
+            "Cushioned collar and tongue, Removable insole, Reflective accents",
+            "Lace-up closure",
+            "Round toe",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Ghost 15 GTX',
+        amazonLink: 'https://www.amazon.com/Brooks-Ghost-Waterproof-Neutral-Running/dp/B0BMT37ZNQ/ref=sr_1_31?crid=2N56AUR4Y44XQ&keywords=brooks%2Bshoes&qid=1706985663&sprefix=brooks%2Bshoe%2Caps%2C601&sr=8-31&th=1',
+        badges: ['new'],
+        price: 169.95,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81vjR4voFWL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Kzqi51pKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81cz6S3kRYL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/817K44b-JjL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81C+yc6i2BL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71iupa+SdLL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Fabric-and-synthetic",
+            "OriginM ade in the USA or Imported",
+            "Sole material Rubber",
+            "Shaft height Ankle Strap",
+            "THIS MEN'S SHOE IS FOR: Runners looking for a smooth ride that won’t distract from the fun of the run. The Ghost 15 GTX offers a refined 3D Fit Print to create a more seamless, secure fit and waterproof protection. This Brooks Ghost 15 GTX is a certified PDAC A5500 Diabetic shoe and has been granted the APMA Seal of Acceptance.",
+            "WATERPROOF AND CUSHION: The Ghost 15 GTX offers neutral support while providing high energizing cushioning and GORE-TEX waterproof protection. Ideal for road running, cross training, the gym or wherever you might want to take them!",
+            "BALANCED, SOFT CUSHIONING: New midsole features soft and lighter-weight DNA LOFT V2 cushioning to provide distraction free cushioning under your feet with each stride.",
+            "SMOOTH, STABLE RIDE: No matter how your foot lands, our soft midsole and Segmented Crash Pad - an integrated system of shock absorbers - team up for easy flow from landing to toe-off.",
+            "ENHANCED UPPER: Engineered air mesh upper provides comfort and breathability with 3D Fit Print for added structure.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'climbing',
+        brand: 'scarpa',
+        name: 'Veloce Rock',
+        amazonLink: 'https://www.amazon.com/SCARPA-Womens-Veloce-Climbing-Maldive/dp/B083RF5Z7M?ref_=ast_sto_dp&th=1&psc=1',
+        price: 138.94,
+        sizes: [5.5,6,6.5,7,7.5,8,8.5,9,9.5,10],
+        colors: ['beige'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'beige',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/619J9gtNA5L._AC_SL1400_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61-XnqiVFzL._AC_SL1364_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61pr1vGcL3L._AC_SL1396_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61GPejlkqRL._AC_SL1389_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/715s5hE63LL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material S-72 (4mm)",
+            "Outer material Rubber",
+            "Closure type Hook & Loop",
+            "Gym-Ready | With a wide toe-box and breathable construction, SCARPA designed the Veloce for intermediate to advanced climbers looking for a more technical shoe that’s comfortable for long sessions in the gym.",
+            "Women’s Last | These climbing shoes feature a more narrow last and lower-volume heel cup for a women’s-specific fit.",
+            "S-72 Rubber | This ultra-soft rubber conforms to the shape of almost any foothold for increased surface area and greater friction.",
+            "Relaxed Performance Fit | With more room near the 4th and 5th toes, this new last from SCARPA provides a comfortable fit and reduces foot fatigue without limiting the power driven towards your big toe.",
+            "Pressure Absorbing Fit | By wrapping the heel in a thinner layer of rubber and breaking the rand over the Achilles tendon, SCARPA gave the Vapor a comfortable fit that doesn’t skimp on performance.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'climbing',
+        brand: 'scarpa',
+        name: 'Quantix SF',
+        amazonLink: 'https://www.amazon.com/SCARPA-Womens-Quantix-Climbing-Shoes/dp/B0B6LNL5CH?ref_=ast_sto_dp&th=1&psc=1',
+        price: 198.5,
+        sizes: [4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71F0Ic159-L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61gjmyaE4pL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/613J7TBcUPL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51ly-clpMqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61IIOJ6n6UL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructionsMachine Wash",
+            "Sole material Vibram",
+            "Outer material Rubber",
+            "Closure type Hook & Loop",
+            "EU Size: 40.5 – US Size: 8.5-9 Women/7.5-8 Men | Versatility Expert | With a subtle downturn, supportive midsole, and fast break-in time, the Quantix SF blends comfort and performance for everything from gym climbing to outdoor sport routes.",
+            "SF Tension System | This rubber rand wraps the shoe from below, starting from the toe area, to keep your foot in a performance position and ensure your new climbing shoe maintains its shape over time.",
+            "Women’s Last | This climbing shoe features a more narrow last and lower-volume heel cup for a women’s-specific fit.",
+            "Vibram XS Grip 2 Rubber | Ideal for any rock type, the XS Grip 2 rubber is both stiff and sticky, giving you the grip you need for steeper walls and overhanging boulders.",
+            "Sizing Advice – Synthetic climbing shoes should fit snugly and will not stretch much over time. An ideal fit should have no dead space out of the box. Use the sizing chart in the product images or description to find your size, then downsize ½ to 2 sizes for premium performance.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'climbing',
+        brand: 'scarpa',
+        name: 'Mago Lace',
+        amazonLink: 'https://www.amazon.com/SCARPA-Mago-Climbing-Shoe-Bright/dp/B07TVWGYRN?ref_=ast_sto_dp&th=1&psc=1',
+        price: 218.95,
+        sizes: [6,6.5,7,7.5,8],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51zXgy7ZWLL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61g0b2MS6lL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51BrxXq1pAL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/513xLdra15L._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51w1TKHgP+L._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51p+Tuw0PNL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51bUydpXPsL._AC_SL1200_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Vibram",
+            "Outer material Rubber",
+            "Closure type Lace-Up",
+            "The Sport Specialist | With an aggressive downturned profile, innovative materials, and a supportive, lace-up design, the Mago is purpose-built to push your limits on steep sport routes.",
+            "Toe Power Support | A supportive insert under the forefoot provides increased power, improved pulling, and a more precise feel on small footholds.",
+            "Vibram XS Grip 2 Rubber | This stiff and sticky high-performance rubber delivers maximum grip for technical footwork on overhanging climbs.",
+            "X-Tension System | Highly charged randing lifts the heel while supporting the arch and forefoot to focus power towards your big toe.",
+            "Improved Upper | Microfiber and Alcantara upper is breathable, soft next to skin, and delightfully lightweight.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'climbing',
+        brand: 'scarpa',
+        name: 'Origin',
+        amazonLink: 'https://www.amazon.com/SCARPA-Origin-Womens-Climbing-Shoes/dp/B08TJ1VL8K?ref_=ast_sto_dp&th=1',
+        price: 212.11,
+        sizes: [5.5,7,7.5],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71FjREUnrSL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71mCQ5G0uAL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61TotoY63tL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71KQ-XohFSL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61lMza4kStL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61K3w91YAgL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/611Yfoc7+RL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Synthetic",
+            "Outer material Synthetic",
+            "Inner material Manmade",
+            "Origin provides an ideal introduction to climbing.",
+            "With a flat bottom profile",
+            "Vision TM sticky but durable rubber sole",
+            "A plush leather upper that gives the luxurious padded feel",
+            "Detail that is rarely found in a shoe designed for newer climbers",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Glycerin StealthFit 20',
+        amazonLink: 'https://www.amazon.com/Brooks-Glycerin-StealthFit-Neutral-Running/dp/B09MGCPPVC/ref=sr_1_18?crid=2YXXOJCMHA5O0&keywords=brooks%2Bshoes&qid=1707072946&sprefix=brooks%2Bshoe%2Caps%2C547&sr=8-18&th=1',
+        price: 121.99,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
+        colors: ['lightblue','black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'lightblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81yFUD2FPtL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81a8ERUomGL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81O6AxfptUL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/810HOccQBoL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81BnxwnGBzL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81biFRAthOL._AC_SL1500_.jpg',
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81LJNoPTGyL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81RsXUyKclL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81BlnJKkRtL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81ub-Nep4jL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81bWxDNFNqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81FVyJzJzTL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [  
+            "Fabric type 100% Synthetic",
+            "Care instructions Machine Wash",
+            "Origin Made in the USA or Imported",
+            "Sole material Manmade",
+            "THIS WOMEN’S SHOE IS FOR: The Glycerin StealthFit 20 is for runners who want a close-to-foot fit and extreme softness in every step — so they can get lost in the comfortable ride and run distraction-free.",
+            "SUPREME SOFTNESS: Featuring nitrogen-infused DNA LOFT v3, our softest cushioning optimized to be lightweight, responsive, and durable with plush comfort.",
+            "SECURE, ADAPTABLE FIT: New StealthFit construction introduces an adaptable, closer fit with a Fit Knit upper which provides seamless structure and breathability that adapts to the movements of your foot.",
+            "SMOOTH TRANSITIONS: Redesigned midsole and outsole offer a widened platform for smoother and even easier transitions.",
+            "BREATHABILITY: Fit Knit upper provides a seamless fit that allows for maximum breathability to keep your feet comfortable and cool.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Hyperion Max',
+        amazonLink: 'https://www.amazon.com/Brooks-Mens-Hyperion-Neutral-Running/dp/B0CH1QMJ9X/ref=sr_1_38?crid=2YXXOJCMHA5O0&keywords=brooks%2Bshoes&qid=1707072946&sprefix=brooks%2Bshoe%2Caps%2C547&sr=8-38&th=1',
+        price: 169.95,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13],
+        colors: ['green','white','orange'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'green',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81ZyhlDTDgL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91M+DKzXrjL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81HdFPUfC3L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81bkpygY4fL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81+HdTe5F9L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81ndN+X-BZL._AC_SL1500_.jpg',
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'white',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61-S5DeqHWL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61GFZsNa6xL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61xRtc8H27L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Z3gA8BHKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71TAOAWtGbL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71MD3sss90L._AC_SL1500_.jpg',
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'orange',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71skVexw7ML._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81w9otGqUuL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71lJgFleLdL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/714tHHVFeqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81mQyQVrdnL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/717oJtaLrxL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Fabric-and-synthetic",
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Caucho",
+            "THIS MEN’S SHOE IS FOR: The Hyperion Max provides neutral support for runners who want to train their fastest and need performance gear to get them ready for race day.",
+            "SOFT CUSHIONING: The midsole is configured with nitrogen-infused, lightweight DNA FLASH cushioning that is highly responsive and returns energy while adapting to your stride.",
+            "SECURE FIT: The stretch woven upper and 3D Fit Print provide extra structure to hold your foot in place while also providing optimum airflow.",
+            "PROTECTION: Outfitted with substantial midsole foam to help absorb impact through your toughest workouts — so you can take on another hard training session sooner.",
+            "QUICK TRANSITIONS: The heel and toe of the midsole are uniquely curved to propel you forward while the Green Rubber outsole helps with fast, effortless transitions.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Revel 5',
+        amazonLink: 'https://www.amazon.com/Brooks-Womens-Revel-Neutral-Running/dp/B09FTN224Q/ref=sr_1_57?crid=2YXXOJCMHA5O0&keywords=brooks%2Bshoes&qid=1707072994&sprefix=brooks%2Bshoe%2Caps%2C547&sr=8-57&th=1',
+        price: 95.01,
+        sizes: [5.5,6,6.5,7,7.5,8],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/813SgRdNJDL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81pB0TdmpTL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81atiChkwQL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Yl-njHTVL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81F7AO6T4sL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81OnV1aJvpL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "THIS WOMEN'S SHOE IS FOR: For runners looking for a versatile shoe that’s springy on the run, stylish off the run, and comfortable for the long run. Styled to perform, the Revel 5 delivers a springy ride and all-day comfort. We recommend ordering Brooks running shoes 1/2 to one size larger than your dress shoe.",
+            "BALANCED, SOFT CUSHIONING: BioMoGo DNA cushioning adapts to your stride, weight, and speed to help protect you by deflecting impact away from your body.",
+            "QUICK TRANSITIONS: The arrow-point pattern in the outsole lets your foot move from heel to toe quickly. Our Green Rubber outsole puts a spring in each step.",
+            "FRESH LOOK: The updated Fit Knit upper provides versatility and style with a comfortably secure fit.",
+            "REFRESHED UPPER: The Engineered Air Mesh and 3D Fit Print on the upper create the right blend of stretch and structure for supreme comfort and stability.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Ravenna 11',
+        amazonLink: 'https://www.amazon.com/Brooks-Womens-Ravenna-Running-Shoe/dp/B07VXWLMVV/ref=sr_1_102?crid=2YXXOJCMHA5O0&keywords=brooks%2Bshoes&qid=1707073850&sprefix=brooks%2Bshoe%2Caps%2C547&sr=8-102&th=1',
+        price: 144.55,
+        sizes: [5,5.5,6,6.5,7,8.5,10.5,12],
+        colors: ['darkblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'darkblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/917s-qzcrGL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81tmXqN7pNL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81SL-55jlkL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81heM-274+L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81tZP-psMYL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/810uYdl13tL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Canvas",
+            "Inner material Manmade",
+            "THIS WOMEN'S SHOE IS FOR: The Ravenna 11 is perfect for runners who want a lightweight, supportive shoe that straddles the line between training and racing.",
+            "SUPPORT AND CUSHION: Provides just the right amount of stability and support, great for overpronation while providing a lightweight, flexible and responsive cushioning. Ideal for road running, cross training, the gym or wherever you might want to take them! Predecessor: Ravenna 10",
+            "FAST CUSHIONING: BioMoGo DNA midsole cushioning and rebounding rubber deliver comfort without adding extra weight - perfect for days when you’re working on your speed.",
+            "HOLISTIC SUPPORT: We've shifted our focus beyond the feet to the most injury-prone part of a runner's body: the knees. GuideRails support keeps you moving comfortably by keeping excess movement in check.",
+            "QUICK TRANSITIONS: The Midfoot Transition Zone is shaped to go from heel to toe quickly.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Launch 7',
+        amazonLink: 'https://www.amazon.com/Brooks-Womens-Launch-Running-Shoe/dp/B0828C7VND/ref=sr_1_105?crid=2YXXOJCMHA5O0&keywords=brooks%2Bshoes&qid=1707073850&sprefix=brooks%2Bshoe%2Caps%2C547&sr=8-105&th=1',
+        price: 188.51,
+        sizes: [6,6.5,7,7.5,8,8.5,9,9.5,10,11],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91vJrZba0PL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81EEmiP9oBL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91qpV1xJvcL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/817tniBEncL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/915njTPXPcL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81WVAMQPT2L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Canvas",
+            "Inner material Manmade",
+            "THIS WOMEN'S SHOE IS FOR: The Launch 7 is perfect for runners who want a streamlined, race-ready shoe that still has enough cushioning for everyday training.",
+            "SUPPORT AND CUSHION: The neutral support type provideds lightweight, flexible and responsive cushioning. Ideal for road running, cross training, the gym or wherever you might want to take them! Predecessor: Launch 6",
+            "FAST CUSHIONING: BioMoGo DNA midsole cushioning and rebounding rubber deliver comfort without adding extra weight - perfect for days when you’re working on your speed.",
+            "LIGHTWEIGHT FIT: The one-piece mesh upper and internal bootie are so light and breezy, they feel like they’re not even there.",
+            "QUICK TRANSITIONS: The Midfoot Transition Zone is shaped to go from heel to toe quickly.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'hiking',
+        brand: 'brooks',
+        name: 'Cascadia 14',
+        amazonLink: 'https://www.amazon.com/Brooks-Mens-Cascadia-Grey-Navy/dp/B07LCX56CP/ref=sr_1_97?crid=2RXWFB2MDIQ77&keywords=brooks%2Bshoes&qid=1707074531&rnid=2941120011&s=apparel&sprefix=brooks%2Bshoes%2Caps%2C529&sr=1-97&th=1',
+        badges: ['best seller'],
+        price: 189.16,
+        sizes: [7,8,8.5,9,9.5,10,10.5,11],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71BnK-FFTML._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71nX-8EgnrL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71uaWALKCZL._AC_SL1239_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Dc255Mu0L._AC_SL1267_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71kCye4z-yL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Mv5idrPqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Ar4SZAgZL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Canvas",
+            "Inner material Manmade",
+            "Closure type Snare",
+            "Rubber sole",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Revel 4',
+        amazonLink: 'https://www.amazon.com/Brooks-Mens-Revel-Running-Shoe/dp/B08BVYBQYG/ref=sr_1_69?crid=2RXWFB2MDIQ77&keywords=brooks%2Bshoes&qid=1707074504&rnid=2941120011&s=apparel&sprefix=brooks%2Bshoes%2Caps%2C529&sr=1-69&th=1',
+        badges: ['best seller'],
+        price: 159.74,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5],
+        colors: ['darkblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'darkblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81LUDZs9f2L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81NWsZPV4qL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81xM2V7EfxL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/810xAyQoJEL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81xRx8NJy0L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81bhSzW3BWL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Hand Wash Only",
+            "Sole material Rubber",
+            "Outer material Canvas",
+            "Inner material Canvas",
+            "THIS MEN'S SHOE IS FOR: For runners looking for a shoe with modern looks and performance features to make running feel springy and fun, the Revel 4 delivers all-day versatility with a responsive feeling perfect for putting in miles on the road.",
+            "BALANCED, SOFT CUSHIONING: BioMoGo DNA cushioning adapts to your stride, weight, and speed to help protect you by deflecting impact away from your body.",
+            "QUICK TRANSITIONS: An updated arrow-point pattern in the outsole lets your foot move from heel to toe quickly.",
+            "FRESH LOOK: The Fit Knit upper provides a fashion-forward aesthetic with a secure, distraction-free fit.",
+            "WEAR TESTERS SAY: “The shape of the shoe promotes a fluid motion from forefoot striking to toe-off. I am running quickly in them without much extra effort and the ride is a good contributor to that.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloud X',
+        amazonLink: 'https://www.amazon.com/Cloud-Alloy-Niagara-12-5/dp/B098NK1ZGT/ref=sr_1_10?crid=16BCSOA2UQNEN&keywords=on+shoes&qid=1707132386&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sprefix=on+sho%2Caps%2C841&sr=1-10',
+        price: 139.94,
+        sizes: [12.5],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81SNK89bETL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/717Tp3HpaAL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71cVwWBOpBL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71oa1DTfH3L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71nBLX-PhTL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Dny6oBXZL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'on',
+        name: 'Cloudnova',
+        amazonLink: 'https://www.amazon.com/Cloudnova-Sneakers-Eclipse-Green-Medium/dp/B0BN8T3J6X/ref=sr_1_59?crid=16BCSOA2UQNEN&keywords=on%2Bshoes&qid=1707132416&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sprefix=on%2Bsho%2Caps%2C841&sr=1-59&th=1',
+        price: 233.53,
+        sizes: [7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        colors: ['sienna'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'sienna',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71mwho7F6nL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71U-ha0JlvL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71w7whEvlaL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71-e3i3lAzL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71SJK00p5bL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61jj6bzVs4L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Suede, Rubber",
+            "Closure type Lace-Up",
+            "Man-made sole",
+            "Padded collar and footbed, Reflective logo details, Perforated panels, Engineered for the needs of multi-functional athletes and everyday wear, Ultra lightweight design, Connected CloudTec cushions at outsole, Removable insole",
+            "Lace-up closure",
+            "Round toe",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloudvista',
+        amazonLink: 'https://www.amazon.com/Womens-Cloudvista-Sneakers-Black-Medium/dp/B098NK2YFV/ref=sr_1_95?crid=16BCSOA2UQNEN&keywords=on%2Bshoes&qid=1707132444&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sprefix=on%2Bsho%2Caps%2C841&sr=1-95&th=1',
+        badges: ['best seller'],
+        price: 190.30,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11],
+        colors: ['white'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'white',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/615sdkW6Q7L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71VYz8JvdiL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61zvmjLQ7sL._AC_SL1439_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/610BuftZdaL._AC_SL1479_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61U-sSXt7EL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/610G5MT-+oL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "Outer material Mesh",
+            "Fabric: Performance mesh",
+            "Rubber sole",
+            "Reflective accents, Lightweight design, Cushioned collar and super-soft insole, Perforated tongue, Rigid trail running sole",
+            "Lace-up closure",
+            "Round toe",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'on',
+        name: 'Cloud 5',
+        amazonLink: 'https://www.amazon.com/Cloudflow-Mens-Running-Shoes-black/dp/B08TWF994M/ref=sr_1_1?crid=16BCSOA2UQNEN&keywords=on+shoes&qid=1707133249&refinements=p_89%3AOn&rnid=2528832011&s=apparel&sprefix=on+sho%2Caps%2C841&sr=1-1',
+        badges: ['best seller'],
+        price: 178.95,
+        sizes: [5.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71htUPht7mL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71loY6rW1sL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71ZFot4f65L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Mi6jOOopL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71+o9s+uVnL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/712+wdkyWpL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71fojVHyVOL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Mesh",
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "Fabric: Mesh",
+            "Rubber sole",
+            "Cushioned collar and tongue, Removable insole, Reflective accents",
+            "Lace-up closure",
+            "Round toe",
+        ]
     }
-
-
-
 ]

@@ -11,7 +11,7 @@ const Home = () => {
         bg="bg-hero"
         heading={heroContent.heading}
         paragraph={heroContent.paragraph}
-        btnLink="/shop/all"
+        btnLink="/shop/products"
         btnVariant='secondary'
       />
       <Categories />

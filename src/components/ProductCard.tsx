@@ -1,7 +1,7 @@
 import { useIsActive } from "@/hooks/useSetActiveImage";
 import { Badge } from "@/libs/shadcn/ui/badge";
 import { ProductCardProps, ProductColorsProps, ProductDetailsProps, ProductImagesProps, ProductPriceProps } from "@/types/product";
-import { setPrice } from "@/utils/setPrice";
+import { setPrice } from "@/utils/price/price.utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -41,6 +41,7 @@ const ProductColors = (props:ProductColorsProps) => {
 const ProductCardImages = (props:ProductImagesProps) => {
     
     const {productImages, activeColor, activeImage, handleMouse} = props
+    
     return (
         <div className="h-full flex flex-1 justify-center items-center relative w-full overflow-hidden">
             {
@@ -66,7 +67,7 @@ const ProductCardImages = (props:ProductImagesProps) => {
                                         // variants={fadeVariants(null)}
                                         animate={activeImage===0 ? {opacity: 1 } : { opacity: 0}}
                                         loading="lazy"
-                                        className=" object-contain absolute bottom-0 max-h-full mt-auto max-w-[95%] bg-center"
+                                        className=" object-contain absolute bottom-0 max-h-[90%] mt-auto max-w-[90%] bg-center left-1/2 -translate-x-1/2"
                                         alt={productImage.color}
                                         src={productImage.imagesUrls[0]}
                                         exit={{ opacity: 0}}
@@ -75,7 +76,7 @@ const ProductCardImages = (props:ProductImagesProps) => {
                                         key={1}
                                         animate={activeImage===1 ? {opacity: 1 } : { opacity: 0}}
                                         loading="lazy"
-                                        className=" object-contain absolute bottom-0 max-h-full mt-auto max-w-[95%] bg-center"
+                                        className=" object-contain absolute bottom-0 max-h-[90%] mt-auto max-w-[90%] bg-center left-1/2 -translate-x-1/2"
                                         alt={productImage.color}
                                         src={productImage.imagesUrls[1]}
                                         exit={{ opacity: 0}}
@@ -117,14 +118,14 @@ const ProductPrice = (props:ProductPriceProps) => {
                 discount 
                 ?(
                     <>
-                        <div className="flex flex-col gap-x-1 items-end  justify-end ">
-                            <p className="font-bold">${setPrice(discount, price)}</p>
-                            <p className="line-through text-zinc-500">${setPrice(null, price)}</p>
+                        <div className="flex flex-col items-end  justify-end ">
+                            <p className="font-bold text-sm">${setPrice(discount, price)}</p>
+                            <p className="line-through text-sm text-zinc-500">${setPrice(null, price)}</p>
                         </div>
                         <Badge variant={'destructive'} className="px-1 mb-1 rounded-none leading-none font-medium text-xs">-{discount}%</Badge>
                     </>
                 )
-                : <p className="font-bold">${setPrice(null, price)}</p>
+                : <p className="font-bold text-sm">${setPrice(null, price)}</p>
             }
 
         </div>
@@ -136,9 +137,9 @@ const ProductCard = ({product}:ProductCardProps) => {
     const { activeColor, activeImage, handleColorChange, handleMouse } = useIsActive()
 
   return (
-    <Link to='/' title={product.name} className="relative w-64 bg-white flex flex-col gap-4 pb-2">
+    <Link to='/' title={product.name} className="relative bg-white flex flex-col gap-2 pb-2">
         {/* top */}
-        <div className="overflow-hidden h-60 w-full relative flex flex-col items-start justify-between">
+        <div className="overflow-hidden bg-white h-52 w-full relative flex flex-col items-start justify-between">
             {/* overlay */}
             <div className="w-full h-full bg-zinc-950 opacity-[0.05] rounded-sm absolute inset-0 z-10 pointer-events-none" />
             {/* badges */}
@@ -146,11 +147,10 @@ const ProductCard = ({product}:ProductCardProps) => {
                 {
                     product.badges 
                     && product.badges.map((badge) => (
-                        <Badge variant={'secondary'} key={`${product.id}-${badge}`}>{badge}</Badge>
+                        <Badge className=" bg-zinc-200 text-zinc-900 shadow-none"  key={`${product.id}-${badge}`}>{badge}</Badge>
                     ))
                 }
             </div>
-            {/* images */}
             <ProductCardImages 
                 productImages={product['images']} 
                 activeColor={activeColor}

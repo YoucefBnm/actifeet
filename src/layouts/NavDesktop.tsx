@@ -62,12 +62,12 @@ const NavbarSubmenu = (props:NavbarLinkItem) => {
 
 const NavDesktop = () => {
   return (
-    <header className=" px-default py-4 flex items-center justify-between">
+    <header className="sticky w-screen z-50 top-0 left-0 h-[72px] bg-white px-default py-4 flex items-center justify-between">
       <Link to='/'>
         <img src={LogoDark} className="align-middle" width={113} height={20} alt="actifeet logo" />
       </Link>
 
-      <nav className="flex items-center justify-between">
+      <nav className=" flex items-center justify-between">
         {
           navbarLinks.map((navLink:NavbarLinkItem) => (
             navLink.submenu

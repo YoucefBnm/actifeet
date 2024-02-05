@@ -24,15 +24,15 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'sale',
-                        route: '/shop/men/sale'
+                        route: '/shop/men/badges/sale'
                     },
                     {
                         title: 'new',
-                        route: '/shop/men/new',
+                        route: '/shop/men/badges/new',
                     },
                     {
                         title: 'best seller',
-                        route: '/shop/men/best seller'
+                        route: '/shop/men/badges/best seller'
                     },
                 ]
             },
@@ -41,19 +41,19 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'running',
-                        route: '/shop/men/running'
+                        route: '/shop/men/category/running'
                     },
                     {
                         title: 'cross training',
-                        route: '/shop/men/cross training',
+                        route: '/shop/men/category/cross training',
                     },
                     {
                         title: 'climbing',
-                        route: '/shop/men/climbing'
+                        route: '/shop/men/category/climbing'
                     },
                     {
                         title: 'hiking',
-                        route: '/shop/men/hiking'
+                        route: '/shop/men/category/hiking'
                     }
                 ]
             },
@@ -62,39 +62,39 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'adidas',
-                        route: '/shop/men/adidas'
+                        route: '/shop/men/brand/adidas'
                     },
                     {
                         title: 'altra',
-                        route: '/shop/men/altra'
+                        route: '/shop/men/brand/altra'
                     },
                     {
                         title: 'asics',
-                        route: '/shop/men/asics'
+                        route: '/shop/men/brand/asics'
                     },
                     {
                         title: 'brooks',
-                        route: '/shop/men/brooks'
+                        route: '/shop/men/brand/brooks'
                     },
                     {
                         title: 'columbia',
-                        route: '/shop/men/columbia'
+                        route: '/shop/men/brand/columbia'
                     },
                     {
                         title: 'nike',
-                        route: '/shop/men/nike'
+                        route: '/shop/men/brand/nike'
                     },
                     {
                         title: 'salomon',
-                        route: '/shop/men/salomon'
+                        route: '/shop/men/brand/salomon'
                     },
                     {
                         title: 'scarpa',
-                        route: '/shop/men/scarpa'
+                        route: '/shop/men/brand/scarpa'
                     },
                     {
                         title: 'under armour',
-                        route: '/shop/men/under armour'
+                        route: '/shop/men/brand/under armour'
                     },
                 ]
             }
@@ -119,15 +119,15 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'sale',
-                        route: '/shop/women/sale'
+                        route: '/shop/women/badges/sale'
                     },
                     {
                         title: 'new',
-                        route: '/shop/women/new',
+                        route: '/shop/women/badges/new',
                     },
                     {
                         title: 'best seller',
-                        route: '/shop/women/best seller'
+                        route: '/shop/women/badges/best seller'
                     },
                 ]
             },
@@ -136,19 +136,19 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'running',
-                        route: '/shop/women/running'
+                        route: '/shop/women/category/running'
                     },
                     {
                         title: 'cross training',
-                        route: '/shop/women/cross training',
+                        route: '/shop/women/category/cross training',
                     },
                     {
                         title: 'climbing',
-                        route: '/shop/women/climbing'
+                        route: '/shop/women/category/climbing'
                     },
                     {
                         title: 'hiking',
-                        route: '/shop/women/hiking'
+                        route: '/shop/women/category/hiking'
                     }
                 ]
             },
@@ -157,39 +157,39 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'adidas',
-                        route: '/shop/women/adidas'
+                        route: '/shop/women/brand/adidas'
                     },
                     {
                         title: 'altra',
-                        route: '/shop/women/altra'
+                        route: '/shop/women/brand/altra'
                     },
                     {
                         title: 'asics',
-                        route: '/shop/women/asics'
+                        route: '/shop/women/brand/asics'
                     },
                     {
                         title: 'brooks',
-                        route: '/shop/women/brooks'
+                        route: '/shop/women/brand/brooks'
                     },
                     {
                         title: 'columbia',
-                        route: '/shop/women/columbia'
+                        route: '/shop/women/brand/columbia'
                     },
                     {
                         title: 'new balance',
-                        route: '/shop/women/new balance'
+                        route: '/shop/women/brand/new balance'
                     },
                     {
                         title: 'salomon',
-                        route: '/shop/women/salomon'
+                        route: '/shop/women/brand/salomon'
                     },
                     {
                         title: 'la sportiva',
-                        route: '/shop/women/la sportiva'
+                        route: '/shop/women/brand/la sportiva'
                     },
                     {
                         title: 'under armour',
-                        route: '/shop/women/under armour'
+                        route: '/shop/women/brand/under armour'
                     },
                 ]
             }
@@ -205,23 +205,23 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'shop all',
-                        route: '/shop/cross training'
+                        route: '/shop/category/cross training'
                     },
                     {
                         title: 'men',
-                        route: '/shop/men/cross training'
+                        route: '/shop/men/category/cross training'
                     },
                     {
                         title: 'women',
-                        route: '/shop/women/cross training'
+                        route: '/shop/women/category/cross training'
                     },
                     {
                         title: 'sale',
-                        route: '/shop/cross training/sale'
+                        route: '/shop/category/cross training/badges/sale'
                     },
                     {
                         title: 'new',
-                        route: '/shop/cross training/new'
+                        route: '/shop/category/cross training/badges/new'
                     },
                 ]
             },
@@ -232,7 +232,7 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'shop all',
-                        route: '/shop/running'
+                        route: '/shop/category/running'
                     },
                     {
                         title: 'men',
@@ -244,11 +244,11 @@ export const navbarLinks = [
                     },
                     {
                         title: 'sale',
-                        route: '/shop/running/sale'
+                        route: '/shop/category/running/badges/sale'
                     },
                     {
                         title: 'new',
-                        route: '/shop/running/new'
+                        route: '/shop/category/running/badges/new'
                     },
                 ]
             },
@@ -258,27 +258,27 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'shop all',
-                        route: '/shop/climbing'
+                        route: '/shop/category/climbing'
                     },
                     {
                         title: 'unisex',
-                        route: '/shop/unisex/climbing'
+                        route: '/shop/unisex/category/climbing'
                     },
                     {
                         title: 'men',
-                        route: '/shop/men/climbing'
+                        route: '/shop/men/category/climbing'
                     },
                     {
                         title: 'women',
-                        route: '/shop/women/climbing'
+                        route: '/shop/women/category/climbing'
                     },
                     {
                         title: 'sale',
-                        route: '/shop/climbing/sale'
+                        route: '/shop/category/category/climbing/badges/sale'
                     },
                     {
                         title: 'new',
-                        route: '/shop/climbing/new'
+                        route: '/shop/category/category/climbing/badges/new'
                     },
                 ]
             },
@@ -292,23 +292,23 @@ export const navbarLinks = [
                     },
                     {
                         title: 'unisex',
-                        route: '/shop/unisex/hiking'
+                        route: '/shop/unisex/category/hiking'
                     },
                     {
                         title: 'men',
-                        route: '/shop/men/hiking'
+                        route: '/shop/men/category/hiking'
                     },
                     {
                         title: 'women',
-                        route: '/shop/women/hiking'
+                        route: '/shop/women/category/hiking'
                     },
                     {
                         title: 'sale',
-                        route: '/shop/hiking/sale'
+                        route: '/shop/category/hiking/badges/sale'
                     },
                     {
                         title: 'new',
-                        route: '/shop/hiking/new'
+                        route: '/shop/category/hiking/badges/new'
                     },
                 ]
             },
@@ -318,12 +318,12 @@ export const navbarLinks = [
     {
         id: 'nav-link-main-sale',
         title: 'sale',
-        route: '/shop/sale',
+        route: '/shop/badges/sale',
     },
     {
         id: 'nav-link-main-new',
         title: 'new',
-        route: '/shop/new',
+        route: '/shop/badges/new',
     },
 ]
 

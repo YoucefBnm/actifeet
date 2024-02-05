@@ -27,28 +27,7 @@ export const footerContent = {
     intro: {
         image: LogoLight,
         paragraph: 'Your first choice for high quality athletic shoes for running, cross training, climbing, and our newest collection hiking.',
-        socialLinks: [
-            {
-                id: 'footer-social-link-twitter',
-                icon: IconX,
-                link: 'https://www.twitter.com/'
-            },
-            {
-                id: 'footer-social-link-pinterest',
-                icon: IconPinterest,
-                link: 'https://www.pinterest.com/'
-            },
-            {
-                id: 'footer-social-link-instagram',
-                icon: IconInstagram,
-                link: 'https://www.instagram.com/'
-            },
-            {
-                id: 'footer-social-link-facebook',
-                icon: IconFacebook,
-                link: 'https://www.facebook.com/'
-            }
-        ],
+        
         copyright: '© 2024 - All rights reserved | website by YCF.'
     },
     navigation: [
@@ -94,72 +73,72 @@ export const footerContent = {
                 },
             ]
         },
-        {
-            id: 'footer-nav-brands',
-            title: 'Brands',
-            links: [
-                {
-                    id: 'footer-nav-link-adidas',
-                    title: 'Adidas',
-                    route: '/shop/adidas'
-                },
-                {
-                    id: 'footer-nav-link-altra',
-                    title: 'altra',
-                    route: '/shop/altra'
-                },
-                {
-                    id: 'footer-nav-link-asics',
-                    title: 'asics',
-                    route: '/shop/asics'
-                },
-                {
-                    id: 'footer-nav-link-brooks',
-                    title: 'brooks',
-                    route: '/shop/brooks'
-                },
-                {
-                    id: 'footer-nav-link-columbia',
-                    title: 'columbia',
-                    route: '/shop/columbia'
-                },
-                {
-                    id: 'footer-nav-link-la-sportiva',
-                    title: 'la sportiva',
-                    route: '/shop/la-sportiva'
-                },
-                {
-                    id: 'footer-nav-link-new-balance',
-                    title: 'new balance',
-                    route: '/shop/new-balance'
-                },
-                {
-                    id: 'footer-nav-link-nike',
-                    title: 'nike',
-                    route: '/shop/nike'
-                },
-                {
-                    id: 'footer-nav-link-puma',
-                    title: 'puma',
-                    route: '/shop/puma'
-                },
-                {
-                    id: 'footer-nav-link-salomon',
-                    title: 'salomon',
-                    route: '/shop/salomon'
-                },
-                {
-                    id: 'footer-nav-link-scarpa',
-                    title: 'scarpa',
-                    route: '/shop/scarpa'
-                },
-                {
-                    id: 'footer-nav-link-under armour',
-                    title: 'under armour',
-                    route: '/shop/under armour'
-                },
-            ]
-        },
+        // {
+        //     id: 'footer-nav-brands',
+        //     title: 'Brands',
+        //     links: [
+        //         {
+        //             id: 'footer-nav-link-adidas',
+        //             title: 'Adidas',
+        //             route: '/shop/adidas'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-altra',
+        //             title: 'altra',
+        //             route: '/shop/altra'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-asics',
+        //             title: 'asics',
+        //             route: '/shop/asics'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-brooks',
+        //             title: 'brooks',
+        //             route: '/shop/brooks'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-columbia',
+        //             title: 'columbia',
+        //             route: '/shop/columbia'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-la-sportiva',
+        //             title: 'la sportiva',
+        //             route: '/shop/la-sportiva'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-new-balance',
+        //             title: 'new balance',
+        //             route: '/shop/new-balance'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-nike',
+        //             title: 'nike',
+        //             route: '/shop/nike'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-puma',
+        //             title: 'puma',
+        //             route: '/shop/puma'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-salomon',
+        //             title: 'salomon',
+        //             route: '/shop/salomon'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-scarpa',
+        //             title: 'scarpa',
+        //             route: '/shop/scarpa'
+        //         },
+        //         {
+        //             id: 'footer-nav-link-under armour',
+        //             title: 'under armour',
+        //             route: '/shop/under armour'
+        //         },
+        //     ]
+        // },
         {
             id: 'footer-nav-collections',
             title: 'collections',
@@ -207,7 +186,29 @@ export const footerContent = {
                 },
             ]
         },
-    ]
+    ],
+    socialLinks: [
+        {
+            id: 'footer-social-link-twitter',
+            icon: IconX,
+            link: 'https://www.twitter.com/'
+        },
+        {
+            id: 'footer-social-link-pinterest',
+            icon: IconPinterest,
+            link: 'https://www.pinterest.com/'
+        },
+        {
+            id: 'footer-social-link-instagram',
+            icon: IconInstagram,
+            link: 'https://www.instagram.com/'
+        },
+        {
+            id: 'footer-social-link-facebook',
+            icon: IconFacebook,
+            link: 'https://www.facebook.com/'
+        }
+    ],
 }
 
 export const climbingContent = {
