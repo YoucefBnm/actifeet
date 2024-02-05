@@ -5492,10 +5492,6 @@ export const SHOP_FILTERS: Record<string, any> = {
                 "name": "men",
                 "isChecked": false
             },
-            {
-                "name": "cross training",
-                "isChecked": false
-            },
         ],
         "category": [
             {

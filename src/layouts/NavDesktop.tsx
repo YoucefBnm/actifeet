@@ -29,11 +29,12 @@ const NavbarSubmenu = (props:NavbarLinkItem) => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="link text-base">{props.title}</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="flex justify-evenly w-screen pr-12 py-4 h-[296px]">
+          <NavigationMenuContent className=" w-full">
+            <ul className="flex pr-4 xl:pr-12 justify-between  w-screen">
               <div className="h-full">
-                <img src={props.ctaImage} alt={props.title} className=" align-middle" />
+                <img  src={props.ctaImage} alt={props.title} className=" object-contain align-middle" />
               </div>
+              <div className="flex justify-evenly flex-1 py-5">
                 {
                   props.submenu && props.submenu.map((navSubmenuItem:SubmenuItem) => (
                     <li key={navSubmenuItem.mainTitle} className="flex flex-col gap-4">
@@ -52,6 +53,7 @@ const NavbarSubmenu = (props:NavbarLinkItem) => {
                     </li>
                   ))
                 }
+              </div>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

@@ -6,6 +6,7 @@ import ShopNavFilterItem from "./ShopNavFilterItem";
 import Spinner from "./Spinner";
 import SortSelect from "./SortSelect";
 import FilterItem from "./FilterItem";
+import Loader from "./Loader";
 
 export {
     StaggerContainer,
@@ -16,4 +17,5 @@ export {
     Spinner,
     SortSelect,
     FilterItem,
+    Loader
 }

@@ -1,6 +1,7 @@
 import HeroImage from './images/hero-image.jpg'
-import LogoDark from './images/logo-dark.png'
-import LogoLight from './images/logo-light.png'
+import LogoDark from './images/logo-dark.svg'
+import LogoLight from './images/logo-light.svg'
+import LogoDarkLg from './images/logo-dark-lg.svg'
 
 import IconDelivery from './icons/icon-features-delivery.svg'
 import IconPayment from './icons/icon-features-payment.svg'
@@ -31,6 +32,7 @@ import IconCart from './icons/icon-cart.svg'
 
 import ToggleNavOpenIcon from './icons/toggle-nav-open.svg'
 import ToggleNavCloseIcon from './icons/toggle-nav-close.svg'
+import FilterIcon from './icons/icon-filter.svg'
 
 export {
     HeroImage,
@@ -62,4 +64,6 @@ export {
     
     ToggleNavOpenIcon,
     ToggleNavCloseIcon,
+    LogoDarkLg,
+    FilterIcon,
 }
