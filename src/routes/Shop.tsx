@@ -5,17 +5,18 @@ import { FilterIcon } from "@/assets"
 import { isMobile } from "@/utils/mediaQuery/mediaQuery"
 
 const Shop = () => {
-  
+  const mediaQuerySize = isMobile()
+
   return (
     <main className="flex flex-col gap-4 px-default py-8 shop">
 
         <motion.div 
-          className={isMobile ? 'grid items-start' : 'grid grid-cols-[256px_1fr] gap-x-2 items-start'}
+          className={mediaQuerySize ? 'grid items-start' : 'grid grid-cols-[256px_1fr] gap-x-2 items-start'}
         >
           {
-            isMobile
+            mediaQuerySize
             ? (
-              <div className="sticky top-0 left-0 mb-4 w-fit inline-flex items-center justify-center p-1 border border-slate-200 rounded-sm bg-slate-100 z-10">
+              <div className="sticky top-20 -ml-8 left-0 mb-4 w-fit inline-flex items-center justify-center p-2 border border-slate-500 rounded-full bg-zinc-700 shadow-sm z-10 transition-colors hover:bg-zinc-950">
                 <Sheet>
                   <SheetTrigger asChild>
                     <button title="filters" role="button" aria-label="nav filters trigger">

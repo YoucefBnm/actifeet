@@ -10,9 +10,9 @@ const ShopNav = () => {
   const isFetching = useSelector(selectIsFetching)
 
   return (
-    <aside className="sticky max-h-[450px] left-0 top-16  w-full">
+    <aside className="sticky bg-white max-h-[450px] left-0 top-16  w-full">
       {isFetching && <div className="max-h-[450px] absolute inset-0 z-10 bg-zinc-950 opacity-5 flex items-center justify-center"><Spinner /></div>}
-      <ScrollArea className="flex flex-col h-full items-start justify-start w-full pl-2 pr-4">
+      <ScrollArea className="flex flex-col max-h-[450px] h-full items-start justify-start w-full pl-2 pr-4">
           <SortSelect />
           
           <div className="group w-full my-4">

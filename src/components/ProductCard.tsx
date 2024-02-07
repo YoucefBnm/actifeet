@@ -1,11 +1,9 @@
 import { useIsActive } from "@/hooks/useSetActiveImage";
 import { Badge } from "@/libs/shadcn/ui/badge";
-import { ProductCardProps, ProductColorsProps, ProductDetailsProps, ProductImagesProps, ProductPriceProps } from "@/types/product";
-import { setPrice } from "@/utils/price/price.utils";
+import { ProductCardProps, ProductColorsProps, ProductDetailsProps, ProductImagesProps } from "@/types/product";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-
+import ProductPrice from "./ProductPrice";
 
 const ProductColors = (props:ProductColorsProps) => {
 
@@ -108,36 +106,12 @@ const ProductDetails = (props:ProductDetailsProps) => {
     )
 }
 
-const ProductPrice = (props:ProductPriceProps) => {
-
-    const { price, discount } = props
-
-    return (
-        <div className="flex px-4 justify-between items-end">
-            {
-                discount 
-                ?(
-                    <>
-                        <div className="flex flex-col items-end  justify-end ">
-                            <p className="font-bold text-sm">${setPrice(discount, price)}</p>
-                            <p className="line-through text-sm text-zinc-500">${setPrice(null, price)}</p>
-                        </div>
-                        <Badge variant={'destructive'} className="px-1 mb-1 rounded-none leading-none font-medium text-xs">-{discount}%</Badge>
-                    </>
-                )
-                : <p className="font-bold text-sm">${setPrice(null, price)}</p>
-            }
-
-        </div>
-    )
-}
-
 const ProductCard = ({product}:ProductCardProps) => {
 
     const { activeColor, activeImage, handleColorChange, handleMouse } = useIsActive()
 
   return (
-    <Link to='/' title={product.name} className="relative bg-white flex flex-col gap-2 pb-2">
+    <Link to={`/${product.id}`} title={product.name} className="relative bg-white flex flex-col gap-2 pb-2">
         {/* top */}
         <div className="overflow-hidden bg-white h-52 w-full relative flex flex-col items-start justify-between">
             {/* overlay */}

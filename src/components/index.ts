@@ -7,6 +7,7 @@ import Spinner from "./Spinner";
 import SortSelect from "./SortSelect";
 import FilterItem from "./FilterItem";
 import Loader from "./Loader";
+import ProductPrice from "./ProductPrice";
 
 export {
     StaggerContainer,
@@ -17,5 +18,6 @@ export {
     Spinner,
     SortSelect,
     FilterItem,
-    Loader
+    Loader,
+    ProductPrice
 }

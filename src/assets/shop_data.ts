@@ -5106,38 +5106,6 @@ export const SHOP_DATA:ProductProps[] = [
     {
         id: uuidv4().toString().replace(/-/g, ''),
         gender: 'women',
-        category: 'climbing',
-        brand: 'climb x',
-        name: 'E Motion',
-        amazonLink: 'https://www.amazon.com/Climb-Motion-Performance-Climbing-Bouldering/dp/B0CP6HXFB9/ref=sr_1_290?crid=2Y10A91WNMG85&keywords=climbing+shoes&qid=1703953041&refinements=p_n_availability%3A2661601011&rnid=2661599011&sprefix=climbing+shoes%2Caps%2C181&sr=8-290',
-        price: 89.9,
-        sizes: [5,7,8.5,11],
-        colors: ['yellow'],
-        images: [
-            {
-                id: uuidv4().toString().replace(/-/g, ''),
-                color: 'yellow',
-                imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51FPX-AXGTL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61dBEH8YPpL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51cDHnK8qmL._AC_SY695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61ZV-sNoWML._AC_SX695_.jpg',
-                ]
-            }
-        ],
-        details: [
-            "Outer material Rubber",
-            "Closure type Hook & Loop",
-            "Split design offers great breathability; wraps around feet comfortably.",
-            "3D Heel Design; More Power to Heel Hook.",
-            "Rubber sole",
-            "Please refer to the Sizing Chart for Recommended Size.",
-            "Padded Collar and Heel for Comfort.",
-        ]
-    },
-    {
-        id: uuidv4().toString().replace(/-/g, ''),
-        gender: 'women',
         category: 'running',
         brand: 'altra',
         name: 'Torin 4',
@@ -5930,34 +5898,37 @@ export const SHOP_DATA:ProductProps[] = [
         id: uuidv4().toString().replace(/-/g, ''),
         gender: 'men',
         category: 'climbing',
-        brand: 'climb x',
-        name: 'CLIMBX Rave',
-        amazonLink: 'https://www.amazon.com/Climb-Rave-Strap-Climbing-Shoe/dp/B07DRRD3X8/ref=sr_1_13?crid=GPRW7D4CK9VR&keywords=climbing+shoes&qid=1704031647&refinements=p_n_availability%3A2661601011&rnid=2661599011&sprefix=climbing+shoe%2Caps%2C235&sr=8-13',
+        brand: 'millet',
+        name: 'millet',
+        amazonLink: 'https://www.amazon.com/MILLET-Mens-Climbing-Shoe-Saphir/dp/B09G36TR5Z/ref=sr_1_63?crid=2Z28OT3YJ2ILV&keywords=climbing%2Bshoes&qid=1707177692&sprefix=climbing%2Bshoes%2Caps%2C247&sr=8-63&th=1',
         badges: ['best seller'],
-        price: 69.95,
-        sizes: [6,6.5,7,8],
-        colors: ['grey'],
+        price: 140.00,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10],
+        colors: ['darkblue'],
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
-                color: 'grey',
+                color: 'darkblue',
                 imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81yPx5Rd1JL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81-I6Sq40tL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81aj7ND4ytL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/816JiqjPMUL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/813570nw5oL._AC_SY695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71y2o9e16gL._AC_SY695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71mAmfu0BXL._AC_SX695_.jpg'
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61e-AUi7-QL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81C4BG1hKDL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71XHMS4L9rL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Di4Hn6a-L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71l82+thXqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71RyHLdyxZL._AC_SL1500_.jpg'
                 ]
             }
         ],
         details: [
+            "Care instructions Machine Wash",
             "Sole material Rubber",
-            "Outer material Synthetic",
-            "Closure type Hook & Loop",
-            "Please refer to the Sizing Chart for Recommended Size.",
-            "Padded Collar and Heel for Comfort.",
+            "Outer material Polyester",
+            "Inner material Synthetic",
+            "Soft slippers for beginner climbers looking for sensations in the vertical dimension specially designed for indoor climbing, Compatible outdoors",
+            "Straight centered shape and symmetrical sole with generous heel for optimized comfort of use, Contoured toe for better precision when climbing",
+            "Excellent grip / durability ratio thanks to the brand's historic 4 Point Durable Grip compound, Velcro tightening for precise adjustment and quick entry and release",
+            "Wrap-around sock tongue offering an ideal compromise between comfort, durability and performance thanks to its hemp-lined polycotton upper",
+            "Content: 1x pair of Easy Up Millet adult climbing shoes, Size: UK 9 / EUR 43 1/3, Color: Blue.Department name: Men s",
         ]
     },
     {
@@ -6645,59 +6616,41 @@ export const SHOP_DATA:ProductProps[] = [
         id: uuidv4().toString().replace(/-/g, ''),
         gender: 'women',
         category: 'climbing',
-        brand: 'climbx',
-        name: 'CLIMBX Rave',
-        amazonLink: 'https://www.amazon.com/Climb-Ravestrap-Climbing-Phantom-Blacs/dp/B0C2DYW4PG/ref=sr_1_54?crid=2K1ACE565N1D4&keywords=climbing%2Bshoes&qid=1704132252&refinements=p_n_availability%3A2661601011&rnid=2661599011&sprefix=climbing%2Bshoes%2Caps%2C197&sr=8-54&th=1',
+        brand: 'tenaya',
+        name: 'Tanta Rock',
+        amazonLink: 'https://www.amazon.com/Tenaya-Tanta-Climbing-Shoe-Womens/dp/B01KJ24KIG/ref=sr_1_123?crid=2Z28OT3YJ2ILV&keywords=climbing%2Bshoes&qid=1707177915&sprefix=climbing%2Bshoes%2Caps%2C247&sr=8-123&th=1',
         badges: ['best seller'],
-        price: 99.95,
+        price: 142.99,
         sizes: [5,5.5,6,7,7.5,8,8.5,9],
-        colors: ['grey','blue','red'],
+        colors: ['blue','green'],
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
-                color: 'grey',
+                color: 'blue',
                 imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71tI0WRoxZL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81AzxSKGq6L._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/815NbIg1mHL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81gnK-ZiazL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81RRYWJY+1L._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Q8fxnN67L._AC_SL1029_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61uBw+7+91L._AC_SL1145_.jpg'
                 ]
             },
             {
                 id: uuidv4().toString().replace(/-/g, ''),
                 color: 'blue',
                 imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81YP+RcTm3L._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81l7lgV4CVL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81i9S2piw4L._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81v86d72IHL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71w5pQ+xomL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81DDGTkssDL._AC_SY695_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61NwooigJIL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61NwooigJIL._AC_SL1200_.jpg'
                 ]
             },
-            {
-                id: uuidv4().toString().replace(/-/g, ''),
-                color: 'red',
-                imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81y1WO9cePL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/8123zMLC9WL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71XDm9bj3cL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81vflS0vlkL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/818x6y1hTGL._AC_SY695_.jpg'
-                ]
-            }
         ],
         details: [
-            "Sole material Rubber",
-            "Outer material Rubber",
-            "Closure type Hook & Loop",
+            "Care instructions Machine Wash",
+            "Sole material Faux Leather, Leather",
+            "Closure type Lace-Up",
             "Water resistance level Not Water Resistant",
-            "Soft ankle padding and flat last for all-day comfort",
-            "Nylon midsole for improved edging ability",
-            "Two Velcro straps for fit adjustability",
-            "4.2mm sticky rubber outer sole for better performance",
-            "Hemp insole for less smell . The entire shoes are made of recyclable materials.", 
+            "Upper Material: natural leather microfiber (synthetic)",
+            "Lining: TXT-treated cotton",
+            "Closure: hook-and-loop straps",
+            "Midsole: TST multi-layer stretch tex",
+            "Rubber: 4mm rubber",
         ]
     },
     {
@@ -6771,34 +6724,33 @@ export const SHOP_DATA:ProductProps[] = [
         id: uuidv4().toString().replace(/-/g, ''),
         gender: 'men',
         category: 'climbing',
-        brand: 'climb x',
-        name: "Point Rocking",
-        amazonLink: 'https://www.amazon.com/Climb-Gear-Point-Climbing-Shoe/dp/B07DQ8JQ52/ref=sr_1_391?crid=2AL1OBRGNN5S4&keywords=climbing+shoes&qid=1704136640&refinements=p_n_availability%3A2661601011&rnid=2661599011&s=apparel&sprefix=%2Caps%2C272&sr=1-391',
+        brand: 'tenaya',
+        name: "Tanta",
+        amazonLink: 'https://www.amazon.com/Tenaya-Tanta-Lace-Climbing-Shoes/dp/B09BQT8DZY?ref_=ast_sto_dp',
         badges: ['best seller','limited'],
-        price: 89.97,
-        sizes: [11,12.5],
+        price: 99.95,
+        sizes: [8,9],
         colors: ['blue'],
         images: [
             {
                 id: uuidv4().toString().replace(/-/g, ''),
                 color: 'blue',
                 imagesUrls: [
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71zOwBHocTL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61vLeAznvZL._AC_SX695_.jpg',
-                    'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61BKRNf8PmL._AC_SX695_.jpg'
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61IJ5C9AmqL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61IJ5C9AmqL._AC_SL1200_.jpg'
                 ]
             }
         ],
         details: [
-            "Fabric type Fabric-and-leather",
             "Care instructions Machine Wash",
             "Sole material Rubber",
-            "Outer material Leather",
-            "Padded Ankle Cuff",
-            "Sticky 3D molded heel cup",
-            "Odorless organic hemp footbed",
-            "Contoured Arch for better fit and performance.",
-            "An excellent all-around climbing shoe",
+            "Outer material Microfiber",
+            "Closure type Lace-Up",
+            "Upper Material: microfiber",
+            "Lining: TXT-treated cotton, multi-layer Stretchtex",
+            "Closure: lace",
+            "Midsole: 2D PLT 10, medium-stiff",
+            "Rubber: 4mm",
         ]
     },
     {
@@ -12806,6 +12758,581 @@ export const SHOP_DATA:ProductProps[] = [
             "Cushioned collar and tongue, Removable insole, Reflective accents",
             "Lace-up closure",
             "Round toe",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'nike',
+        name: 'Pegasus 38 Shield',
+        amazonLink: 'https://www.amazon.com/Nike-Pegasus-Shield-Shoes-Numeric_7/dp/B0BTQLHGGL/ref=sr_1_7?crid=2W49KC7LT23SW&keywords=Nike%2BPegasus%2BShields&qid=1707173072&sprefix=nike%2Bpegasus%2Bshields%2Caps%2C196&sr=8-7&th=1',
+        badges: ['best seller'],
+        price: 261,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71yw+4fAyaL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81usG-1gstL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81w2TyKJyVL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71GJOEs+K-L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81jgqjqtHKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71o19xNVpIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61w6pPRvZgL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Synthetic",
+            "Closure type Lace-Up",
+            "Rubber sole",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'nike',
+        name: 'free run',
+        amazonLink: 'https://www.amazon.com/Nike-Running-Anthracite-us_Footwear_Size_System-Numeric_10/dp/B0CD2Y147L/ref=sr_1_263?crid=34DNW4CRDCUDM&keywords=nike+shoes&qid=1707173464&sprefix=nike+shoe%2Caps%2C306&sr=8-263',
+        price: 138.89,
+        colors: ['black'],
+        sizes: [5,6.5,8.5],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81hPhqRGDIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/8104a+4s4SL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71nAsZcfhIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81JiuM893zL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81hQoo3BJWL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81srZZY8izL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/8193fKFvEoL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Origin Imported",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Water resistance level Water Resistant",
+            "Free RN NN Women's Road Running Shoes",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'nike',
+        name: 'TR 13',
+        amazonLink: 'https://www.amazon.com/Nike-Season-Fitness-Running-Medium/dp/B0CKZ9BHQN/ref=sr_1_158?crid=34DNW4CRDCUDM&keywords=nike%2Bshoes&qid=1707173430&sprefix=nike%2Bshoe%2Caps%2C306&sr=8-158&th=1',
+        price: 103.18,
+        sizes: [6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81M9YQ67inL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81XvrKtq1SL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71+jdME4o3L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81mbuBKNlML._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Z2JBA72bL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81FDJ43VTIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81516ifLFQL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Mesh upper for high breathability no matter the workout",
+            "Closure type Hook & Loop",
+            "Plush cushioning in the midsole makes for a smooth ride on the treadmill—and seamless transitions from 1 set to the next.",
+            "A midfoot strap goes across the laces and hugs your foot to help keep you secure for lateral movements.",
+            "We paired the soft midsole with a stable platform that allows for side-to-side movements and short runs.",
+            "Comfort collar offers a plush feel and support, helping you get in and out of the shoe with ease when you’re on the go.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'under armour',
+        name: 'HOVR Intake 6',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Intake-Running-Capri/dp/B0BZXYKMC1/ref=sr_1_5?crid=1MC84QSUV24H5&keywords=under%2Barmour%2Bshoes&qid=1707174029&sprefix=under%2Barmour%2Bshoes%2Caps%2C192&sr=8-5&th=1',
+        badges: ['new'],
+        price: 100,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61eN9zpLJWL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61q0np5Wh4L._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61pQvI-FRbL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51PoeVWVczL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71rtryLnzVL._AC_SL1000_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type 60% Cotton,40% Polyester",
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Lightweight, breathable knit upper for ultimate comfort against the foot throughout your runs",
+            "TPU external heel counter provides lockdown support & fit",
+            "Ortholite deluxe sockliner for maximum step-in comfort",
+            "Responsive UA HOVR cushioning reduces impact, returns energy & helps propel you forward",
+            "Carbon rubber in heel & toe-off for added traction & durability & blown rubber forefoot for energy return",
+            "Offset: 8mm",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'under armour',
+        name: 'Charged Vantage 2',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Charged-Vantage-Running/dp/B09MY8S5B1/ref=sr_1_62?crid=1MC84QSUV24H5&keywords=under%2Barmour%2Bshoes&qid=1707174049&sprefix=under%2Barmour%2Bshoes%2Caps%2C192&sr=8-62&th=1',
+        badges: ['sale'],
+        price: 89.95,
+        discount: 23,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61byCKLfUIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/613R01OiCPL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61dav9z+WlL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71upf6ox43L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61RxV4Ec1aL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Made in the USA or Imported",
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "Light, breathable stretch-mesh upper with molded synthetic midfoot panel for added durability & support",
+            "Removable foam sockliner for ultimate step-in comfort & cushioning",
+            "Charged Cushioning midsole uses compression molded foam for ultimate responsiveness & durability",
+            "Solid rubber outsole covers high impact zones for greater durability with less weight",
+            "Anatomically placed, deep flex grooves offer extra flexibility in key areas",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'under armour',
+        name: 'HOVR Machina',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Machina-Running-Shoes/dp/B081VGLJ1L/ref=sr_1_193?crid=1MC84QSUV24H5&keywords=under+armour+shoes&qid=1707174578&sprefix=under+armour+shoes%2Caps%2C192&sr=8-193',
+        price: 150,
+        sizes: [9],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71QISpGJ69L._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71-sajcMx8L._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/614YndjbdhL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81i8idUIRWL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71iq4q6niPL._AC_SL1425_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Rubber sole",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'Speedform Velociti',
+        category: 'running',
+        brand: 'under armour',
+        name: 'Speedform Velociti',
+        amazonLink: 'https://www.amazon.com/Under-Armour-Speedform-Velociti-Running/dp/B01GQK6L8M/ref=sr_1_243?crid=1MC84QSUV24H5&keywords=under%2Barmour%2Bshoes&qid=1707174603&sprefix=under%2Barmour%2Bshoes%2Caps%2C192&sr=8-243&th=1',
+        badges: ['sale'],
+        price: 63.19,
+        discount: 20,
+        sizes: [6.5,8],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81gZL0ENHeL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81mZPN36EpL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/816nAzyRD5L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71rbr8zSd+L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71ZpSa+L9FL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/712DgYD48DL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81cKqqx8OuL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Textile, EVA, Rubber",
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "NEUTRAL: For runners who need a balance of flexibility & cushioning",
+            "Innovative UA SpeedForm construction molds to the foot for a precision fit, eliminating all distraction",
+            "Engineered mesh delivers a light, comfortable fit & amazing breathability",
+            "Internal heel counter provides seamless, lightweight support & structure",
+            "Embedded sockliner for added cushioning & seamless comfort",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: 'GEL-NIMBUS™ 26',
+        amazonLink: 'https://www.amazon.com/ASICS-Athletic-Running-Evening-Footwear/dp/B0CMDTWQVT/ref=sr_1_10?crid=3N72JT8619819&keywords=asics%2Bshoes&qid=1707219206&sprefix=asics%2Bshoe%2Caps%2C548&sr=8-10&th=1',
+        badges: ['new'],
+        price: 229.95,
+        sizes: [9.5,11.5],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71SxiUHG4YL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71CvtRKGJIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71iNJuu4xVL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71eMhv2S1gL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71kC430bYKL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Shaft height Ankle Strap",
+            "Outer material Lace-up",
+            "Inner material Synthetic",
+            "PureGEL technology",
+            "New upper structure",
+            "OrthoLite X-55 sockliner",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'asics',
+        name: 'Gel-Nimbus 24',
+        amazonLink: 'https://www.amazon.com/ASICS-Womens-Gel-Nimbus-LITE-Show-Running/dp/B09CLND2K5/ref=sr_1_152?crid=3N72JT8619819&keywords=asics+shoes&qid=1707219479&sprefix=asics+shoe%2Caps%2C548&sr=8-152',
+        badges: ['best seller'],
+        price: 118.39,
+        sizes: [5,6,6.5,7.5,8,8.5,9,9.5,10,11],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61WUUkhI50L._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61N+jXUbAAL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61AlZ2iO9VL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61EJ0zGAmAL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71hbjfLLrlL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71TBTBQUcPL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/718Cc3-fhCL._AC_SL1200_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Engineered Mesh",
+            "Closure type Lace-Up",
+            "Engineered mesh upper wraps the foot with a soft feel while improving breathability:",
+            "ASICS LITE rubber is lighter, stronger, and more sustainable than standard outsole rubbers:",
+            "AHAR outsole rubber improves durability:",
+            "Rearfoot and Forefoot GEL Technology Cushioning System: Attenuates shock during impact and toe-off phases, and allows movement in multiple planes as the foot transitions through the gait cycle.",
+            "Trusstic System technology: Reduces the weight of the sole unit while retaining the structural integrity of the shoe.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'asics',
+        name: 'Gel-DS Trainer 26',
+        amazonLink: 'https://www.amazon.com/ASICS-Womens-Gel-DS-Trainer-Running/dp/B08XWCN1SG/ref=sr_1_159?crid=3N72JT8619819&keywords=asics%2Bshoes&qid=1707219479&sprefix=asics%2Bshoe%2Caps%2C548&sr=8-159&th=1',
+        badges: ['sale'],
+        price: 79.95,
+        discount: 20,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10],
+        colors: ['darkblue','orange'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'darkblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61HhybrKtPL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61veyUuv-vL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61ZdbpLisDL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61n+j9aVTHL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61NRWhWGYvL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61TknaR23yL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71ze-GXvr5L._AC_SL1200_.jpg'
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'orange',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61mLo2lcpHL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61FbZcC7cHL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61uTWcJaxvL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61sJhEQagPL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61S6ToDYDfL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71xABbA4deS._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61C4YAxemCL._AC_SL1200_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Mesh",
+            "Closure type Lace-Up",
+            "FLYTEFOAM technology provides lightweight and durable cushioning.",
+            "FLYTEFOAM Technology: Provides lightweight cushioning.",
+            "Rearfoot GEL technology cushioning system: Attenuates shock during impact phase and allows for a smooth transition to midstance.",
+            "Engineered knit mesh upper",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: 'GT-1000 9',
+        amazonLink: 'https://www.amazon.com/ASICS-GT-1000-Running-Shoes-Magnetic/dp/B088K6QZY8/ref=sr_1_179?crid=3N72JT8619819&keywords=asics%2Bshoes&qid=1707219479&sprefix=asics%2Bshoe%2Caps%2C548&sr=8-179&th=1',
+        badges: ['best seller'],
+        price: 109.95,
+        sizes: [7.5],
+        colors: ['darkblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'darkblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/7131rN5T1ZL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71NFrTgOjdL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71uQ3WsUxSL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/711coJ6-RRL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71-ZVY9WgtL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81LNwD0PPJL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81SYnZh44sL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Ethylene Vinyl Acetate, Rubber",
+            "Outer material Mesh",
+            "Closure type Lace-Up",
+            "I.G.S (Impact Guidance System) Technology - ASICS design philosophy that employs linked componentry to enhance the foot's natural gait from heel strike to toe-off.",
+            "EVA Sockliner - Removable sockliner that provides cushioning performance.",
+            "DuoMax Support System - A dual density midsole system positioned to enhance support and stability, positioned sport specifically.",
+            "FlyteFoam Midsole Technology - Our FlyteFoam technology provides exceptional bounce back and responsiveness no matter the distance, utilizing organic super fibers to help reduce packing out that traditionally happens with softer, low density foams.",
+            "AHAR Outsole - Acronym for ASICS High Abrasion Rubber. Placed in critical areas of the outsole for exceptional durability",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: 'Gel-Quantum 90',
+        amazonLink: 'https://www.amazon.com/ASICS-Gel-Quantum-Running-Graphite-Black/dp/B07KJJ2R88/ref=sr_1_265?crid=3N72JT8619819&keywords=asics%2Bshoes&qid=1707220552&sprefix=asics%2Bshoe%2Caps%2C548&sr=8-265&th=1',
+        badges: ['best seller'],
+        price: 109.95,
+        sizes: [8,8.5,12.5,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61tuzwl23vL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61sIPDmwdbL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61K7aZtskwL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61j6S5i9HkL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61FR3zeIUZL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61rxbaiLE6L._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51weCPcPKoL._AC_SL1200_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Fabric type 100% Synthetic",
+            "Care instructions Machine Wash",
+            "Origin Imported",
+            "Sole material Rubber",
+            "E;V;A midsole:",
+            "Rearfoot GEL technology: Improves impact absorption and creates a softer feeling at footstrike",
+            "Breathable mesh upper:",
+            "Rearfoot GEL technology: Improves impact absorption and creates a softer feeling at footstrike",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: 'Heatracer 2',
+        amazonLink: 'https://www.amazon.com/ASICS-Heatracer-Running-Shoes-Sunrise/dp/B082ZRMKBT/ref=sr_1_200?crid=3N72JT8619819&keywords=asics%2Bshoes&qid=1707219509&sprefix=asics%2Bshoe%2Caps%2C548&sr=8-200&th=1',
+        price: 90,
+        sizes: [8,11,11.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61XZuRo0WCL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61uyhookaZL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61zVfYrrEbL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61NhepYcd4L._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51vcMGV1PRL._AC_SL1200_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61NYNn6etAL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51CIhsLKMuL._AC_SL1200_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "SpevaFoam Midsole Material - Improves bounce back characteristics and decreases midsole breakdown.",
+            "Engineered Mesh Upper - Multi-directional mesh material improves ventilation and stability.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: 'Hyper Gel-Yu',
+        amazonLink: 'https://www.amazon.com/ASICS-HyperGEL-Yu-Mens-Running-Peacoat/dp/B07QZ4KPNN/ref=sr_1_244?crid=3N72JT8619819&keywords=asics+shoes&qid=1707220501&sprefix=asics+shoe%2Caps%2C548&sr=8-244',
+        price: 79.95,
+        sizes: [8.5,10,13],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61DibTOhuhL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61UDKE3N7eL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71V2ttpQKyL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/612t32eIRlL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61WR++cqgjL._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61olWKfsw7L._AC_SL1024_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61vqfttHflL._AC_SL1024_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Rubber sole",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Glycerin 15',
+        amazonLink: 'https://www.amazon.com/Brooks-Glycerin-Running-Silver-Nightlife/dp/B078T3F8WM/ref=sr_1_97?crid=JR8XGJ7D4G72&keywords=brooks%2Bshoes&qid=1707305251&sprefix=brooks%2Bshoes%2Caps%2C212&sr=8-97&th=1',
+        price: 259.95,
+        sizes: [7],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Gc6CZMOsL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81LBkn+aA5L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81qx7CvhUiL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71cXgbBixAL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/819tjOP75GL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81gKiXCv+GL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91oTMspyn4L._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Fabric",
+            "Inner material Manmade",
+            "Improved fit from next-generation 3D Stretch Print saddle",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Ricochet 3',
+        amazonLink: 'https://www.amazon.com/Brooks-Ricochet-Navy-Grey-Scarlet/dp/B08LN6DD6K/ref=sr_1_63?crid=JR8XGJ7D4G72&keywords=brooks%2Bshoes&qid=1707305758&sprefix=brooks%2Bshoes%2Caps%2C212&sr=8-63&th=1',
+        badges: ['sale'],
+        price: 89.95,
+        discount: 20,
+        sizes: [9.5,10.5,11,12,14],
+        colors: ['white'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'white',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/814F92dMZqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81kO0oA5ASL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81n2BdsQ87L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/810dlYLpgLL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81ysQjnOHKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81y2LM3Y7GL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Canvas",
+            "Inner material Manmade",
+            "THIS MEN'S SHOE IS FOR: The Ricochet 3 is perfect for runners who like a springy, lightweight ride that offers a balance of adaptable cushioning plus energy return. Predecessor: Brooks Ricochet 2",
+            "LIGHTWEIGHT, SPRINGY CUSHIONING: An updated combination of BioMoGo DNA and DNA AMP cushioning work together to provide a lighter than ever, responsive ride that gives more energy back to you.",
+            "BETTER-THAN-EVER FIT: Comfort goes into stealth mode inside the sleek simplicity of the Refreshed Fit Knit upper, which is flexible and breathable with a plush interior liner for comfort and stability.",
+            "QUICK SMOOTH TRANSITIONS: A flexible, arrow-point pattern on the outsole helps you move from heel to toe quickly, without losing energy.",
+            "GREAT RIDE: The Ricochet 3 is super light with a perfect blend of energy return and adaptable cushioning for a springy, responsive ride",
         ]
     }
 ]

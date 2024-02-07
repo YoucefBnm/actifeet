@@ -93,10 +93,6 @@ export const SHOP_FILTERS: Record<string, any> = {
                 "name": "red chili",
                 "isChecked": false
             },
-            {
-                "name": "climb x",
-                "isChecked": false
-            },
             
             {
                 "name": "under armour",
@@ -319,12 +315,40 @@ export const SHOP_FILTERS: Record<string, any> = {
                 "name": "columbia",
                 "isChecked": false
             },
-            
+            {
+                "name": "la sportiva",
+                "isChecked": false
+            },
+            {
+                "name": "millet",
+                "isChecked": false
+            },
+            {
+                "name": "new balance",
+                "isChecked": false
+            },
             {
                 "name": "nike",
                 "isChecked": false
             },
+            {
+                "name": "tenaya",
+                "isChecked": false
+            },
+            {
+                "name": "on",
+                "isChecked": false
+            },
+            {
+                "name": "puma",
+                "isChecked": false
+            },
             
+            
+            {
+                "name": "red chili",
+                "isChecked": false
+            },
             {
                 "name": "salomon",
                 "isChecked": false
@@ -335,31 +359,6 @@ export const SHOP_FILTERS: Record<string, any> = {
             },
             
             
-            {
-                "name": "puma",
-                "isChecked": false
-            },
-            
-            {
-                "name": "on",
-                "isChecked": false
-            },
-            {
-                "name": "red chili",
-                "isChecked": false
-            },
-            {
-                "name": "new balance",
-                "isChecked": false
-            },
-            {
-                "name": "la sportiva",
-                "isChecked": false
-            },
-            {
-                "name": "climb x",
-                "isChecked": false
-            },
             {
                 "name": "under armour",
                 "isChecked": false
@@ -853,13 +852,17 @@ export const SHOP_FILTERS: Record<string, any> = {
                 "isChecked": false
             },
             {
+                "name": "millet",
+                "isChecked": false
+            },
+            {
                 "name": "la sportiva",
                 "isChecked": false
             },
             {
-                "name": "climb x",
+                "name": "tenaya",
                 "isChecked": false
-            }
+            },
         ],
         "sizes": [
             {
@@ -1175,10 +1178,6 @@ export const SHOP_FILTERS: Record<string, any> = {
             },
             {
                 "name": "under armour",
-                "isChecked": false
-            },
-            {
-                "name": "climb x",
                 "isChecked": false
             },
             {
@@ -2616,7 +2615,11 @@ export const SHOP_FILTERS: Record<string, any> = {
             {
                 "name": "black diamond",
                 "isChecked": false
-            }
+            },
+            {
+                "name": "tenaya",
+                "isChecked": false
+            },
         ],
         "sizes": [
             {
@@ -3676,6 +3679,10 @@ export const SHOP_FILTERS: Record<string, any> = {
             },
             {
                 "name": "la sportiva",
+                "isChecked": false
+            },
+            {
+                "name": "tenaya",
                 "isChecked": false
             },
             {
@@ -6158,10 +6165,7 @@ export const SHOP_FILTERS: Record<string, any> = {
             }
         ],
         "brand": [
-            {
-                "name": "scarpa",
-                "isChecked": false
-            },
+            
             {
                 "name": "black diamond",
                 "isChecked": false
@@ -6171,11 +6175,19 @@ export const SHOP_FILTERS: Record<string, any> = {
                 "isChecked": false
             },
             {
+                "name": "millet",
+                "isChecked": false
+            },
+            {
                 "name": "red chili",
                 "isChecked": false
             },
             {
-                "name": "climb x",
+                "name": "scarpa",
+                "isChecked": false
+            },
+            {
+                "name": "tenaya",
                 "isChecked": false
             },
         ],
@@ -6356,10 +6368,6 @@ export const SHOP_FILTERS: Record<string, any> = {
             },
             {
                 "name": "scarpa",
-                "isChecked": false
-            },
-            {
-                "name": "climb x",
                 "isChecked": false
             },
         ],
@@ -7392,10 +7400,6 @@ export const SHOP_FILTERS: Record<string, any> = {
             },
             {
                 "name": "salomon",
-                "isChecked": false
-            },
-            {
-                "name": "climb x",
                 "isChecked": false
             },
             {

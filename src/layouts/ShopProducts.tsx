@@ -37,7 +37,6 @@ const GridCell = ({product}:GridCellProps) => {
 
   return (
     <motion.div 
-      // className="w-[270px] md:w-64 w- sm:w-[300px]"
       variants={fadeVariants(null)}
     >
       {

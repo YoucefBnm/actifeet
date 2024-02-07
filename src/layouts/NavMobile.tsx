@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 const TogglNavBtn = () => {
 
   return (
-    <DrawerTrigger>
+    <DrawerTrigger className="w-28 flex justify-end">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 6H24" stroke="black" strokeWidth="2.5" strokeLinecap="round"/>
         <path d="M1 12H24" stroke="black" strokeWidth="2.5" strokeLinecap="round"/>
@@ -20,7 +20,7 @@ const TogglNavBtn = () => {
 
 const NavMobile = () => {
   return (
-    <header className="p-5">
+    <header className="p-4 bg-white sticky top-0 w-screen z-50">
       <nav className="flex justify-between items-center">
         <Link to='/'>
           <img className="align-middle" alt='actifeet logo dark' src={LogoDark} />

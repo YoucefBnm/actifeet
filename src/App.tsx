@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom"
 import { Footer, NavDesktop, NavMobile } from "./layouts"
-import { Home, Shop } from "./routes"
+import { Home, ProdcutPage, Shop } from "./routes"
 import { isMobile } from "./utils/mediaQuery/mediaQuery"
 
 function App() {
-  
+  const mediaQuerySize = isMobile()
 
   return (
     <>
       {
-        isMobile
+        mediaQuerySize
         ? <NavMobile />
         : <NavDesktop />
       }
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/shop/:gender?/category?/:category?/badges?/:badges?/brand?/:brand?" element={<Shop />} />
+        <Route path="/:productId" element={<ProdcutPage />} />
       </Routes>
 
       <Footer />

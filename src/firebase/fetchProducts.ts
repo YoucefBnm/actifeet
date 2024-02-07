@@ -1,4 +1,4 @@
-import { QueryDocumentSnapshot, QueryFieldFilterConstraint, QueryFilterConstraint, and, collection, getCountFromServer, getDocs, limit, or, query, startAfter } from "firebase/firestore"
+import { QueryDocumentSnapshot, QueryFieldFilterConstraint, QueryFilterConstraint, and, collection, doc, getCountFromServer, getDoc, getDocs, limit, or, query, startAfter } from "firebase/firestore"
 import { db, filterQueries, sortOptions } from "./controllers"
 import { SortOptionsTypes } from "@/types/sortOptions"
 import { ProductProps } from "@/types/product"
@@ -71,4 +71,17 @@ export const fetchProducts = async (options:fetchOptionsProps) => {
         count,
         lastVisibleItem
     }
+}
+
+export const fetchProductItem = async (productId:string) => {
+
+    const collectionRef = collection(db, 'products')
+
+    const productDoc = doc(collectionRef, productId)
+
+    const productSnapshot = await getDoc(productDoc)
+    
+    if(productSnapshot.exists()) {
+        return productSnapshot.data() as ProductProps
+    } 
 }
