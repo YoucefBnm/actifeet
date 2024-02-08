@@ -1,5 +1,6 @@
-import { IconCart, IconSearch, IconUser } from "@/assets"
+import { IconSearch, IconUser } from "@/assets"
 import { Link } from "react-router-dom"
+import { AuthDropdown, Cart } from "."
 
 const NavbarUtils = () => {
   return (
@@ -11,15 +12,14 @@ const NavbarUtils = () => {
         </li>
 
         <li className="py-2 px-2 link">
-            <Link to='/login'>
+            {/* <Link to='/login'>
                 <img className="align-middle" src={IconUser} width={24} height={24} />
-            </Link>
+            </Link> */}
+            <AuthDropdown />
         </li>
 
         <li className="py-2 px-2 link">
-            <span aria-label="cart trigger">
-                <img width={24} height={24} className="align-middle" src={IconCart} />
-            </span>
+            <Cart />
         </li>
     </ul>
   )

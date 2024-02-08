@@ -2,6 +2,7 @@ import { ProductProps } from "@/types/product"
 import { SHOP_COLLECTION_TYPES } from "./shopCollection.types"
 import { DocumentSnapshot } from "firebase/firestore"
 import { SortOption } from "@/types/sortOptions"
+import { ReducerAction } from "@/types/action"
 
 type ShopCollectionStateType = {
     products: ProductProps[],
@@ -19,10 +20,7 @@ const SHOP_COLLECTION_INITIAL_STATE:ShopCollectionStateType = {
     isFetching: false,
     error: null,
 }
-type ReducerAction = {
-    type: string,
-    payload: any
-}
+
 export const shopCollectionReducer = (state=SHOP_COLLECTION_INITIAL_STATE, { type, payload}:ReducerAction) => {
     
     switch(type) {

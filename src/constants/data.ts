@@ -54,91 +54,25 @@ export const footerContent = {
                 {
                     id: 'footer-nav-link-running',
                     title: 'Running',
-                    route: '/shop/running'
+                    route: '/shop/category/running'
                 },
                 {
                     id: 'footer-nav-link-Cross-training',
                     title: 'Cross Training',
-                    route: '/shop/cross-training'
+                    route: '/shop/category/cross-training'
                 },
                 {
                     id: 'footer-nav-link-climbing',
                     title: 'Climbing',
-                    route: '/shop/climbing'
+                    route: '/shop/category/climbing'
                 },
                 {
                     id: 'footer-nav-link-hiking',
                     title: 'Hiking',
-                    route: '/shop/hiking'
+                    route: '/shop/category/hiking'
                 },
             ]
         },
-        // {
-        //     id: 'footer-nav-brands',
-        //     title: 'Brands',
-        //     links: [
-        //         {
-        //             id: 'footer-nav-link-adidas',
-        //             title: 'Adidas',
-        //             route: '/shop/adidas'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-altra',
-        //             title: 'altra',
-        //             route: '/shop/altra'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-asics',
-        //             title: 'asics',
-        //             route: '/shop/asics'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-brooks',
-        //             title: 'brooks',
-        //             route: '/shop/brooks'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-columbia',
-        //             title: 'columbia',
-        //             route: '/shop/columbia'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-la-sportiva',
-        //             title: 'la sportiva',
-        //             route: '/shop/la-sportiva'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-new-balance',
-        //             title: 'new balance',
-        //             route: '/shop/new-balance'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-nike',
-        //             title: 'nike',
-        //             route: '/shop/nike'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-puma',
-        //             title: 'puma',
-        //             route: '/shop/puma'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-salomon',
-        //             title: 'salomon',
-        //             route: '/shop/salomon'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-scarpa',
-        //             title: 'scarpa',
-        //             route: '/shop/scarpa'
-        //         },
-        //         {
-        //             id: 'footer-nav-link-under armour',
-        //             title: 'under armour',
-        //             route: '/shop/under armour'
-        //         },
-        //     ]
-        // },
         {
             id: 'footer-nav-collections',
             title: 'collections',
@@ -146,17 +80,17 @@ export const footerContent = {
                 {
                     id: 'footer-nav-link-best-seller',
                     title: 'best seller',
-                    route: '/shop/best-seller'
+                    route: '/shop/badges/best-seller'
                 },
                 {
                     id: 'footer-nav-link-new',
                     title: 'new',
-                    route: '/shop/new'
+                    route: '/shop/badges/new'
                 },
                 {
                     id: 'footer-nav-link-sale',
                     title: 'sale',
-                    route: '/shop/sale'
+                    route: '/shop/badges/sale'
                 },
             ]
         },
@@ -167,22 +101,17 @@ export const footerContent = {
                 {
                     id: 'footer-nav-link-register',
                     title: 'register',
-                    route: '/shop/register'
+                    route: '/register'
                 },
                 {
                     id: 'footer-nav-link-login',
                     title: 'login',
-                    route: '/shop/login'
-                },
-                {
-                    id: 'footer-nav-link-shop',
-                    title: 'shop',
-                    route: '/shop/all'
+                    route: '/login'
                 },
                 {
                     id: 'footer-nav-link-checkout',
                     title: 'checkout',
-                    route: '/shop/checkout'
+                    route: '/checkout'
                 },
             ]
         },
@@ -224,14 +153,14 @@ export const hikingContent = {
 export const crossTrainingContent = {
     heading: 'cross training',
     paragraph: 'Our cross-training shoes are built to handle any workout, from intense gym sessions to high-intensity interval training. With superior stability, flexibility, and breathability, these shoes are designed to support your every move.',
-    link: '/shop/cross training',
+    link: '/shop/category/cross training',
     image: CtaCrossTrainingImage
 }
 
 export const runningContent = {
     heading: 'running',
     paragraph: "Our running shoe collection is designed to enhance your running experience, whether you're a seasoned marathoner or a beginner hitting the pavement for the first time. From responsive cushioning to lightweight designs, our shoes are engineered to provide optimal support.",
-    link: '/shop/running',
+    link: '/shop/category/running',
     image: CtaRunningImage
 }
 
@@ -240,36 +169,36 @@ export const categories = [
         id: 'category-men',
         title: 'men',
         image: CategoryMenImage,
-        link: '/shop/men'
+        link: '/shop/gender/men'
     },
     {
         id: 'category-women',
         title: 'women',
         image: CategoryWomenImage,
-        link: '/shop/women'
+        link: '/shop/gender/women'
     },
     {
         id: 'category-running',
         title: 'running',
         image: CategoryRunningImage,
-        link: '/shop/running'
+        link: '/shop/category/running'
     },
     {
         id: 'category-cross-training',
         title: 'cross training',
         image: CategoryCrossTrainingImage,
-        link: '/shop/cross training'
+        link: '/shop/category/cross training'
     },
     {
         id: 'category-climbing',
         title: 'climbing',
         image: CategoryClimbingImage,
-        link: '/shop/climbing'
+        link: '/shop/category/climbing'
     },
     {
         id: 'category-hiking',
         title: 'hiking',
         image: CategoryHikingImage,
-        link: '/shop/hiking'
+        link: '/shop/category/hiking'
     },
 ]

@@ -83,7 +83,7 @@ const NavDesktop = () => {
               />
             )
             : navLink.route && (
-              <Link key={navLink.id} to={navLink.route} className="link p-2">{navLink.title}</Link>
+              <Link key={navLink.id} to={navLink.route} className={`${navLink.title==='sale' ? ' text-red-500 link p-2' : 'link p-2'}`}>{navLink.title}</Link>
             )
           ))
         }

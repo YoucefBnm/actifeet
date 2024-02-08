@@ -33,6 +33,8 @@ import IconCart from './icons/icon-cart.svg'
 import ToggleNavOpenIcon from './icons/toggle-nav-open.svg'
 import ToggleNavCloseIcon from './icons/toggle-nav-close.svg'
 import FilterIcon from './icons/icon-filter.svg'
+import IconAdd from './icons/icon-add.svg'
+import IconDeduct from './icons/icon-deduct.svg'
 
 export {
     HeroImage,
@@ -66,4 +68,6 @@ export {
     ToggleNavCloseIcon,
     LogoDarkLg,
     FilterIcon,
+    IconAdd,
+    IconDeduct,
 }

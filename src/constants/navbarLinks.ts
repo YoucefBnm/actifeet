@@ -2,11 +2,6 @@ import { NavMenImage, NavWomenImage, NavSportsImage } from "@/assets"
 
 export const navbarLinks = [
     {
-        id: 'nav-link-main-shop',
-        title: 'shop all',
-        route: '/shop/all',
-    },
-    {
         id: 'nav-link-dropdown-men',
         title: 'men',
         submenu: [
@@ -261,10 +256,6 @@ export const navbarLinks = [
                         route: '/shop/category/climbing'
                     },
                     {
-                        title: 'unisex',
-                        route: '/shop/unisex/category/climbing'
-                    },
-                    {
                         title: 'men',
                         route: '/shop/men/category/climbing'
                     },
@@ -288,11 +279,7 @@ export const navbarLinks = [
                 links: [
                     {
                         title: 'shop all',
-                        route: '/shop/hiking'
-                    },
-                    {
-                        title: 'unisex',
-                        route: '/shop/unisex/category/hiking'
+                        route: '/shop/category/hiking'
                     },
                     {
                         title: 'men',
@@ -316,14 +303,19 @@ export const navbarLinks = [
         ctaImage: NavSportsImage
     },
     {
-        id: 'nav-link-main-sale',
-        title: 'sale',
-        route: '/shop/badges/sale',
+        id: 'nav-link-main-best-seller',
+        title: 'best seller',
+        route: '/shop/badges/best seller'
     },
     {
         id: 'nav-link-main-new',
         title: 'new',
         route: '/shop/badges/new',
+    },
+    {
+        id: 'nav-link-main-sale',
+        title: 'sale',
+        route: '/shop/badges/sale',
     },
 ]
 

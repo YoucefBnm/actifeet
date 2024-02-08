@@ -3,12 +3,15 @@ import { useFetchProductItem } from "@/hooks/useFetchProductItem";
 import { useIsActive } from "@/hooks/useSetActiveImage";
 import { Badge } from "@/libs/shadcn/ui/badge";
 import { Button } from "@/libs/shadcn/ui/button";
+import { addCartItem } from "@/store/cart/cart.action";
+import { selectCartItems } from "@/store/cart/cart.selector";
 import { ProductProps } from "@/types/product";
 import { setPrice } from "@/utils/price/price.utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 interface ProductGalleryProps {
@@ -27,6 +30,8 @@ interface ProductDetailHeaderProps {
 
 interface ProductDetailSizes {
     sizes: ProductProps['sizes'];
+    selectedSize: number | undefined;
+    setSelectedSize: (size:number) => void
 }
 
 interface ProductColorsProps {
@@ -125,9 +130,8 @@ const ProductHeader = (props:ProductDetailHeaderProps) => {
 
 const ProductSizes = (props:ProductDetailSizes) => {
 
-    const { sizes } = props
+    const { sizes, selectedSize, setSelectedSize } = props
 
-    const [selectedSize, setSelectedSize] = useState<number>()
 
     return (
         <div className="flex flex-col gap-2">
@@ -220,13 +224,22 @@ const ProductPage = () => {
 
     const { product } = useFetchProductItem()
     const {activeColor, handleColorChange } = useIsActive()
+    const [selectedSize, setSelectedSize] = useState<number>()
 
+    const dispatch = useDispatch()
+
+    const cartItems = useSelector(selectCartItems)
+
+    const addItem = () => 
+        product && selectedSize && 
+        dispatch(addCartItem(cartItems, product, activeColor, selectedSize))
+        console.log(activeColor)
   return (
     <main>
         {
             product
 
-            ?(<div className="grid gap-8 grid-rows-2 md:grid-rows-1 md:grid-cols-[.6fr_.4fr] px-default py-8">
+            ?(<div className="grid gap-8 grid-rows-[repeat(2,min-content)] md:grid-rows-1 md:grid-cols-[.6fr_.4fr] px-default py-8">
                 {/* gallery */}
                 <div className="flex flex-col gap-4">
                     <div className="flex justify-end gap-0.5 text-sm capitalize">
@@ -250,7 +263,11 @@ const ProductPage = () => {
                         discount={product.discount}
                         badges={product.badges}
                     />
-                    <ProductSizes sizes={product.sizes} />
+                    <ProductSizes 
+                        sizes={product.sizes} 
+                        selectedSize={selectedSize}
+                        setSelectedSize={setSelectedSize}
+                    />
                     <ProductColors 
                         colors={product.images} 
                         activeColor={activeColor}
@@ -258,7 +275,11 @@ const ProductPage = () => {
                     />
                     <ProductDetails details={product.details} />
 
-                    <Button className="w-full" onClick={() => console.log('add to cart')}>add to cart</Button>
+                    <Button 
+                        className="w-full" 
+                        onClick={addItem}>
+                            add to cart
+                        </Button>
                 </div>
             </div>)
             : <div className=" w-screen h-dvh flex justify-center items-center"><Spinner /></div>

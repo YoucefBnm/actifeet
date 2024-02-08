@@ -8,6 +8,8 @@ import SortSelect from "./SortSelect";
 import FilterItem from "./FilterItem";
 import Loader from "./Loader";
 import ProductPrice from "./ProductPrice";
+import Cart from "./Cart";
+import AuthDropdown from "./AuthDropdown";
 
 export {
     StaggerContainer,
@@ -19,5 +21,7 @@ export {
     SortSelect,
     FilterItem,
     Loader,
-    ProductPrice
+    ProductPrice,
+    Cart,
+    AuthDropdown,
 }

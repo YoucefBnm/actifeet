@@ -29,7 +29,7 @@ const Home = () => {
         bg="bg-climbing"
         heading={climbingContent.heading}
         paragraph={climbingContent.paragraph}
-        btnLink="/shop/climbing"
+        btnLink="/shop/category/climbing"
         btnVariant='outline'
       />
       
