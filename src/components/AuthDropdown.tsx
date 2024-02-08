@@ -1,11 +1,15 @@
 import { IconUser } from "@/assets"
 import { Button } from "@/libs/shadcn/ui/button"
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem } from "@/libs/shadcn/ui/navigation-menu"
 import { Popover, PopoverContent, PopoverTrigger } from "@/libs/shadcn/ui/popover"
-import { NavigationMenuTrigger } from "@radix-ui/react-navigation-menu"
+import { Separator } from "@/libs/shadcn/ui/separator"
+import { ReactNode } from "react"
 import { Link } from "react-router-dom"
-
-const AuthDropdownVisitor = () => {
+interface AuthDropdownProps {
+    title: string;
+    lead: string;
+    children: ReactNode
+}
+const AuthDropdownContainer = ({title,lead, children}:AuthDropdownProps) => {
 
     return (
         <Popover>
@@ -15,17 +19,17 @@ const AuthDropdownVisitor = () => {
 
             <PopoverContent className=" flex flex-col gap-4 mr-4 w-80 py-6 px-4">
                 <div className="flex flex-col gap-2">
-                    <h4 className="heading heading-xs">create your account for free</h4>
-                    <p className="text-sm leading-normal">create your account for free or login to get member's benefits like free delivery, fast checkout, coupons, special offers and more.</p>
+                    <h4 className="heading heading-xs">
+                        {title}
+                    </h4>
+                    <p className="text-sm leading-normal text-zinc-700">
+                        {lead}
+                    </p>
                 </div>
 
+                <Separator />
                 <div className="flex gap-2">
-                    <Button variant={'outline'} className="border-2 text-zinc-950 border-zinc-950">
-                        <Link to='/auth/register'>Create your Account</Link>
-                    </Button>
-                    <Button>
-                        <Link to='/auth/login'>Login</Link>
-                    </Button>
+                    {children}
                 </div>
             </PopoverContent>
         </Popover>
@@ -34,7 +38,31 @@ const AuthDropdownVisitor = () => {
 
 const AuthDropdown = () => {
   return (
-    <AuthDropdownVisitor />
+    // not logged
+    // <AuthDropdownContainer 
+    //     title='create your account for free'
+    //     lead="Create your account for free or if you already a member login to get member's benefits like free delivery, fast checkouts, coupons and descount, our special offers, our newest shoes, and more."
+    // >
+    //     <Button variant={'outline'} className="border-2 text-zinc-950 border-zinc-950">
+    //         <Link to='/auth/register'>Create your Account</Link>
+    //     </Button>
+    //     <Button>
+    //         <Link to='/auth/login'>Login</Link>
+    //     </Button>
+    // </AuthDropdownContainer>
+
+    // loggedin
+    <AuthDropdownContainer
+        title='you are now actifeet member'
+        lead="explore our diverse shoes collections for all sports and all your activities."
+    >
+        <Button>
+            <Link to='/checkout'>Go to Checkout</Link>
+        </Button>
+        <Button onClick={() => {}} variant={'outline'} className="border-2 border-zinc-950 text-zinc-950">
+            Sign Out
+        </Button>
+    </AuthDropdownContainer>
   )
 }
 
