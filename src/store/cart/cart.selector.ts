@@ -3,13 +3,23 @@ import { RootState } from "../root.reducer";
 import { CartItemProps } from "@/types/cart";
 
 
-const selectCartReducer = (state:RootState) => state['cart']
+const selectCartReducer = (state:RootState) => state.cart
+
+
+export const selectLoading = createSelector(
+    [selectCartReducer],
+    cartSlice => cartSlice.loading
+)
+
+export const selectError = createSelector(
+    [selectCartReducer],
+    cartSlice => cartSlice.error
+)
 
 export const selectCartItems = createSelector(
     [selectCartReducer],
     cartSlice => cartSlice.cartItems
 )
-
 export const selectCartTotal = createSelector(
     [selectCartItems],
     (cartItems) =>
@@ -18,7 +28,6 @@ export const selectCartTotal = createSelector(
             0
         )
 )
-
 export const selectCartCount = createSelector(
     [selectCartItems],
     (cartItems) => 

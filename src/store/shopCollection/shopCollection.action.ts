@@ -35,4 +35,5 @@ export const fetchProductsSuccess = ({ products, count, lastVisibleItem}:fetchSu
 export const loadeMoreProductsSuccess = ({ products, count, lastVisibleItem}:fetchSuccess) =>
     createAction(SHOP_COLLECTION_TYPES.LOAD_MORE_PRODUCTS_SUCCESS, { products, count, lastVisibleItem})
 
-export const fetchProductsFailed = (error:string | unknown) => createAction(SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_FAILED, error)
+export const fetchProductsFailed = (error:string | unknown) => 
+    createAction(SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_FAILED, error)

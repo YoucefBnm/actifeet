@@ -7,6 +7,8 @@ import NavMobile from "./NavMobile";
 import ShopNav from "./ShopNav";
 import ShopProducts from "./ShopProducts";
 import Cta from "./Cta";
+import ProductPageGallery from "./ProductPageGallery";
+import ProductPageDetails from "./ProductPageDetails";
 
 export {
     Categories,
@@ -18,4 +20,6 @@ export {
     ShopNav,
     ShopProducts,
     Cta,
+    ProductPageGallery,
+    ProductPageDetails,
 }

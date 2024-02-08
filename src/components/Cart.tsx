@@ -3,12 +3,13 @@ import { Button } from "@/libs/shadcn/ui/button"
 import { ScrollArea } from "@/libs/shadcn/ui/scroll-area"
 import { Separator } from "@/libs/shadcn/ui/separator"
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/libs/shadcn/ui/sheet"
-import { clearCartItem, removeCartItem } from "@/store/cart/cart.action"
-import { selectCartCount, selectCartItems, selectCartTotal } from "@/store/cart/cart.selector"
+import { addCartItemStart, clearCartItemStart, removeCartItemStart } from "@/store/cart/cart.action"
+import { selectCartCount, selectCartItems, selectCartTotal, selectLoading } from "@/store/cart/cart.selector"
 import { CartItemProps } from "@/types/cart"
 import { setPrice } from "@/utils/price/price.utils"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
+import { Spinner } from "."
 
 type CartItemGroupProps = {
     segment: string,
@@ -38,7 +39,7 @@ const CartItemUtils = ({cartItem}:CartItemType) => {
                     role="button" 
                     aria-label="deduct item quantity" 
                     className=" appearance-none p-1 transition-colors hover:bg-zinc-300 rounded-full"
-                    onClick={() => dispatch(removeCartItem(cartItems, cartItem))}
+                    onClick={() => dispatch(removeCartItemStart(cartItems, cartItem))}
                 >
                     <img width={16} height={16} className=" align-middle" src={IconDeduct} aria-label="hidden" />
                 </button>
@@ -47,6 +48,7 @@ const CartItemUtils = ({cartItem}:CartItemType) => {
                     role="button" 
                     aria-label="increment item quantity" 
                     className=" appearance-none p-1 transition-colors hover:bg-zinc-300 rounded-full"
+                    onClick={() => dispatch(addCartItemStart(cartItems, cartItem))}
                 >
                     <img width={16} height={16} className=" align-middle" src={IconAdd} aria-label="hidden" />
                 </button>
@@ -78,7 +80,7 @@ const CartItem = ({cartItem}:CartItemType) => {
                                 aria-label="clear cart item"
                                 title='remove item'
                                 className=" w-4 h-4 flex bg-zinc-200 items-center justify-center text-xs  appearance-none p-1 transition-colors hover:bg-zinc-300 rounded-full"
-                                onClick={() => dispatch(clearCartItem(cartItems, cartItem))}
+                                onClick={() => dispatch(clearCartItemStart(cartItems, cartItem))}
                             >           
                                 <span>&times;</span>
                             </button>
@@ -108,6 +110,7 @@ const CartItemsContainer = () => {
     const cartItems = useSelector(selectCartItems)
     const cartCount = useSelector(selectCartCount)
     const cartTotal = useSelector(selectCartTotal)
+    const isLoading = useSelector(selectLoading)
 
     return (
         <SheetContent className="gap-8 flex flex-col">
@@ -118,7 +121,7 @@ const CartItemsContainer = () => {
                 </SheetTitle>
             </SheetHeader>
 
-            <ScrollArea className=" w-96">
+            <ScrollArea className="relative w-96">
                 <div className="flex flex-col gap-8 items-start">
                     {
                         cartItems.map((cartItem: CartItemProps) => 
@@ -126,6 +129,7 @@ const CartItemsContainer = () => {
                         )
                     }
                 </div>
+                {isLoading && <div className="absolute inset-0 z-10 bg-zinc-950 opacity-25"><Spinner /></div>}
             </ScrollArea>
 
             <SheetFooter className="items-center flex  gap-4 ">
@@ -182,12 +186,14 @@ const Cart = () => {
             <SheetTrigger asChild>
                 <img className="align-middle" width={24} height={24} src={IconCart} />
             </SheetTrigger>
-            {cartItemsCount > 0 
+            {
+            cartItemsCount > 0 
             && <div className="absolute pointer-events-none -top-1 left-5 bg-red-500 font-body tracking-tighter flex justify-center items-center w-4 h-4 rounded-full text-[8px] text-white text-center">
                 <span className="align-middle">
                     {cartItemsCount > 10 ? '+10' : cartItemsCount}
                 </span>
-            </div>}
+            </div>
+            }
         </div>
         {/* not logged in */}
         {

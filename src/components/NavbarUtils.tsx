@@ -12,9 +12,6 @@ const NavbarUtils = () => {
         </li>
 
         <li className="py-2 px-2 link">
-            {/* <Link to='/login'>
-                <img className="align-middle" src={IconUser} width={24} height={24} />
-            </Link> */}
             <AuthDropdown />
         </li>
 

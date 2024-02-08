@@ -1,20 +1,25 @@
 import { CartItemProps } from "@/types/cart";
-import { addItemToCart, clearItemFromCart, removeItemFromCart } from "@/utils/cart/cart.utils";
 import { createAction } from "@/utils/reducer/reducer.utils";
 import { CART_ACTION_TYPES } from "./cart.types";
 import { ProductProps } from "@/types/product";
 
-export const addCartItem = (cartItems:CartItemProps[], itemToAdd:ProductProps, selectedColor:number, selectedSize:number) => {
-    const newCartItems = addItemToCart(cartItems, itemToAdd, selectedColor, selectedSize)
-    return createAction(CART_ACTION_TYPES.SET_CART_ITEMS, newCartItems)
-}
+export const setCartItemsStart = (cartItems:CartItemProps[], itemToAdd:ProductProps, selectedColor:number, selectedSize:number|undefined) => 
+    createAction(CART_ACTION_TYPES.SET_CART_ITEMS_START, {cartItems, itemToAdd, selectedColor, selectedSize})
+export const addCartItemStart = (cartItems:CartItemProps, itemTarget:CartItemProps) => 
+    createAction(CART_ACTION_TYPES.ADD_CART_ITEM_START, {cartItems, itemTarget})
+export const removeCartItemStart = (cartItems:CartItemProps[], itemTarget:CartItemProps) => 
+    createAction(CART_ACTION_TYPES.REMOVE_CART_ITEM_START, {cartItems, itemTarget})
+export const clearCartItemStart = (cartItems:CartItemProps[], itemTarget:CartItemProps) => 
+    createAction(CART_ACTION_TYPES.CLEAR_CART_ITEM_START, {cartItems, itemTarget})
 
-export const removeCartItem = (cartItems:CartItemProps[], itemToRemove:CartItemProps) => {
-    const newCartItems = removeItemFromCart(cartItems, itemToRemove)
-    return createAction(CART_ACTION_TYPES.SET_CART_ITEMS, newCartItems)
-}
+export const setCartItemsSuccess = (cartItems:CartItemProps[]) =>
+    createAction(CART_ACTION_TYPES.SET_CART_ITEMS_SUCCESS, cartItems)
+export const addCartItemSuccess = (cartItems:CartItemProps[]) => 
+    createAction(CART_ACTION_TYPES.ADD_CART_ITEM_SUCCESS, cartItems)
+export const removeCartItemSuccess = (cartItems:CartItemProps[]) =>
+    createAction(CART_ACTION_TYPES.REMOVE_CART_ITEM_SUCCESS, cartItems)
+export const clearCartItemSuccess = (cartItems:CartItemProps[]) =>
+    createAction(CART_ACTION_TYPES.CLEAR_CART_ITEM_SUCCESS, cartItems)
 
-export const clearCartItem = (cartItems:CartItemProps[], itemToClear:CartItemProps) => {
-    const newCartItems = clearItemFromCart(cartItems, itemToClear)
-    return createAction(CART_ACTION_TYPES.SET_CART_ITEMS, newCartItems)
-}
+export const setCartItemsFailed = (error:string|unknown) =>
+    createAction(CART_ACTION_TYPES.SET_CART_ITEMS_FAILED, error)
