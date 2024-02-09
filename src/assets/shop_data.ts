@@ -13334,5 +13334,574 @@ export const SHOP_DATA:ProductProps[] = [
             "QUICK SMOOTH TRANSITIONS: A flexible, arrow-point pattern on the outsole helps you move from heel to toe quickly, without losing energy.",
             "GREAT RIDE: The Ricochet 3 is super light with a perfect blend of energy return and adaptable cushioning for a springy, responsive ride",
         ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'adidas',
+        name: 'Duramo 10',
+        amazonLink: 'https://www.amazon.com/adidas-Duramo-Solar-Yellow-Silver/dp/B09TT2DD3J/ref=sr_1_19?crid=C9WA3T66PG9Z&keywords=adidas%2Bshoes&qid=1707436411&sprefix=adidas%2Bs%2Caps%2C641&sr=8-19&th=1',
+        badges: ['best seller'],
+        price: 69.9,
+        sizes: [7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,13,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71fMcjVAtiL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71kxj-TLSTL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71pGfom9buL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71fn91P-eDL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71y8tqpRF+L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/719StUe0ovL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type 100% Textile_Synthetic",
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Mesh",
+            "Men's ultralight running shoes with a neutral fit",
+            "SUPPORTIVE UPPER: Mesh and textile upper provides breathability and support",
+            "LIGHT MAKES FAST: adidas LIGHTMOTION provides super-light cushioning for next-level movement",
+            "HIGH TRACTION: The rubber outsole delivers great grip",
+            "MADE WITH RECYCLED CONTENT: Made with a series of recycled materials, this upper features at least 50% recycled content. This product represents just one of our solutions to help end plastic waste",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'adidas',
+        name: 'Terrex 299',
+        amazonLink: 'https://www.amazon.com/adidas-Mens-Sneaker-Black-Solar/dp/B0BGGV9XC7/ref=sr_1_21?content-id=amzn1.sym.f0d76fd3-f1bb-4365-978a-69e3415358f5%3Aamzn1.sym.f0d76fd3-f1bb-4365-978a-69e3415358f5&keywords=adidas&pd_rd_r=3e36246f-289e-40e8-8264-97d829d6a003&pd_rd_w=Oc5qO&pd_rd_wg=xGF8R&pf_rd_p=f0d76fd3-f1bb-4365-978a-69e3415358f5&pf_rd_r=DNRJ89FJ3RWSM9C70HYB&qid=1707436414&refinements=p_n_is-global-store-asin%3A16354393011%2Cp_89%3Aadidas&s=apparel&sr=1-21&th=1',
+        badges: ['best seller'],
+        price: 185.9,
+        sizes: [10,10.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71DT1fi+HXL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61BUol7PrKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/711JqjWOpKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71wd9bTVZuL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71OrNdKKJGL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Shaft height Ankle Strap",
+            "Outer material Synthetic",
+            "Inner material Tissue",
+            "Racing shoe",
+            "UNGEDMESH upper",
+            "Alphaboost system",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'adidas',
+        name: 'Duramo Speed',
+        amazonLink: 'https://www.amazon.com/adidas-Duramo-Speed-Sneaker-White/dp/B0C2QMGYJS/ref=sr_1_62?content-id=amzn1.sym.f0d76fd3-f1bb-4365-978a-69e3415358f5%3Aamzn1.sym.f0d76fd3-f1bb-4365-978a-69e3415358f5&keywords=adidas&pd_rd_r=3e36246f-289e-40e8-8264-97d829d6a003&pd_rd_w=Oc5qO&pd_rd_wg=xGF8R&pf_rd_p=f0d76fd3-f1bb-4365-978a-69e3415358f5&pf_rd_r=DNRJ89FJ3RWSM9C70HYB&qid=1707436889&rnid=7141123011&sr=8-62&th=1',
+        price: 115.98,
+        sizes: [9.5],
+        colors: ['black','blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Y+HfpJNNL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81e-BXghgqL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/813VlwPDJbL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81U9vcSsoML._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Znx6Ygm2L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81lEEepo44L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91HlkdzEvhL._AC_SL1500_.jpg'
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71kbvsDoaWL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71jXkhv9swL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71312jqa75L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/710xY2DYQJL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91HJJ3fXkDL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91fiXmRnF-L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "Light and breathable upper as it keeps your foot locked in",
+            "Lightweight, responsive and designed for faster movement",
+            "Full-length lightstrike midsole delivers the raceday feeling of our pinnacle running gear",
+            "Regular fit and lace closure",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'adidas',
+        name: 'Puremotion Adapt',
+        amazonLink: 'https://www.amazon.com/adidas-Womens-Puremotion-Adapt-Sneakers/dp/B0BZ7TMBCT/ref=sr_1_67?content-id=amzn1.sym.f0d76fd3-f1bb-4365-978a-69e3415358f5%3Aamzn1.sym.f0d76fd3-f1bb-4365-978a-69e3415358f5&keywords=adidas&pd_rd_r=3e36246f-289e-40e8-8264-97d829d6a003&pd_rd_w=Oc5qO&pd_rd_wg=xGF8R&pf_rd_p=f0d76fd3-f1bb-4365-978a-69e3415358f5&pf_rd_r=DNRJ89FJ3RWSM9C70HYB&qid=1707436889&rnid=7141123011&sr=8-67',
+        price: 109.5,
+        sizes: [6],
+        colors: ['white'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'white',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/41T7FvFiQ3L._AC_SL1080_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/418xM0A2NqL._AC_SL1080_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/41Ph0ZxPsIL._AC_SL1080_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/41Q8qcX+M-L._AC_SL1080_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/41EXB4OXmOL._AC_SL1080_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/419+xr0AJFL._AC_SL1080_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Hand Wash Only",
+            "Sole material TEXTILE/LEATHER",
+            "Shaft height Ankle",
+            "Outer material SYNTHETICS",
+            "Regular fit",
+            "Slip-on construction with elastic strap",
+            "Textile upper",
+            "Cloudfoam memory sockliner",
+            "Textile lining",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: 'Anthem 5',
+        amazonLink: 'https://www.amazon.com/Brooks-Anthem-Black-Ebony-Purple/dp/B09ZD7B64R?ref_=ast_sto_dp&th=1&psc=1',
+        price: 84.95,
+        sizes: [5,7.5,8,8.5,9,9.5,10,10.5,11],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/6131gBBwn0L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71QaJxAXD4L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71QAFS5UCeL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61YuFFQlOyL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71A0Yk2OpiL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Ge-x4VUAL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Made in the USA or Imported",
+            "Sole material Rubber",
+            "Outer material Mesh",
+            "THIS WOMEN’S SHOE IS FOR: The Anthem 5 is for runners looking for a running shoe at an excellent value with streamlined aesthetics.",
+            "SOFT CUSHIONING: New midsole has even more BioMoGo DNA cushioning to better adapt to your stride, weight, and speed.",
+            "BREATHABLE UPPER: All-new engineered air mesh upper delivers breathability with streamlined style.",
+            "SMOOTH TRANSITIONS: Our segmented crash pad cushions every step for smooth heel-to-toe transitions.",
+            "IMPROVED HEEL FIT: New heel fit for increased plush comfort fit.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'brooks',
+        name: 'Cascadia 17',
+        amazonLink: 'https://www.amazon.com/Brooks-Mens-Cascadia-Trail-Running/dp/B0CH1P3DMY?ref_=ast_sto_dp&th=1&psc=1',
+        price: 139.95,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11],
+        colors: ['black','yellow','darkblue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71nRUWXgYbL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71dPUdpiOwL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71cujIyOhGL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/712GlTi0yhL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81irxnQazbL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71AHou+Fe8L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71MUCeHE+NL._AC_SL1500_.jpg'
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'yellow',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81oE9MeptbL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81ihjZg5-8L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81zYSKQ3hPL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Hg-BL3ZGL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81ozbLFWBbL._AC_SL1500_.jpg'
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'darkblue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71JT8di1vnL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71o2hSeMU1L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71TkP++mbHL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/714GGpjSRfL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Z4JtOYAvL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Origin Made in the USA or Imported",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "THIS MEN’S SHOE IS FOR: The Cascadia 17 is for runners who want to explore any trail and feel confident across all terrain.",
+            "SOFT CUSHIONING: DNA LOFT v2 midsole technology provides soft cushioning over rugged terrain to deliver comfort on long trail runs.",
+            "ENHANCED TRACTION: New TrailTack Green provides versatile traction on wet and dry surfaces for added stability over uneven terrain and is constructed from 25% recycled content.",
+            "ADAPTABLE STABILITY: Our new Trail Adapt System utilizes an integrated midsole, rock plate, and zonal outsole pods to offer enhanced control and a stable ride over any terrain.",
+            "PROTECTION AND FLEXABLITY: An articulated Ballistic Rock Shield between two layers of DNA LOFT v2 foam provides necessary protection without limiting the flexibility needed for smooth transitions.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'puma',
+        name: 'Softride Enzo',
+        amazonLink: 'https://www.amazon.com/Puma-Softride-Shoes-Color-Castlerock/dp/B0BC2KM2CW/ref=sr_1_13_mod_primary_new?crid=3G2OBXTJN5U34&keywords=PUMA+Softride&qid=1707489226&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=puma+softride%2Caps%2C214&sr=8-13',
+        badges: ['sale'],
+        price: 75,
+        discount: 29,
+        sizes: [12],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/514yak-a87L._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61V+a5Y9ZcL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51uOx0Hb7wL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51ZCTNUmidL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/41t9zDfQKOL._AC_SL1000_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Fabric-and-synthetic",
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "Softride Enzo EVO Knit",
+            "37695401",
+            "Puma Black Castlerock High Risk Red",
+            "Medium (D, M)",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'puma',
+        name: '',
+        amazonLink: 'https://www.amazon.com/PUMA-%E3%83%97%E3%83%BC%E3%83%9E-Running-Spring-Summer/dp/B0C7J44KPX/ref=sr_1_14?crid=2B4RZ2VXEK7QG&keywords=puma%2Bshoes&qid=1707488868&sprefix=puma%2Bshoe%2Caps%2C218&sr=8-14&th=1',
+        price: 99.06,
+        sizes: [6,6.5,7,7.5,8,8.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61dRjCif63L._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61jH5K+fosL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71XkBd3psWL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71O2yyOOJnL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71M4033yNAL._AC_SL1425_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Dbf4E8v1L._AC_SL1425_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "Upper: Synthetic fiber + synthetic resin (polyurethane)",
+            "Outsole: Rubber sole",
+            "Stable TPU heel spoiler",
+            "Cushion Level: Medium",
+            "Smooth fit and optimal cushioning",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'cross training',
+        brand: 'puma',
+        name: '',
+        amazonLink: 'https://www.amazon.com/Puma-Pacer-Overload-Shoes-Concrete/dp/B0CQ7KQ4NZ/ref=sr_1_28?crid=2B4RZ2VXEK7QG&keywords=puma+shoes&qid=1707488868&sprefix=puma+shoe%2Caps%2C218&sr=8-28',
+        price: 68,
+        sizes: [14],
+        colors: ['grey'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'grey',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61MSbkHIAXL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61bE0bAhPUL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71s+5WEL8OL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81jZqVgpUIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71VYUJWleOL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71b-8e2Ph2L._AC_SL1500_.jpg'
+                ]
+            }   
+        ],
+        details: [
+            "Fabric type Mesh",
+            "Sole material Rubber",
+            "Outer material Mesh",
+            "Closure type Lace-Up",
+            "Pacer 23 Tech Overload",
+            "39346502",
+            "Concrete Gray Inky Blue Puma White",
+            "Medium (D, M)",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'puma',
+        name: 'Softride',
+        amazonLink: 'https://www.amazon.com/PUMA-Unisex-Running-Black-White/dp/B0C342Q9XZ/ref=sr_1_39?crid=2B4RZ2VXEK7QG&keywords=puma%2Bshoes&qid=1707488868&sprefix=puma%2Bshoe%2Caps%2C218&sr=8-39&th=1',
+        price: 91.88,
+        sizes: [6,6.5,7,7.5,8,8.5,10.5,11],
+        colors: ['red'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'red',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71a9SG2VZ5L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71yLJIkVJFL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71rPkizuJhL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71JvKpiJSkL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81j3Op5DakL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/819M5lrbVcL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Synthetic",
+            "Outer material Synthetic",
+            "Inner material Synthetic",
+            "Closure type Lace-Up",
+            "Softride Symmetry",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'cross training',
+        brand: 'new balance',
+        name: 'Nergize Sport V2',
+        amazonLink: 'https://www.amazon.com/New-Balance-DynaSoft-Nergize-Reflection/dp/B0BHK9TSZD/ref=sr_1_1?crid=2GVY4X5J52S17&keywords=altra%2Bshoes&qid=1707491394&rnid=7141123011&s=apparel&sprefix=altra%2Bshoe%2Caps%2C491&sr=1-1&th=1',
+        badges: ['best seller'],
+        price: 55.99,
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,12],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/512IZqMnOmL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51jKY68YKcL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/518EMvf9EKL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51P1Ekc+oCL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51C1wKIMDJL._AC_SL1000_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51vcf5k1KlL._AC_SL1000_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Origin Imported",
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "Closure type Lace-Up",
+            "DynaSoft midsole couples ultra-responsive performance with plush comfort",
+            "Upper features no-sew construction for a sleek fit and feel",
+            "Synthetic/textile upper",
+            "Durable rubber outsole",
+            "Adjustable lace closure for a customized fit.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'running',
+        brand: 'altra',
+        name: 'Escalante 2',
+        amazonLink: 'https://www.amazon.com/ALTRA-Womens-Escalante-Running-Black/dp/B07NBVF4T1/ref=sr_1_48?crid=2GVY4X5J52S17&keywords=altra%2Bshoes&qid=1707491237&rnid=2941120011&s=apparel&sprefix=altra%2Bshoe%2Caps%2C491&sr=1-48&th=1',
+        badges: ['best seller'],
+        price: 129,
+        sizes: [11.5],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/91YFUQLNxSL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81QqRyYQyfL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81KLutR5t0L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/812g9Jm0C-L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "ZERO DROP PLATFORMS - 0mm heel-to-toe drop place heel and forefoot the same distance from the ground for natural alignment and low-impact landing",
+            "UPDATED VERSION - Altra Escalante 2 keeps its Altra EGO midsole, but the addition of flex grooves in the midsole and outsole allow for a smoother, more performance-driven ride",
+            "REDESIGNED UPPER - The upper provides a more secure fit through the midfoot while the FOOTSHAPE design still allows for natural toe-splay",
+            "WOMEN-SPECIFIC FIT - The running shoes are a bit narrower than the previous model, so we recommend to order 1/2 size up for a better fit",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'altra',
+        name: 'Torin Knit 3.5',
+        amazonLink: 'https://www.amazon.com/Altra-AFM1837K-Torin-Knit-3-5/dp/B079R7WZFK/ref=sr_1_125?crid=2GVY4X5J52S17&keywords=altra+shoes&qid=1707491204&sprefix=altra+shoe%2Caps%2C491&sr=8-125',
+        badges: ['best seller'],
+        price: 86.15,
+        sizes: [12.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61yxwrNCYYL._AC_SL1155_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51WbXcDOugL._AC_SL1155_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Rg3m5CjzL._AC_SL1155_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51poo7tB9LL._AC_SL1155_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61+iLy64WbL._AC_SL1155_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Fabric type Mesh-Synthetic",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Flashy engineered knit",
+            "A-strap arch support",
+            "Sock-like feel",
+            "Stack Height: 28mm",
+            "Cushioning: Moderate",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'altra',
+        name: 'Solstice XT 2',
+        amazonLink: 'https://www.amazon.com/ALTRA-AL0A546V-Solstice-XT-Running/dp/B0C4M8LDF8/ref=sr_1_5?crid=2GVY4X5J52S17&keywords=altra%2Bshoes&qid=1707491167&sprefix=altra%2Bshoe%2Caps%2C491&sr=8-5&th=1',
+        badges: ['best seller'],
+        price: 180.37,
+        sizes: [8, 9,9.5,10,11.5,12,12.5],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71thrVCCLfL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/717HFTlZx2L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Gcl2BT3LL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71gMOarc2vL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71m0Bv7gYYL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Rubber",
+            "Closure type Lace-Up",
+            "Get Comfortable: Signature Altra Balanced Cushioning and FootShape toe boxes allow your toes to spread and encourages proper, low-impact form",
+            "Stay Focused: Engineered mesh uppers are light, breathable and ready for anything",
+            "Push Yourself: InnerFlex midsole technology ensures increased flexibility and performance",
+            "Athletic rubber outsole great for gym use and short runs",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'altra',
+        name: 'Lone Peak 8',
+        amazonLink: 'https://www.amazon.com/ALTRA-AL0A85P3-Lone-Peak-Running/dp/B0C4ML265B/ref=sr_1_6?crid=2GVY4X5J52S17&keywords=altra%2Bshoes&qid=1707491167&sprefix=altra%2Bshoe%2Caps%2C491&sr=8-6&th=1',
+        price: 139.95,
+        sizes: [8,9,10.5,13],
+        colors: ['beige','yellow'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'beige',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61d2+BNftpL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61ARsbEZtQL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Vi3SWTW3L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51ZUJ3qHFGL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61K9SdEnuIL._AC_SL1500_.jpg'
+                ]
+            },
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'yellow',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61SW7GN5ggL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61lsmxGQI9L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71YMuXs6uiL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61Y-E9XyjPL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71xSOS+c1OL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Origin Made in USA or Imported",
+            "Closure type Lace-Up",
+            "Stay Focused: With our MaxTrac outsole and multi-directional TrailClaw lug pattern for grippy traction, you can focus on the trail infront of you",
+            "Reimagining Legendary: With a refined upper for durability, a grippy outsole, and a roomy toe box you'll be ready to bag larger-than-life trail adventures",
+            "Run Naturally: Our eNatural Fit toe box allows the toes to relax and spread out... naturally",
+            "Stay Comfortable: Stack height of 25mm provides ample cushion for long runs",   
+        ]
+
     }
 ]

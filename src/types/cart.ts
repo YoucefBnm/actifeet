@@ -5,7 +5,7 @@ export interface CartItemProps {
     category: string,
     brand: string;
     name: string;
-    price: number;
+    price: number | string;
     size: number;
     color: string;
     mainImage: string;

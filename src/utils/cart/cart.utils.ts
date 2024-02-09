@@ -12,7 +12,7 @@ type CartItemTarget = {
     cartItems: CartItemProps[],
     itemTarget: CartItemProps,
 }
-export const addItemToCart = (payload:SetCartItemsProps) => {
+export const addItemToCart = (payload:SetCartItemsProps): Promise<CartItemProps[]> => {
     
     const {cartItems, itemToAdd, selectedColor, selectedSize } = payload
     
@@ -68,7 +68,8 @@ export const addCartItem = (payload:CartItemTarget) => {
         return new Promise((resolve) => 
             resolve(cartItems.map(cartItem => 
                 cartItem.id === itemTarget.id
-                && {...cartItem, quantity: cartItem.quantity + 1 }
+                ? {...cartItem, quantity: cartItem.quantity + 1 }
+                : cartItem
             ))
         )
     }

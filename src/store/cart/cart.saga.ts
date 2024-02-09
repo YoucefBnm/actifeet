@@ -5,6 +5,7 @@ import { addCartItemSuccess, clearCartItemSuccess, removeCartItemSuccess, setCar
 import { CART_ACTION_TYPES } from "./cart.types"
 import { TakeableChannel } from "redux-saga"
 import { toast } from "sonner"
+import { ProductProps } from "@/types/product"
 
 type AddCartItemProps = {
     payload: {
@@ -14,22 +15,45 @@ type AddCartItemProps = {
         selectedSize: number 
     }
 }
+
+type SetCartItemsProps = {
+    cartItems:CartItemProps[], 
+    itemToAdd:ProductProps, 
+    selectedColor:number, 
+    selectedSize:number | undefined
+}
+
+type CartItemTargetProps = {
+    payload: {
+        cartItems: CartItemProps[], 
+        itemTarget: CartItemProps
+    }
+}
 function* addCartItemAsync ({ payload }:AddCartItemProps): Generator<any, void, any> {
     try {
 
         const {cartItems, itemToAdd, selectedColor, selectedSize } = payload
         
         yield new Promise((resolve) => setTimeout(resolve, 1000))
-        const newCartItems = yield call(addItemToCart, { cartItems, itemToAdd, selectedColor, selectedSize })
+        
+        const newCartItems: CartItemProps[] = yield call(addItemToCart, {
+            cartItems,
+            itemToAdd,
+            selectedColor,
+            selectedSize,
+        } as unknown as SetCartItemsProps)
+
         toast('Item successfully added to cart.')
         yield put(setCartItemsSuccess(newCartItems))
-    } catch(error) {
+    } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        error && toast(error.message)
+        if(typeof error === 'string') {
+            toast(error)
+        }
     }
 }
 
-function* addCartItemQuantityAsync ({ payload })  {
+function* addCartItemQuantityAsync ({ payload }:CartItemTargetProps): Generator<any, void, any> {
     try {
         const { cartItems, itemTarget } = payload
 
@@ -37,12 +61,14 @@ function* addCartItemQuantityAsync ({ payload })  {
         const newCartItems = yield call(addCartItem, { cartItems, itemTarget})
         toast('Item Successfully added.')
         yield put(addCartItemSuccess(newCartItems))
-    } catch(error) {
+    } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        toast(error.message)
+        if(typeof error === 'string') {
+            toast(error)
+        }
     }
 }
-function* removeCartItemAsync ({payload}) {
+function* removeCartItemAsync ({payload}:CartItemTargetProps): Generator<any, void, any> {
 
     try {
         const { cartItems, itemTarget } = payload
@@ -51,22 +77,26 @@ function* removeCartItemAsync ({payload}) {
         toast('Item Successfully removed.')
         yield put(removeCartItemSuccess(newCartItems))
         
-    } catch(error) {
+    } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        toast(error.message)
+        if(typeof error === 'string') {
+            toast(error)
+        }
     }
 }   
 
-function* clearCartItemAsync ({payload}) {
+function* clearCartItemAsync ({payload}:CartItemTargetProps): Generator<any, void, any> {
     try {
         const { cartItems, itemTarget } = payload
         yield new Promise((resolve) => setTimeout(resolve, 1000))
         const newCartItems = yield call(clearItemFromCart, {cartItems, itemTarget})
         toast('Item Successfully cleared.')
         yield put(clearCartItemSuccess(newCartItems))
-    } catch(error) {
+    } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        toast(error.message)
+        if(typeof error === 'string') {
+            toast(error)
+        }
     }
 }
 function* onAddCartItem() {
