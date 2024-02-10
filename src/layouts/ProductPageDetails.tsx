@@ -6,7 +6,7 @@ import {  ProductDetailPageColorsProps, ProductDetailPageHeaderProps, ProductPag
 import { Button } from "@/libs/shadcn/ui/button";
 import { useDispatch, useSelector } from "react-redux";
 import { setCartItemsStart } from "@/store/cart/cart.action";
-import { selectCartItems, selectLoading } from "@/store/cart/cart.selector";
+import { selectCartError, selectCartItems, selectLoading } from "@/store/cart/cart.selector";
 import { Spinner } from "@/components";
 
 const ProductHeader = (props:ProductDetailPageHeaderProps) => {
@@ -84,10 +84,15 @@ const ProductColors = (props:ProductDetailPageColorsProps) => {
 const ProductSizes = (props:ProductPageSizesProps) => {
 
     const { sizes, selectedSize, setSelectedSize } = props
+    const error = useSelector(selectCartError)
 
     return (
         <div className="flex flex-col gap-2">
-            <h3 className="heading heading-xs text-zinc-500">select size</h3>
+            <h3 
+                className={`heading heading-xs ${error && !selectedSize ? 'text-red-500' : 'text-zinc-500'}`}
+            >
+                select size
+            </h3>
             <div id="product-details-sizes" className="flex gap-1 flex-wrap">
                 {
                     sizes.map((size, index) =>
@@ -95,7 +100,9 @@ const ProductSizes = (props:ProductPageSizesProps) => {
                             key={`${size}-${index}`}
                             role="button"
                             aria-label="select size"
-                            className={`${size===selectedSize ? 'text-zinc-900 font-semibold' : 'text-zinc-500 font-normal'} relative appearance-none border w-10 aspect-square border-slate-600`}
+                            className={
+                                `${size===selectedSize && !error ? 'text-zinc-900 font-semibold' : 'text-zinc-500 font-normal'} 
+                                relative appearance-none border w-10 aspect-square border-slate-600`}
                             onClick={() => setSelectedSize(size)}
                         >
                             {
@@ -123,7 +130,7 @@ const ProductDescriptions = ({details}:ProductPageDescription) => {
                         details.map((detail, index) => 
                             <li key={index} className="relative pl-3">
                                 <span className="absolute left-0 text-xs top-px text-slate-400 font-body">&raquo;</span>
-                                {detail}
+                                <p>{detail}</p>
                             </li>
                         )
                     }
@@ -141,7 +148,6 @@ const ProductPageDetails = (props:ProductPageDetailsProps) => {
     const cartItems = useSelector(selectCartItems)
     const dispatch = useDispatch()
     const isLoading = useSelector(selectLoading)
-    
     const addItemToCart = () => dispatch(setCartItemsStart(cartItems, product, activeColor, selectedSize))
 
   return (

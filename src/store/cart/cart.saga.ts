@@ -47,9 +47,7 @@ function* addCartItemAsync ({ payload }:AddCartItemProps): Generator<any, void, 
         yield put(setCartItemsSuccess(newCartItems))
     } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        if(typeof error === 'string') {
-            toast(error)
-        }
+        toast(error.message)
     }
 }
 
@@ -63,9 +61,7 @@ function* addCartItemQuantityAsync ({ payload }:CartItemTargetProps): Generator<
         yield put(addCartItemSuccess(newCartItems))
     } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        if(typeof error === 'string') {
-            toast(error)
-        }
+        toast.error(error.message)
     }
 }
 function* removeCartItemAsync ({payload}:CartItemTargetProps): Generator<any, void, any> {
@@ -79,9 +75,7 @@ function* removeCartItemAsync ({payload}:CartItemTargetProps): Generator<any, vo
         
     } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        if(typeof error === 'string') {
-            toast(error)
-        }
+        toast(error.message)
     }
 }   
 
@@ -94,9 +88,7 @@ function* clearCartItemAsync ({payload}:CartItemTargetProps): Generator<any, voi
         yield put(clearCartItemSuccess(newCartItems))
     } catch(error: string | unknown) {
         yield put(setCartItemsFailed({error}))
-        if(typeof error === 'string') {
-            toast(error)
-        }
+        toast(error.message)
     }
 }
 function* onAddCartItem() {

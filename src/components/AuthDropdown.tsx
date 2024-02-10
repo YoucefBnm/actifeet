@@ -28,7 +28,7 @@ const AuthDropdownContainer = ({title,lead, children}:AuthDropdownProps) => {
                 </div>
 
                 <Separator />
-                <div className="flex gap-2">
+                <div className="flex flex-col items-stretch gap-2">
                     {children}
                 </div>
             </PopoverContent>
@@ -39,30 +39,31 @@ const AuthDropdownContainer = ({title,lead, children}:AuthDropdownProps) => {
 const AuthDropdown = () => {
   return (
     // not logged
-    // <AuthDropdownContainer 
-    //     title='create your account for free'
-    //     lead="Create your account for free or if you already a member login to get member's benefits like free delivery, fast checkouts, coupons and descount, our special offers, our newest shoes, and more."
-    // >
-    //     <Button variant={'outline'} className="border-2 text-zinc-950 border-zinc-950">
-    //         <Link to='/auth/register'>Create your Account</Link>
-    //     </Button>
-    //     <Button>
-    //         <Link to='/auth/login'>Login</Link>
-    //     </Button>
-    // </AuthDropdownContainer>
-
-    // loggedin
-    <AuthDropdownContainer
-        title='you are now actifeet member'
-        lead="explore our diverse shoes collections for all sports and all your activities."
+    <AuthDropdownContainer 
+        title='create your account for free'
+        lead="Create your account for free or if you already a member login to get member's benefits like free delivery, fast checkouts, coupons and descount, our special offers, our newest shoes, and more."
     >
         <Button>
-            <Link to='/checkout'>Go to Checkout</Link>
+            <Link to='/login'>Login</Link>
         </Button>
-        <Button onClick={() => {}} variant={'outline'} className="border-2 border-zinc-950 text-zinc-950">
-            Sign Out
+        <Button variant={'outline'} className="border-2 text-zinc-950 border-zinc-950">
+            <Link to='/register'>Create your Account</Link>
         </Button>
+        
     </AuthDropdownContainer>
+
+    // loggedin
+    // <AuthDropdownContainer
+    //     title='you are now actifeet member'
+    //     lead="explore our diverse shoes collections for all sports and all your activities."
+    // >
+    //     <Button>
+    //         <Link to='/checkout'>Go to Checkout</Link>
+    //     </Button>
+    //     <Button onClick={() => {}} variant={'outline'} className="border-2 border-zinc-950 text-zinc-950">
+    //         Sign Out
+    //     </Button>
+    // </AuthDropdownContainer>
   )
 }
 

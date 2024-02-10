@@ -37,7 +37,7 @@ const ShopFiltersWrap = () => {
             {SHOP_FILTERS[params][key].length > 1 
               &&(<AccordionItem value={key}>
                 <AccordionTrigger>
-                  <h4 className="uppercase font-semibold font-heading text-base">{key}</h4>
+                  <h4 className="uppercase font-semibold font-heading text-sm">{key}</h4>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="flex flex-wrap gap-1">

@@ -59,7 +59,7 @@ export const footerContent = {
                 {
                     id: 'footer-nav-link-Cross-training',
                     title: 'Cross Training',
-                    route: '/shop/category/cross-training'
+                    route: '/shop/category/cross training'
                 },
                 {
                     id: 'footer-nav-link-climbing',
@@ -80,7 +80,7 @@ export const footerContent = {
                 {
                     id: 'footer-nav-link-best-seller',
                     title: 'best seller',
-                    route: '/shop/badges/best-seller'
+                    route: '/shop/badges/best seller'
                 },
                 {
                     id: 'footer-nav-link-new',

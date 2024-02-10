@@ -9,7 +9,8 @@ export interface CartItemProps {
     size: number;
     color: string;
     mainImage: string;
-    quantity: number
+    quantity: number,
+    link: string
 }
 
 export interface CartProps {

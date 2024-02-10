@@ -6,7 +6,7 @@ const Footer = () => {
   const { intro, navigation, socialLinks } = footerContent
 
   return (
-    <footer className="px-default py-8 bg-black">
+    <footer className="px-default py-8 bg-zinc-900">
       <div className="flex items-start gap-10  flex-wrap">
        
         <div className="flex flex-col gap-y-6">
@@ -19,7 +19,7 @@ const Footer = () => {
           {
             navigation.map(navItem => (
               <div key={navItem.id} className="flex gap-4 flex-col items-start">
-                <h4 className="link text-zinc-200">{navItem.title}</h4>
+                <h4 className="link text-white">{navItem.title}</h4>
                 <ul className='flex flex-col items-start gap-4'>
                   {
                     navItem.links.map(navItemLink => (
@@ -33,7 +33,7 @@ const Footer = () => {
             ))
           }
           <div className="flex gap-4 ml-auto flex-col ">
-            <h4 className="link text-zinc-200">follow us</h4>
+            <h4 className="link text-white">follow us</h4>
             <div className="flex gap-2">
               {
                 socialLinks.map(socialLink => (

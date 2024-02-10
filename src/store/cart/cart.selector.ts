@@ -33,3 +33,8 @@ export const selectCartCount = createSelector(
     (cartItems) => 
         cartItems.reduce((total:number, cartItem:CartItemProps) => total + cartItem.quantity, 0) 
 )
+
+export const selectCartError = createSelector(
+    [selectCartReducer],
+    cartSlice => cartSlice.error
+)

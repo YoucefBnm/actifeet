@@ -48,7 +48,8 @@ export const addItemToCart = (payload:SetCartItemsProps): Promise<CartItemProps[
                     size: selectedSize,
                     color: itemToAdd['colors'][selectedColor],
                     mainImage: itemToAdd.images[selectedColor].imagesUrls[0],
-                    quantity: 1
+                    quantity: 1,
+                    link: itemToAdd.id
                 }
             ])
         }

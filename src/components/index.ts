@@ -10,6 +10,8 @@ import Loader from "./Loader";
 import ProductPrice from "./ProductPrice";
 import Cart from "./Cart";
 import AuthDropdown from "./AuthDropdown";
+import CartItem from "./CartItem";
+import InputGroup from "./InputGroup";
 
 export {
     StaggerContainer,
@@ -24,4 +26,6 @@ export {
     ProductPrice,
     Cart,
     AuthDropdown,
+    CartItem,
+    InputGroup
 }

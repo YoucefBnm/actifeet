@@ -16,11 +16,11 @@ const Shop = () => {
           {
             mediaQuerySize
             ? (
-              <div className="sticky top-20 -ml-8 left-0 mb-4 w-fit inline-flex items-center justify-center p-2 border border-slate-500 rounded-full bg-zinc-700 shadow-sm z-10 transition-colors hover:bg-zinc-950">
+              <div className="sticky top-20 -ml-8 left-1 mb-4 w-fit inline-flex items-center justify-center p-1.5 border border-zinc-300 rounded-full bg-zinc-200 shadow-sm z-10 transition-colors hover:bg-zinc-500">
                 <Sheet>
                   <SheetTrigger asChild>
                     <button title="filters" role="button" aria-label="nav filters trigger">
-                      <img width={24} height={24} src={FilterIcon} />
+                      <img width={16} height={16} src={FilterIcon} />
                     </button>
                   </SheetTrigger>
                   <SheetContent>

@@ -12,7 +12,7 @@ const SortSelect = () => {
 
   return (
     <Select>
-        <SelectTrigger className="w-full border-zinc-600 rounded-none text-zinc-800 font-heading heading">
+        <SelectTrigger className="w-full border-zinc-300 rounded-none text-zinc-800 font-heading heading">
             <SelectValue placeholder='sort by' />
         </SelectTrigger>
         <SelectContent className="py-2 px-2 w-[232px] border-zinc-300 rounded-sm">

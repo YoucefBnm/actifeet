@@ -13902,6 +13902,340 @@ export const SHOP_DATA:ProductProps[] = [
             "Run Naturally: Our eNatural Fit toe box allows the toes to relax and spread out... naturally",
             "Stay Comfortable: Stack height of 25mm provides ample cushion for long runs",   
         ]
-
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Super Cross 4',
+        amazonLink: 'https://www.amazon.com/Salomon-SPECTUR-Running-BLAZING-ORANGE/dp/B0BPHFQ3Q7/ref=sr_1_42?keywords=salomon%2Bshoes&qid=1707506813&sr=8-42&th=1',
+        price: 292.95,
+        sizes: [10,10.5,12],
+        colors: ['green'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'green',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71dqN5X49VL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/712Az+TA+eL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71mw1qpNGyL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/615vNEqUguL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61MtYjezsrL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Outer material Synthetic",
+            "Closure type Lace-Up",
+            "Energy Blade-powered propulsion for snappy toe-off and an easier, more fluid stride.",
+            "Energy Surge is a lightweight, resilient and soft foam compound that evens out the impact and delivers a smoother foot strike.",
+            "Lightweight, responsive foam created by combining EVA and Olefin [OBC] to deliver long-lasting cushion and bouncy energy return.",
+            "Energy Blade is a built into the midsole to boost forward propulsion. The joined efforts of the blade, midsole foam and sole geometry make for a snappy, propulsive running machine.",
+            "Engineered mesh is a structure that varies the weave to offer more support and durability or flexibility and breathability, according to the specific needs of the shoe.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Cross Over',
+        amazonLink: 'https://www.amazon.com/SALOMON-Camping-Hiking-Shoes-Magnet/dp/B08C7YGCC2/ref=sr_1_43?keywords=salomon%2Bshoes&qid=1707506813&sr=8-43&th=1',
+        price: 299.95,
+        sizes: [7,7.5,9,9.5,10.5,12,13,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61NHp6r7xJL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61cBouELLRL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61lusSSajjL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61b4kAOAXWL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61RpJqe+fNL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61XPhCyXY3L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Outer material Synthetic",
+            "Inner material Manmade",
+            "Hiking Grip",
+            "We've optimized the Contagrip outsole with durable rubber and hiking-specific cleats",
+            "Outdoor Protection",
+            "Reinforced toe cap protects your feet, seamless construction keeps mud at bay",
+            "Specifically designed for bold hiking",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Alphacross 4 GTX',
+        amazonLink: 'https://www.amazon.com/Salomon-Alphacross-Trail-Running-Ebony/dp/B09P9MKX28/ref=sr_1_194?keywords=salomon+shoes&qid=1707507598&sr=8-194',
+        price: 164.85,
+        sizes: [8.5,10,10.5,12],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71N8vVQFMYL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71t7c4SJItL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/717KcKg17BL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71zFKI5j00L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/6116ltQunXL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Ethylene Vinyl Acetate",
+            "Closure type Lace-Up",
+            "Water resistance level",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Impulse',
+        amazonLink: 'https://www.amazon.com/Salomon-Womens-Trail-Running-Black/dp/B094QZDRSD/ref=sr_1_217?keywords=salomon+shoes&qid=1707507598&sr=8-217',
+        price: 89.9,
+        sizes: [4.5],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51YBMA7pZ4L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/612VbnVXqSL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51z51OxgrCL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61c6rHFToRL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51ROov-VYJL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/51Sz-9FGC5L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Outer material Synthetic",
+            "Inner material Synthetic",
+            "Closure type Quicklace",
+            "A fun and easy trail running shoe to take your adventures off road.",
+            "The alliance of soft and springy Fuze Surge foam and reverse camber geometry in the midsole delivers active energy return and a smooth, powerful stride.",
+            "Just the right amount of protection on the upper, with the solid, grippy tread of a Contagrip outsole.",
+            "A lightweight upper construction built on our soft and welcoming Fuze Surge foam in the midsole, delivering cushioned, durable comfort.",
+            "Colours: Black, Lunar Rock, Black; Women's Shoes; UK Size: 4.5.Lining: Textile; Outsole: Rubber; Upper: Textile / Synthetic",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'salomon',
+        name: 'Sonic 5 ',
+        amazonLink: 'https://www.amazon.com/Salomon-Sonic-Balance-Running-Trooper/dp/B0983Y3ZC9/ref=sr_1_221?keywords=salomon%2Bshoes&qid=1707507598&sr=8-221&th=1',
+        price: 88.57,
+        sizes: [7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        colors: ['white'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'white',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71hjg3HLfXL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71dOKALeSHL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61IIow3GrVL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71HPZe13oKL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71HL5mpteSL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71xr--Ovh3L._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Sole materialRubber",
+            "Outer material Mesh",
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "Engineered mesh is a unique mesh structure that varies the weave to offer more support and durability or flexibility and breathability, according to the specific needs in different parts of the shoe.",
+            "Optivibe: A combination of foams, one to dampen, one to propel. This was developed to reduce vibration upon foot strike aimed to decrease muscle fatigue without affecting the overall ride",
+            "Geometric Decoupling works with the foot to provide guidance for an effortless and efficient heel-to-toe transition.",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Super Cross 3',
+        amazonLink: 'https://www.amazon.com/Salomon-Supercross-Trail-Running-Ebony/dp/B08XZWK63R/ref=sr_1_252?keywords=salomon+shoes&qid=1707507628&sr=8-252',
+        badges: ['best seller'],
+        price: 124.9,
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        colors: ['black'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'black',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71HEzve64xL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Fh7HevyIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71fjrnukDNL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71SUiQbvi1L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61CpQSF7kAL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Speed Laces",
+            "Water resistance level Not Water Resistant",
+            "The SUPERCROSS 3 is a trail running shoe that does what it says it will. Powerful grip that sinks its teeth into the ground and propels you onwards and upwards, a fit that hugs your heels down and holds them in, and SensiFit built into the upper to wrap your foot comfortably and snugly.",
+            "Get to grips with Contragrip, traction that connects you to the ground and propels you forward with explosive energy. A fit experience to hug you in and hold you down, maximizing energy transfer to the outsole. SensiFit in the upper, actioned by Quicklace ensures a snug and enveloping hold.",
+            "Go The Distance: Whether you love road running in your neighborhood, an escape to a local trail, or something more rugged, Salomon makes shoes that ensure you have a smooth ride on any and all terrain",
+            "TOMORROW IS YOURS: Whether you are into trail running, hiking, backpacking, or mountaineering, Salomon has shoes and gear for kids, men and women to help you conquer a new distance, personal record, or event",
+            "SINCE 1947 Salomon has created innovative outdoor sports gear; From running and hiking to backpacking, skiing and more, our shoes, boots, bags, apparel and accessories help make any path your own",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'men',
+        category: 'running',
+        brand: 'salomon',
+        name: 'Sonic 3',
+        amazonLink: 'https://www.amazon.com/Salomon-Sonic-BALANCE-White-Black/dp/B07ZZTM9LY/ref=sr_1_294?keywords=salomon+shoes&qid=1707507656&sr=8-294',
+        price: 119.9,
+        sizes: [8.5,12.5],
+        colors: ['blue'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'blue',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/810p00PnjIL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81raQ8D85pL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Z4kMlBabL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71lSpZXBOmL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71eq9ytIeLL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81GKc+xLMjL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Origin Imported",
+            "Sole material Synthetic",
+            "Closure type Regular laces",
+            "Water resistance level Water Resistant",
+            "Road Running Shoes: The Salomon Sonic 3 Balance training shoe helps optimize your road running with Optivibe foam to reduce vibrations and limit muscle fatigue and a road-specific Sensifit upper for comfort",
+            "Optimized Transition: This road running shoe features a Geometric Decoupling axis that is centered to deliver a balanced, effortless forward transition from contact to propulsion as you rack up the miles",
+            "Go The Distance: Whether you love road running in your neighborhood, an escape to a local trail, or something more rugged, Salomon makes shoes that ensure you have a smooth ride on any and all terrain",
+            "Time To Play: Whether you are into trail running, hiking, backpacking, or mountaineering, Salomon has shoes and gear for kids, men and women to help you conquer a new distance, personal record, or event",
+            "Since 1947 Salomon has created innovative outdoor sports gear. From running and hiking to backpacking, skiing and more, our shoes, boots, bags, apparel and accessories help make any path your own",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Phantasm',
+        amazonLink: 'https://amazon.com/Salomon-Phantasm-Running-Womens-Heather/dp/B09R7YDF21/ref=sr_1_64_mod_primary_new?keywords=salomon+shoes&qid=1707508772&s=apparel&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-64',
+        price: 58.79,
+        sizes: [9.5],
+        colors: ['pink'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'pink',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81syc1RB3zL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81NhFm7hp-L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81-lsSmgpzL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/7107tWKajRL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71hnKn3AscL._AC_SL1500_.jpg',
+                ]
+            }
+        ],
+        details: [
+            "Care instructions Machine Wash",
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Country of Origin Vietnam",
+            "Rubber sole",
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Sense Ride',
+        amazonLink: 'https://www.amazon.com/Salomon-Womens-Sense-Bluebird-Black/dp/B079H4KZKZ/ref=sr_1_111?keywords=salomon+shoes&qid=1707508801&s=apparel&sr=1-111',
+        price: 124.9,
+        sizes: [7],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71q3uh1bHuL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71Yfx3Kj6BL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71eVMY8al8L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71K7kiVTKAL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/614K1S76qGL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71ZJ8P0bTIL._AC_SL1500_.jpg'
+                ]
+            }
+        ],
+        details: [
+            'Closure type Lace-Up'
+        ]
+    },
+    {
+        id: uuidv4().toString().replace(/-/g, ''),
+        gender: 'women',
+        category: 'hiking',
+        brand: 'salomon',
+        name: 'Xa Elevate',
+        amazonLink: 'https://www.amazon.com/Salomon-Womens-Elevate-Running-Eggshell/dp/B078SYPTW8/ref=sr_1_113?keywords=salomon+shoes&qid=1707508801&s=apparel&sr=1-113',
+        badges: ['best seller'],
+        price: 128.9,
+        sizes: [5.5,12],
+        colors: ['teal'],
+        images: [
+            {
+                id: uuidv4().toString().replace(/-/g, ''),
+                color: 'teal',
+                imagesUrls: [
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81Kykl1Mx-L._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/819afM7z1gL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71-uO60WFCL._AC_SL1358_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/71q0+ukFMHL._AC_SL1499_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/61S67vfbQeL._AC_SL1500_.jpg',
+                    'https://m.media-amazon.com/images/W/MEDIAX_849526-T3/images/I/81BML2npbrL._AC_SL1500_.jpg',
+                    ''
+                ]
+            }
+        ],
+        details: [
+            "Sole material Rubber",
+            "Closure type Lace-Up",
+            "Water resistance level Not Water Resistant",
+            "Agility : Elevate's Sensifit supports the foot without constricting it, while the Advanced Chassis combined with Energy Cell+ provides agile stability.",
+            "Protection : Profeel film protects the soles of your feet on rough, rocky terrain. And a lightweight toe cap and mudguard protect the base of the foot from dings and scrapes.",
+            "Grip : A premium wet traction Contagrip sole ensures grip on all trail conditions, and a scrambling zone around the forefoot has more surface contact, for grip on rocky terrain.",
+        ]
     }
 ]
