@@ -7,8 +7,12 @@ import HeroRunningImage from "./images/hero-running.jpg";
 import HeroClimbingImage from "./images/hero-climbing.jpg";
 import CategoryMenImage from "./images/category-men.jpg";
 import CategoryWomenImage from "./images/category-women.jpg";
+import CategorySportsImage from "./images/category-sports.jpg";
+
+import Logo from "./icons/logo.svg";
 
 export {
+  Logo,
   CategoryRunningImage,
   CategoryCrossImage,
   CategoryHikingImage,
@@ -18,4 +22,5 @@ export {
   HeroClimbingImage,
   CategoryMenImage,
   CategoryWomenImage,
+  CategorySportsImage,
 };

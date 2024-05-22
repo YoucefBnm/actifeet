@@ -38,7 +38,6 @@ const AnimatedText = memo(function AnimatedText({
   className,
 }: AnimatedTextProps) {
   const words = text.split(" ");
-  console.log(text.length);
   return (
     <motion.div
       transition={{ staggerChildren: 0.1 }}

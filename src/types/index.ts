@@ -1,3 +1,5 @@
+import { Params } from "react-router";
+
 export interface ProductProps {
   id: string;
   gender: string;
@@ -44,4 +46,10 @@ export interface ProductDetailsProps {
 export type ProductPriceProps = {
   price: ProductProps["price"];
   discount?: ProductProps["discount"];
+};
+
+export type ProductsCarouselProps = {
+  title: string;
+  route: string;
+  params: Readonly<Params<string>>;
 };

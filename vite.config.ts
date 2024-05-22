@@ -12,7 +12,6 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "./src/assets"),
       "@components": path.resolve(__dirname, "./src/components"),
       "@constants": path.resolve(__dirname, "./src/constants"),
-      "@firebase": path.resolve(__dirname, "./src/firebase"),
       "@hooks": path.resolve(__dirname, "./src/hooks"),
       "@libs": path.resolve(__dirname, "./src/libs"),
       "@routes": path.resolve(__dirname, "./src/routes"),

@@ -1,7 +1,6 @@
-import { SHOP_DATA } from "@/assets/shop_data";
 import CategoryWrap from "@/components/CategoryWrap";
 import HeroWrap from "@/components/HeroWrap";
-import ProductCard from "@/components/ProductCard";
+import ProductsCarousel from "@/components/ProductsCarousel";
 import {
   crossTrainingCategoryContent,
   heroClimbingContent,
@@ -18,9 +17,13 @@ const Home = () => {
   return (
     <>
       <HeroWrap heroBg={bgImage} heading={heading} route="/shop/all" />
-      <ProductCard product={SHOP_DATA[2]} />
       <Sports />
       <Gender />
+      <ProductsCarousel
+        title="favorites"
+        route="/shop/badge/best seller"
+        params={{ badge: "best seller" }}
+      />
       <CategoryWrap
         title={hikingCategoryContent.title}
         heading={hikingCategoryContent.heading}
@@ -35,6 +38,11 @@ const Home = () => {
         description={heroRunningContent.description}
         route="/shop/sport/running"
       />
+      <ProductsCarousel
+        title="new arrivals"
+        route="/shop/badge/new"
+        params={{ badge: "new" }}
+      />
       <CategoryWrap
         title={crossTrainingCategoryContent.title}
         heading={crossTrainingCategoryContent.heading}
@@ -48,6 +56,11 @@ const Home = () => {
         heading={heroClimbingContent.heading}
         description={heroClimbingContent.description}
         route="/shop/sport/running"
+      />
+      <ProductsCarousel
+        title="best deals"
+        route="/shop/badge/sale"
+        params={{ badge: "sale" }}
       />
     </>
   );

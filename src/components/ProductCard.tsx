@@ -25,6 +25,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
     <div className="size-full flex flex-1 justify-center items-start relative overflow-hidden">
       {productImages.map((productImage, index) => (
         <motion.div
+          key={uuidv4()}
           variants={clipPathVariants}
           animate={index === activeColor ? "visible" : "hidden"}
           transition={{ ease: easeTransition, duration: 0.5 }}
@@ -36,6 +37,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
           <div className="relative size-full">
             <AnimatePresence>
               <motion.div
+                key={0}
                 variants={clipPathVariants}
                 animate={activeImage === 0 ? "visible" : "hidden"}
                 transition={{ ease: easeTransition, duration: 0.5 }}
@@ -45,14 +47,14 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                 <img
                   width={500}
                   height={320}
-                  key={0}
                   loading="lazy"
                   alt="sport shoes"
-                  className="object-contain absolute bottom-4 max-h-[70%] mt-auto max-w-[75%] left-1/2 -translate-x-1/2"
+                  className="object-contain absolute bottom-4 max-h-[65%] mt-auto max-w-[70%] left-1/2 -translate-x-1/2"
                   src={productImage.imagesUrls[0]}
                 />
               </motion.div>
               <motion.div
+                key={1}
                 variants={clipPathVariants}
                 animate={activeImage === 1 ? "visible" : "hidden"}
                 transition={{ ease: easeTransition, duration: 0.5 }}
@@ -120,7 +122,10 @@ const ProductCardDetails = memo(function ProductCardDetails({
       >
         {productName}
       </h4>
-      <h5 className="text-xs text-neutral-500 capitalize">
+      <h5
+        className="text-xs text-neutral-500 capitalize text-ellipsis truncate"
+        title={`${productGender} ${productCategory} ${productBrand}`}
+      >
         {productGender} {productCategory} {productBrand}
       </h5>
     </div>
@@ -135,7 +140,7 @@ const ProductCardPrice = memo(function ProductCardPrice(
     <div className="flex my-4 px-4 text-base justify-between items-end">
       {discount ? (
         <>
-          <div className="flex items-center gap-2 w-full">
+          <div className="flex text-xs md:text-base items-center gap-2 w-full">
             <p>${setPrice(price, discount)}</p>
             <p className="text-neutral-500 line-through">
               ${setPrice(price, null)}
@@ -164,16 +169,16 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
       aria-label={`navigate to ${product.name} page`}
       title={product.name}
       to={`/product/${product.id}`}
-      className="flex w-72 flex-col relative"
+      className="flex  flex-col relative "
       id={product.id}
     >
-      <div className="overflow-hidden bg-white h-60 w-full relative flex flex-col items-start justify-between gap-8">
+      <div className="overflow-hidden bg-white h-56 w-full relative flex flex-col items-start justify-between gap-8">
         <div className=" size-full bg-neutral-500 z-10 bg-opacity-5 absolute inset-0 pointer-events-none" />
         <div className="flex items-start h-5">
           {product.badge && (
             <Badge
-              className="rounded-none text-xs font-heading border-none"
-              variant={product.badge === "sale" ? "destructive" : "default"}
+              className="rounded-none py-px text-xs font-heading font-normal border-none"
+              variant={"default"}
             >
               {product.badge}
             </Badge>

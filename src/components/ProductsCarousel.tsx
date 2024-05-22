@@ -1,0 +1,111 @@
+import { Suspense, memo, useEffect, useState } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
+import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
+import { ProductProps, ProductsCarouselProps } from "@/types";
+import { useRevealAnimation } from "@/hooks/useRevealAnimation";
+import { fetchOptionsProps } from "@/firebase/types";
+import { fetchProducts } from "@/firebase/products/fetchProducts";
+import ProductCard from "./ProductCard";
+import AnimatedText from "./AnimatedText";
+import Spinner from "./Spinner";
+
+const ProductsCarousel = memo(function ProductsCarousel({
+  title,
+  route,
+  params,
+}: ProductsCarouselProps) {
+  const [carouselProducts, setCarouselProducts] = useState<ProductProps[]>();
+  const [loading, setIsLoading] = useState(false);
+
+  const { targetRef, isInView } = useRevealAnimation();
+
+  useEffect(() => {
+    const fetchCarouselProducts = async () => {
+      // params, sortOption, limitNumber, filters, lastVisible
+      setIsLoading(true);
+      const options: fetchOptionsProps = {
+        params: params,
+        sortOption: "suggested",
+        limitNumber: 15,
+        filters: {},
+        lastVisible: undefined,
+      };
+      const { products } = await fetchProducts(options);
+
+      if (products && isInView) {
+        setCarouselProducts(products);
+        setIsLoading(false);
+      }
+    };
+
+    fetchCarouselProducts();
+    console.log(carouselProducts);
+  }, [isInView]);
+
+  const loadCarouselProducts =
+    carouselProducts && !loading && carouselProducts.length > 0;
+  return (
+    <section
+      ref={targetRef}
+      className="section-container grid-rows-[min-content_1fr] px-default py-12 min-h-svh place-content-center"
+    >
+      <AnimatedText
+        text={title}
+        className="heading-title row-span-1 col-start-1 col-span-4 mb-4"
+      />
+      <Carousel
+        opts={{
+          align: "start",
+          axis: "x",
+          skipSnaps: true,
+        }}
+        className="w-full col-span-12 md:col-span-11  col-start-1 md:col-start-2 row-start-2"
+      >
+        <div className="flex justify-between items-baseline mb-4">
+          <div className="flex relative gap-2">
+            <CarouselPrevious className="relative inset-0 transform-none" />
+            <CarouselNext className="relative inset-0 transform-none" />
+          </div>
+          <Button variant={"link"} size={"sm"}>
+            <Link to={route}>View all</Link>
+          </Button>
+        </div>
+
+        {isInView ? (
+          <Suspense
+            fallback={
+              <div className="size-full flex items-center justify-center">
+                <Spinner />
+              </div>
+            }
+          >
+            <CarouselContent>
+              {loadCarouselProducts &&
+                carouselProducts.map((product) => (
+                  <CarouselItem
+                    key={product.id}
+                    className="basis-1/2 md:basis-1/3 xl:basis-1/4"
+                  >
+                    <ProductCard product={product} />
+                  </CarouselItem>
+                ))}
+            </CarouselContent>
+          </Suspense>
+        ) : (
+          <div className="size-full flex items-center justify-center">
+            <Spinner />
+          </div>
+        )}
+      </Carousel>
+    </section>
+  );
+});
+
+export default ProductsCarousel;

@@ -27,7 +27,7 @@ const CategoryWrap = memo(function CategoryWrap({
   const navigateToPage = () => navigate(route);
 
   return (
-    <section className="px-default pb-16">
+    <section className="px-default pb-16 border border-t-neutral-50">
       <motion.div
         ref={targetRef}
         className="section-container grid-rows-[min-content_1fr]"

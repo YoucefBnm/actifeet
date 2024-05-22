@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+/src/assets/shop_data.ts
+/src/hooks/useAddProducts.ts
