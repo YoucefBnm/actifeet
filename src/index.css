@@ -108,5 +108,5 @@ input {
 }
 
 .header {
-  @apply bg-white px-default flex items-center sticky z-50 inset-0 w-screen h-16 justify-between
+  @apply bg-white px-default flex items-center sticky z-50 inset-0 w-screen h-16 justify-between border-b border-neutral-50
 }

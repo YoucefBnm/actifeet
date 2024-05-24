@@ -1,5 +1,165 @@
+import { SearchIcon } from "@/assets";
+import { Drawer, DrawerContent, DrawerTrigger } from "./ui/drawer";
+import { ScrollArea } from "./ui/scroll-area";
+import { ChangeEvent, memo, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  selectSearchProductsCount,
+  selectSearchProductsLastItem,
+  selectSearchProductsLoading,
+  selectSearchProductsResults,
+} from "@/store/searchProducts/searchProducts.selector";
+import {
+  searchMoreProductsStart,
+  searchProductsStart,
+} from "@/store/searchProducts/searchProducts.action";
+import { Input } from "./ui/input";
+import { searchSuggestion } from "@/constants/searchSuggetions";
+import { Badge } from "./ui/badge";
+import Spinner from "./Spinner";
+import ProductCard from "./ProductCard";
+import { Button } from "./ui/button";
+import { useWindowHeight } from "@react-hook/window-size/throttled";
+
+interface SearchFieldProps {
+  searchQuery: string;
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+}
+
+const SearchField = memo(function SearchField({
+  searchQuery,
+  handleChange,
+}: SearchFieldProps) {
+  return (
+    <div className="w-full">
+      <Input
+        value={searchQuery}
+        placeholder="Search for shoes"
+        onChange={handleChange}
+      />
+    </div>
+  );
+});
+
+const SearchSuggestions = ({
+  setSearchQuery,
+}: {
+  setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
+}) => {
+  const dispatch = useDispatch();
+  const isLoading = useSelector(selectSearchProductsLoading);
+  return (
+    <div className="flex flex-wrap gap-2">
+      {searchSuggestion.map((suggestion) => (
+        <button
+          type="button"
+          role="button"
+          onClick={() => {
+            setSearchQuery(suggestion);
+            dispatch(searchProductsStart(suggestion, 3));
+          }}
+          key={suggestion}
+          disabled={isLoading}
+        >
+          <Badge
+            variant={"outline"}
+            className="capitalize font-heading text-black"
+          >
+            {suggestion}
+          </Badge>
+        </button>
+      ))}
+    </div>
+  );
+};
+
+const SearchResults = ({ searchQuery }: { searchQuery: string }) => {
+  const searchResults = useSelector(selectSearchProductsResults);
+  const resultsCount = useSelector(selectSearchProductsCount);
+  const isLoading = useSelector(selectSearchProductsLoading);
+  const allLoaded = searchResults.length === resultsCount;
+  const lastVisible = useSelector(selectSearchProductsLastItem);
+
+  const dispatch = useDispatch();
+  const loadMore = () =>
+    dispatch(searchMoreProductsStart(searchQuery, 3, lastVisible));
+
+  return (
+    <div className="relative">
+      <h3 className="font-heading capitalize mb-2 text-neutral-500">
+        {searchResults.length > 0 &&
+          !isLoading &&
+          `(${resultsCount}) Shoes for "${searchQuery}"`}
+      </h3>
+
+      {isLoading ? (
+        <div className="absolute h-20 inset-0 size-full  flex items-center justify-center">
+          <Spinner />
+        </div>
+      ) : (
+        <div className="grid grid-cols-2 gap-4">
+          {searchResults.length > 0 &&
+            searchResults.map((result) => (
+              <ProductCard key={result.id} product={result} />
+            ))}
+          {!allLoaded && searchResults.length !== 0 && (
+            <>
+              <br />
+              <Button
+                className="font-heading text-sm col-span-2"
+                onClick={loadMore}
+              >
+                Load more
+              </Button>
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const NavSearch = () => {
-  return <div>NavSearch</div>;
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const windowHeight = useWindowHeight();
+
+  const dispatch = useDispatch();
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value.toLocaleLowerCase());
+    if (e.target.value !== "") {
+      dispatch(searchProductsStart(searchQuery, 3));
+    }
+  };
+
+  return (
+    <Drawer direction={"right"}>
+      <DrawerTrigger
+        asChild
+        aria-label="search field trigger"
+        className="cursor-pointer"
+      >
+        <img width={23} height={23} src={SearchIcon} aria-hidden="true" />
+      </DrawerTrigger>
+
+      <DrawerContent className="top-0 w-11/12 md:w-3/5 xl:w-2/4 border-none outline-none">
+        <div className="  flex items-center h-16 px-6">
+          <SearchField searchQuery={searchQuery} handleChange={handleChange} />
+        </div>
+
+        <ScrollArea style={{ height: windowHeight - 64 }} className="w-full">
+          <div className="px-6 mb-4">
+            <h4 className="font-heading mb-2 text-neutral-500">Search for</h4>
+            <SearchSuggestions setSearchQuery={setSearchQuery} />
+          </div>
+
+          <div className="px-6 py-4">
+            <SearchResults searchQuery={searchQuery} />
+          </div>
+        </ScrollArea>
+      </DrawerContent>
+    </Drawer>
+  );
 };
 
 export default NavSearch;

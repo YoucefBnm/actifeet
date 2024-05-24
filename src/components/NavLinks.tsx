@@ -22,7 +22,7 @@ const NavLinkItem = (props: NavSubmenu) => {
       <NavigationMenuTrigger className=" font-heading capitalize text-sm">
         {title}
       </NavigationMenuTrigger>
-      <NavigationMenuContent className="bg-white border-t border-neutral-100">
+      <NavigationMenuContent className="bg-white">
         <ul className="w-screen section-container h-80">
           <div className="col-span-5 mr-6 xl:mr-0">
             <img

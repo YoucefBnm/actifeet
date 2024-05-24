@@ -10,6 +10,9 @@ import CategoryWomenImage from "./images/category-women.jpg";
 import CategorySportsImage from "./images/category-sports.jpg";
 
 import Logo from "./icons/logo.svg";
+import UserIcon from "./icons/icon-user.svg";
+import SearchIcon from "./icons/icon-search.svg";
+import CartIcon from "./icons/icon-cart.svg";
 
 export {
   Logo,
@@ -23,4 +26,7 @@ export {
   CategoryMenImage,
   CategoryWomenImage,
   CategorySportsImage,
+  UserIcon,
+  SearchIcon,
+  CartIcon,
 };
