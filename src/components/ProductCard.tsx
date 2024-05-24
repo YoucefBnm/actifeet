@@ -29,19 +29,21 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
           variants={clipPathVariants}
           animate={index === activeColor ? "visible" : "hidden"}
           transition={{ ease: easeTransition, duration: 0.5 }}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="absolute inset-0 overflow-hidden"
           exit={"hidden"}
         >
-          <div className="relative size-full">
+          <div
+            className="relative size-full"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <AnimatePresence>
               <motion.div
                 key={0}
                 variants={clipPathVariants}
                 animate={activeImage === 0 ? "visible" : "hidden"}
                 transition={{ ease: easeTransition, duration: 0.5 }}
-                className="absolute inset-0 size-full bg-white"
+                className="absolute inset-0 size-full bg-white pointer-events-none"
                 exit="hidden"
               >
                 <img
@@ -49,7 +51,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                   height={320}
                   loading="lazy"
                   alt="sport shoes"
-                  className="object-contain absolute bottom-4 max-h-[65%] mt-auto max-w-[70%] left-1/2 -translate-x-1/2"
+                  className="object-contain absolute bottom-4 max-h-[65%] mt-auto max-w-[70%] left-1/2 -translate-x-1/2 pointer-events-none"
                   src={productImage.imagesUrls[0]}
                 />
               </motion.div>
@@ -58,7 +60,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                 variants={clipPathVariants}
                 animate={activeImage === 1 ? "visible" : "hidden"}
                 transition={{ ease: easeTransition, duration: 0.5 }}
-                className="absolute inset-0 size-full bg-white"
+                className="absolute inset-0 size-full bg-white pointer-events-none"
                 exit="hidden"
               >
                 <img
@@ -67,7 +69,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                   key={1}
                   loading="lazy"
                   alt="sport shoes"
-                  className="object-contain absolute bottom-4 max-h-[70%] mt-auto max-w-[75%] left-1/2 -translate-x-1/2"
+                  className="object-contain absolute bottom-4 max-h-[70%] mt-auto max-w-[75%] left-1/2 -translate-x-1/2 pointer-events-none"
                   src={productImage.imagesUrls[1]}
                 />
               </motion.div>

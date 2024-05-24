@@ -13,7 +13,9 @@ import { TakeableChannel } from "redux-saga";
 
 type fetchAsyncPayload = {
   payload: {
-    params: Readonly<Params<string>>;
+    params: Readonly<
+      Params<"gender" | "category" | "brand" | "badge" | "sizes" | "colors">
+    >;
     sortOption: keyof SortOptionsTypes;
     limitNumber: number;
     filters: filtersType;

@@ -1,7 +1,7 @@
-import { NavigationMenuItem } from "@radix-ui/react-navigation-menu";
 import {
   NavigationMenu,
   NavigationMenuContent,
+  NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
@@ -25,7 +25,7 @@ const NavLinkItem = (props: NavSubmenu) => {
       </NavigationMenuTrigger>
       <NavigationMenuContent className="bg-white border-t border-neutral-100">
         <ul className="w-screen section-container h-80">
-          <div className="col-span-5">
+          <div className="col-span-5 mr-6 xl:mr-0">
             <img
               loading="lazy"
               decoding="async"

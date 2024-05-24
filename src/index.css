@@ -75,3 +75,33 @@ body {
 .btn {
   @apply font-heading font-semibold capitalize rounded-full
 }
+
+img,
+figure,
+picture,
+video,
+button,
+label,
+input {
+  @apply select-none
+}
+
+.group-gender,
+.group-category,
+.group-brand,
+.group-badge,
+.group-colors {
+  @apply w-28
+}
+
+.group-sizes {
+  @apply w-8 h-8;
+}
+
+.group-colors {
+  @apply items-center justify-start gap-x-2 py-0.5 px-0
+}
+
+.input-colors {
+  @apply relative w-5 h-5 border-none rounded-full border border-neutral-300
+}

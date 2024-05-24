@@ -13,7 +13,9 @@ import { createAction, withMatcher } from "@/utils/reducer.utils";
 
 export const fetchProductsStart = withMatcher(
   (
-    params: Readonly<Params<string>>,
+    params: Readonly<
+      Params<"gender" | "category" | "brand" | "badge" | "sizes" | "colors">
+    >,
     sortOption: keyof SortOptionsTypes,
     limitNumber: number,
     filters: filtersType

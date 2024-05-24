@@ -86,6 +86,11 @@ export const menLinks: NavSubmenu = {
       links: [
         {
           id: uuidv4(),
+          title: "adidas",
+          route: "/shop/men/brand/adidas",
+        },
+        {
+          id: uuidv4(),
           title: "altra",
           route: "/shop/men/brand/altra",
         },
@@ -211,13 +216,18 @@ export const womenLinks: NavSubmenu = {
         },
         {
           id: uuidv4(),
-          title: "nike",
-          route: "/shop/women/brand/nike",
+          title: "la sportiva",
+          route: "/shop/women/brand/la sportiva",
         },
         {
           id: uuidv4(),
-          title: "salomon",
-          route: "/shop/women/brand/salomon",
+          title: "new balance",
+          route: "/shop/women/brand/new balance",
+        },
+        {
+          id: uuidv4(),
+          title: "nike",
+          route: "/shop/women/brand/nike",
         },
         {
           id: uuidv4(),
@@ -245,28 +255,33 @@ export const sportsLinks: NavSubmenu = {
       links: [
         {
           id: uuidv4(),
+          title: "shop all",
+          route: "/shop/category/running",
+        },
+        {
+          id: uuidv4(),
           title: "men",
-          route: "/shop/men/caetgory/running",
+          route: "/shop/men/category/running",
         },
         {
           id: uuidv4(),
           title: "women",
-          route: "/shop/women/caetgory/running",
+          route: "/shop/women/category/running",
         },
         {
           id: uuidv4(),
           title: "best seller",
-          route: "/shop/caetgory/running/badge/best seller",
+          route: "/shop/category/running/badge/best seller",
         },
         {
           id: uuidv4(),
           title: "new",
-          route: "/shop/caetgory/running/badge/new",
+          route: "/shop/category/running/badge/new",
         },
         {
           id: uuidv4(),
           title: "sale",
-          route: "/shop/caetgory/running/badge/sale",
+          route: "/shop/category/running/badge/sale",
         },
       ],
     },
@@ -276,28 +291,33 @@ export const sportsLinks: NavSubmenu = {
       links: [
         {
           id: uuidv4(),
+          title: "shop all",
+          route: "/shop/category/cross training",
+        },
+        {
+          id: uuidv4(),
           title: "men",
-          route: "/shop/men/caetgory/cross training",
+          route: "/shop/men/category/cross training",
         },
         {
           id: uuidv4(),
           title: "women",
-          route: "/shop/women/caetgory/cross training",
+          route: "/shop/women/category/cross training",
         },
         {
           id: uuidv4(),
           title: "best seller",
-          route: "/shop/caetgory/cross training/badge/best seller",
+          route: "/shop/category/cross training/badge/best seller",
         },
         {
           id: uuidv4(),
           title: "new",
-          route: "/shop/caetgory/cross training/badge/new",
+          route: "/shop/category/cross training/badge/new",
         },
         {
           id: uuidv4(),
           title: "sale",
-          route: "/shop/caetgory/cross training/badge/sale",
+          route: "/shop/category/cross training/badge/sale",
         },
       ],
     },
@@ -307,28 +327,33 @@ export const sportsLinks: NavSubmenu = {
       links: [
         {
           id: uuidv4(),
+          title: "shop all",
+          route: "/shop/category/hiking",
+        },
+        {
+          id: uuidv4(),
           title: "men",
-          route: "/shop/men/caetgory/hiking",
+          route: "/shop/men/category/hiking",
         },
         {
           id: uuidv4(),
           title: "women",
-          route: "/shop/women/caetgory/hiking",
+          route: "/shop/women/category/hiking",
         },
         {
           id: uuidv4(),
           title: "best seller",
-          route: "/shop/caetgory/hiking/badge/best seller",
+          route: "/shop/category/hiking/badge/best seller",
         },
         {
           id: uuidv4(),
           title: "new",
-          route: "/shop/caetgory/hiking/badge/new",
+          route: "/shop/category/hiking/badge/new",
         },
         {
           id: uuidv4(),
           title: "sale",
-          route: "/shop/caetgory/hiking/badge/sale",
+          route: "/shop/category/hiking/badge/sale",
         },
       ],
     },
@@ -338,28 +363,33 @@ export const sportsLinks: NavSubmenu = {
       links: [
         {
           id: uuidv4(),
+          title: "shop all",
+          route: "/shop/category/climbing",
+        },
+        {
+          id: uuidv4(),
           title: "men",
-          route: "/shop/men/caetgory/climbing",
+          route: "/shop/men/category/climbing",
         },
         {
           id: uuidv4(),
           title: "women",
-          route: "/shop/women/caetgory/climbing",
+          route: "/shop/women/category/climbing",
         },
         {
           id: uuidv4(),
           title: "best seller",
-          route: "/shop/caetgory/climbing/badge/best seller",
+          route: "/shop/category/climbing/badge/best seller",
         },
         {
           id: uuidv4(),
           title: "new",
-          route: "/shop/caetgory/climbing/badge/new",
+          route: "/shop/category/climbing/badge/new",
         },
         {
           id: uuidv4(),
           title: "sale",
-          route: "/shop/caetgory/climbing/badge/sale",
+          route: "/shop/category/climbing/badge/sale",
         },
       ],
     },

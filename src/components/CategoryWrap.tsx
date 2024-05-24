@@ -1,7 +1,7 @@
 import { useRevealAnimation } from "@/hooks/useRevealAnimation";
 import { easeTransition } from "@/libs/motion/motion.transitions";
 import { clipPathVariants, fadeVariants } from "@/libs/motion/motion.variants";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import AnimatedText from "./AnimatedText";
 import { useNavigate } from "react-router-dom";
 import { memo } from "react";
@@ -26,6 +26,9 @@ const CategoryWrap = memo(function CategoryWrap({
   const navigate = useNavigate();
   const navigateToPage = () => navigate(route);
 
+  const controls = useAnimation();
+  const startAnimation = () => controls.start("visible");
+
   return (
     <section className="px-default pb-16 border border-t-neutral-50">
       <motion.div
@@ -44,6 +47,7 @@ const CategoryWrap = memo(function CategoryWrap({
           variants={clipPathVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
+          onAnimationComplete={startAnimation}
           className="row-start-2 col-start-1 md:col-start-2 md:col-span-4 col-span-6 md:mb-0 mb-4"
         >
           <picture className="size-full">
@@ -63,7 +67,7 @@ const CategoryWrap = memo(function CategoryWrap({
           className="col-span-10 md:col-span-6 md:col-start-7 row-start-3 col-start-1 md:row-start-2"
           transition={{ staggerChildren: 0.15 }}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={controls}
         >
           <AnimatedText
             text={heading}

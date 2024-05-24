@@ -7,7 +7,7 @@ import { Link, Outlet } from "react-router-dom";
 const NavDesktop = () => {
   return (
     <>
-      <header className="px-default flex items-center sticky z-50 inset-0 w-screen h-16 bg-white">
+      <header className=" bg-red-700 md:bg-white px-default flex items-center sticky z-50 inset-0 w-screen h-16 ">
         <Link className="block" to="/">
           <img
             width={32}

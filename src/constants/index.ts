@@ -48,7 +48,7 @@ export const heroContent = {
 
 export const heroRunningContent = {
   title: "running",
-  heading: "feel the thrill of the run",
+  heading: "feel the run thrill",
   description:
     "Designed to enhance your running experience, whether you're a seasoned marathoner or a beginner hitting the pavement for the first time. From responsive cushioning to lightweight designs, our shoes are engineered to provide optimal support",
   bgImage: HeroRunningImage,

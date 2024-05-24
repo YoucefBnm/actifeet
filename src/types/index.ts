@@ -2,12 +2,12 @@ import { Params } from "react-router";
 
 export interface ProductProps {
   id: string;
-  gender: string;
-  category: string;
+  gender: "men" | "women";
+  category: "running" | "cross training" | "hiking" | "climbing";
   brand: string;
   name: string;
   amazonLink: string;
-  badge?: string;
+  badge?: "best seller" | "new" | "sale";
   price: number;
   discount?: number | undefined;
   sizes: number[];
@@ -52,4 +52,11 @@ export type ProductsCarouselProps = {
   title: string;
   route: string;
   params: Readonly<Params<string>>;
+};
+
+export type FilterItemProps = {
+  type: string;
+  label: string;
+  isChecked: boolean;
+  handleChange: (checked: boolean) => void;
 };

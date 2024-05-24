@@ -68,12 +68,12 @@ const HeroWrap = memo(function HeroWrap({
           </div>
         )}
         <AnimatedText
-          className="heading-xl overflow-hidden md:max-w-[40vw]"
+          className="heading-xl overflow-hidden max-w-[11ch]"
           text={heading}
         />
         {description && (
           <motion.p
-            className="text-sm mt-6 max-w-[70vw] md:max-w-[33vw] leading-normal text-gray-100"
+            className="text-sm mt-6 max-w-[60vw] md:max-w-[33vw] leading-normal text-gray-100"
             variants={fadeVariants("opacity")}
             transition={{ ease: "linear" }}
           >

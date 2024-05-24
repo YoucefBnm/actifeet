@@ -3,7 +3,7 @@ import AnimatedText from "@/components/AnimatedText";
 import { useRevealAnimation } from "@/hooks/useRevealAnimation";
 import { easeTransition } from "@/libs/motion/motion.transitions";
 import { clipPathVariants, fadeVariants } from "@/libs/motion/motion.variants";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 
 interface GenderCardProps {
@@ -14,6 +14,9 @@ interface GenderCardProps {
 }
 
 const GenderCard = ({ inView, imageUrl, title, route }: GenderCardProps) => {
+  const controls = useAnimation();
+  const startAnimation = () => controls.start("visible");
+
   return (
     <motion.div
       transition={{ staggerChildren: 0.2 }}
@@ -25,6 +28,7 @@ const GenderCard = ({ inView, imageUrl, title, route }: GenderCardProps) => {
         variants={clipPathVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
+        onAnimationComplete={startAnimation}
       >
         <Link to={route} className="block">
           <motion.picture
@@ -45,15 +49,17 @@ const GenderCard = ({ inView, imageUrl, title, route }: GenderCardProps) => {
         </Link>
       </motion.div>
 
-      <motion.div className="overflow-hidden">
+      <div className="overflow-hidden">
         <motion.h3
           className="heading-base mt-4 uppercase "
           variants={fadeVariants("bottom")}
           transition={{ ease: easeTransition }}
+          initial="hidden"
+          animate={controls}
         >
           {title}
         </motion.h3>
-      </motion.div>
+      </div>
     </motion.div>
   );
 };

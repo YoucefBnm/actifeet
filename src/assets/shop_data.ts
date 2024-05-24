@@ -5,6 +5,289 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "women",
+    category: "hiking",
+    brand: "altra",
+    name: "lone peak 8",
+    amazonLink:
+      "https://www.amazon.com/ALTRA-Womens-AL0A7R7I-All-WTHR-Trail/dp/B0CNJ7DM9X/ref=sr_1_105?dib=eyJ2IjoiMSJ9.AKTYd_Tyb6UfN810dRXIk_z3np5wHk3AO9n2rlNPX4X70j_KG0-82YKS-ySuae5DSZJWNNHhAW7PBwTBFqKBvabSCfDD2-T2nOaByYWm4t0z6eIzQ5ZZ3b8Zz1LJyekso4aV9GMXGsc2xNIvKD_C015Zo2dWuBbBX1SxBdR37iUba4d1RGz0ARt7Kir8FUNrRQKibjMnw4yQnC7LUaJW9CGnDQDmmIe28GJe377VLESyXDaAKbONMVrT7tnJupH_Kpb91amPT2PtLvNNs_ixKqgJWXadK7je05LJ8kHPZmY.5H1NX4mR7-H4OnFr9JoTb2Xo4kDffoQl0_tdcjiO-MM&dib_tag=se&keywords=women+altra+shoes&qid=1716471373&sr=8-105",
+    price: 159.95,
+    sizes: [9, 11.5, 12],
+    colors: ["black"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/51DKrIiFywL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/51duTqvUrlL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/61WVlctR5JL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/51QzEOzaCOL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/51nMwcEhmSL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/419WATMXoUL._AC_SX695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Origin: Made in USA or Imported",
+      "Sole material: Rubber",
+      "Outer material: Mesh",
+      "Closure type: Lace-Up",
+      "Stay Focused: With our MaxTrac outsole and multi-directional TrailClaw lug pattern for grippy traction, you can focus on the trail infront of you",
+      "Reimagining Legendary: With a refined upper for durability, a grippy outsole, and a roomy toe box you'll be ready to bag larger-than-life trail adventures",
+      "Run Naturally: Our eNatural Fit toe box allows the toes to relax and spread out... naturally",
+      "Stay Comfortable: Stack height of 25mm provides ample cushion for long runs",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "altra",
+    name: "torin 7",
+    amazonLink:
+      "https://www.amazon.com/ALTRA-Womens-AL0A82CZ-Torin-Running/dp/B0BK2JYVQ1/ref=sr_1_294?dib=eyJ2IjoiMSJ9.EJUOeq253n4dhrtcTB3l0aQSiutaBQTObBDK6aXQSfF4F70C1vi-cwaI50Yx_ESbR7WQh0r5MSWBBcWJH7Cukz8rUZnuTosbpPkYQz6TVdsobeJJkOAknoBqYBcrpRTE.tp_e6SZcBDrCK0DcG1MOJFGNlhS0we_k2PGU8_jgI_I&dib_tag=se&keywords=women+altra+shoes&qid=1716471942&sr=8-294",
+    badge: "sale",
+    price: 149.95,
+    discount: 25,
+    sizes: [6.5, 7, 8, 8.5],
+    colors: ["white"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "white",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61VDsg4OhmL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61yjOQiRDvL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61TiSobLscL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/714o7WFbA6L._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Fabric type: 100% Synthetic",
+      "Origin: Imported",
+      "Sole material: Rubber",
+      "Outer material: Synthetic",
+      "Go Further: Our original Altra EGO MAX foam is designed to provide added energy return and a responsive, yet soft, comfortable feel",
+      "Push Yourself: Balanced Cushioning places your heel and forefoot the same distance from the ground to encourage proper, low-impact form throughout your run",
+      "Get Comfortable: Signature Altra FootShape toe boxes allow your toes to spread and encourages proper, low-impact form throughout your run",
+      "Stay Comfortable: Altra's FootPod Technology maps the bones and tendons of your foot to encourage natural movement underfoot",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "altra",
+    name: "provision 8",
+    amazonLink:
+      "https://www.amazon.com/ALTRA-Womens-Provision-Road-Running/dp/B0CP9ZPBP2/ref=sr_1_69?dib=eyJ2IjoiMSJ9.A4-0B7ScY9DEbYv7-J4GQLex6KfLbnUoszpgjpjGPkEUTSv2phav6Fan5AFNcpqfxD831LQLvvbKr1KXaieVY3I8HozoLTZSl-a-StxAOwgEU0T8CyJoWmB-oHCvMYVnMALFSXzs8oqg5cgx3zmT6kmHpZazEgl71w5W-9rzWuQlYRtuB3TFS8QqzLSEPLNXbvOl0jx9cKAAvyZeLqTds1cvwGTmi60WyVbXeN5j6LAWrGwJszs_V60VvVt9DkslCK71h_BRXbi9tyhjLu38PiWEKTeFOOPOpUiTSFufDQM.ccTffBu8eVy-lmRm4DXBRwg9m-MqVJokGSiX7wWruvk&dib_tag=se&keywords=women+altra+shoes&qid=1716471285&sr=8-69",
+    price: 139.95,
+    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9],
+    colors: ["darkblue"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "darkblue",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61sbGoM-9rL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/716waRCWwwL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71WPYhkC8GL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71v6v-U5kYL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71vLdqwlOdL._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: ["Sole material: Rubber", "Outer material: Mesh", "Rubber sole"],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "altra",
+    name: "provision 8",
+    amazonLink: "",
+    badge: "sale",
+    price: 139.95,
+    discount: 25,
+    sizes: [11],
+    colors: ["black"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61S2htYpxIL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61QffVeO9HL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61n6pBVh93L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61mNt-hwH2L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61X6e2x6UpL._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: ["Sole material: Rubber", "Outer material: Mesh", "Rubber sole"],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "altra",
+    name: "escalante 4",
+    amazonLink:
+      "https://www.amazon.com/ALTRA-Womens-Escalante-Road-Running/dp/B0CP8JMPBS/ref=sr_1_35?dib=eyJ2IjoiMSJ9.8BLQcWLWGd2BHKx-Xusu_eGb5RWRFsUBDsbL-BMAGTSmvIL61Xe65j9ZMM693klSjGFTtG8PV1ffef3U8ER8HxFmJDrx5l3mD0IRASeAqUy59JH7npLIRXZ3pNoj2xLFibPXU9S_oQD3h1NRMswKKdrboJYC8Az43sBpMXMlki1SJ6WDaLowMQpETiQ0b1dbiwDzVSlYNbFstrrsZ3gqFbTYwTyDox0iugzPxASVQhYg1dTFG02cJGsLKDiNvrqiTo8Ajd2iH3xgIQrlla_qjycbyh0E7zAAELKvwVbsVi8.qEFhg9t_N60LZMqAKkRZTvHe8u3JdGbx8jUGmISVYg8&dib_tag=se&keywords=women+altra+shoes&qid=1716471275&sr=8-35",
+    price: 129.95,
+    sizes: [5, 5.5, 6, 6.5, 7],
+    colors: ["teal"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "teal",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/71fy3lQYEcL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71+bTqoC6CL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/819NE5EpPFL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71Wn-MBKSLL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71ySEywYIFL._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Product Dimensions: 12 x 10 x 5 inches; 1.34 Pounds",
+      "Item model number: AL0A85NF",
+      "Department: womens",
+      "Date First Available :  November 30, 2023",
+      "ASIN: B0CP8JMPBS",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "saucony",
+    name: "echelon 9",
+    amazonLink:
+      "https://www.amazon.com/Saucony-Womens-Echelon-Sneaker-Indigo/dp/B09L2N9FCL/ref=sr_1_15?crid=24MR656PJ939P&dib=eyJ2IjoiMSJ9.gs3mP9zKHpcbM47eRcGsa5UexMCp6P8WBEyLE4HTVtsHj9wjlvd70CKgsweVJa4C2OHhsFBZxGafiNcphUxS-IBaFeOMYeGDDTp6TQYKqSiVe1X9vPRzfMkyh4P-mP79bCA42mYwpQB7NwvBs8P7r0SY6xKCh9AAXdMSkeQnIJuto8NT3MXNJBTVaJkpiinjpVkOUwNjqwxoTbbrmZr0kyr-CuxNrkPZOcRJ3gyt9Ca83SaF0gvMCaHChtvfBxEAbQtk8Z3icDAVEzhB8zzJR9zKm1MG4jQir-Wor81OXOQ.pHp0Q7yOYKeXz9OblUhpnnBZdKEGOtdl2ut0AIYmLAw&dib_tag=se&keywords=saucony%2Bshoes&qid=1716469575&sprefix=saucony%2Bshoes%2Caps%2C213&sr=8-15&th=1",
+    badge: "new",
+    price: 112.5,
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 9, 9.5],
+    colors: ["black", "grey"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61SHf7iRCLL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61KVfi0HUpL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61UDR03o8TL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61TQAqSRh8L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/515gwzs9vCL._AC_SY695_.jpg",
+        ],
+      },
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "gery",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/612-nRUAtcL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/618xXG5iaIL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61Nlc7ktRUL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61wZrlC+kWL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51U9IxcXzjL._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Origin: Made in the USA or Imported",
+      "Sole material: Rubber",
+      "Outer material: Mesh",
+      "Closure type: Lace-Up",
+      "Expect a dramatically improved feel and ride with increased toe spring and heelbeveling, but the same roomy last and shape you love.",
+      "With a thicker bed of our updated PWRRUN cushioning, it’s a super soft ride that’s way lighter than before.",
+      "From high thread-count marled mesh to supportive outsole wrapping at themidfoot, it’s the little things that make all the difference.",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "men",
+    category: "running",
+    brand: "saucony",
+    name: "omni 21",
+    amazonLink:
+      "https://www.amazon.com/Saucony-Mens-Running-Black-White/dp/B0BN4R7W1Z/ref=sr_1_38?crid=24MR656PJ939P&dib=eyJ2IjoiMSJ9.gs3mP9zKHpcbM47eRcGsa5UexMCp6P8WBEyLE4HTVtsHj9wjlvd70CKgsweVJa4C2OHhsFBZxGafiNcphUxS-IBaFeOMYeGDDTp6TQYKqSiVe1X9vPRzfMkyh4P-mP79bCA42mYwpQB7NwvBs8P7r0SY6xKCh9AAXdMSkeQnIJuto8NT3MXNJBTVaJkpiinjpVkOUwNjqwxoTbbrmZr0kyr-CuxNrkPZOcRJ3gyt9Ca83SaF0gvMCaHChtvfBxEAbQtk8Z3icDAVEzhB8zzJR9zKm1MG4jQir-Wor81OXOQ.pHp0Q7yOYKeXz9OblUhpnnBZdKEGOtdl2ut0AIYmLAw&dib_tag=se&keywords=saucony%2Bshoes&qid=1716469575&sprefix=saucony%2Bshoes%2Caps%2C213&sr=8-38&th=1",
+    price: 79.99,
+    sizes: [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13],
+    colors: ["blue", "black"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "blue",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61V3Fk3pXVL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61xh8-34pcL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61Ga4dI+DvL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61-ZdaECjNL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61f9oW6veNL._AC_SY695_.jpg",
+        ],
+      },
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61pxitDL-mL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61Dyp7h2-oL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/616WX5o6NuL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61jfwO8FPbL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/510xZ6NQUML._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Fabric type: Fabric",
+      "Care instructions: Machine Wash",
+      "Origin: Made in USA and Imported",
+      "Sole material: Rubber",
+      "Feel next-level comfort and support with dual-density PWRRUN cushioning, now in a lighter and softer blend than ever before.",
+      "With intentional design choices like bold, fast logos and supportive 3D printing, it’s super comfortable and super inspiring from heel to toe.",
+      "The Omni 21 features an engineered midfoot support system and sophisticated mesh design that hugs your foot completely.",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "saucony",
+    name: "kinvara 14",
+    amazonLink:
+      "https://www.amazon.com/Saucony-Womens-Kinvara-Desert-Azure/dp/B0C2JLZ5SG/ref=sr_1_20?crid=24MR656PJ939P&dib=eyJ2IjoiMSJ9.gs3mP9zKHpcbM47eRcGsa5UexMCp6P8WBEyLE4HTVtsHj9wjlvd70CKgsweVJa4C2OHhsFBZxGafiNcphUxS-IBaFeOMYeGDDTp6TQYKqSiVe1X9vPRzfMkyh4P-mP79bCA42mYwpQB7NwvBs8P7r0SY6xKCh9AAXdMSkeQnIJuto8NT3MXNJBTVaJkpiinjpVkOUwNjqwxoTbbrmZr0kyr-CuxNrkPZOcRJ3gyt9Ca83SaF0gvMCaHChtvfBxEAbQtk8Z3icDAVEzhB8zzJR9zKm1MG4jQir-Wor81OXOQ.pHp0Q7yOYKeXz9OblUhpnnBZdKEGOtdl2ut0AIYmLAw&dib_tag=se&keywords=saucony+shoes&qid=1716469575&sprefix=saucony+shoes%2Caps%2C213&sr=8-20",
+    price: 89.95,
+    sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11],
+    colors: ["beige"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "beige",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/81iK4Hr74NL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/81VoI4Si1DL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/81AFVpryXsL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/81pPHhusHaL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/71uVLfFnYBL._AC_SX695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Fabric type: Fabric",
+      "Care instructions: Machine Wash",
+      "Origin: Made in USA and Imported",
+      "Sole material: Rubber",
+      "Naturally fast and ultra-flexible, it’s designed to move with you as you pick up the pace",
+      "Lighter-than-ever, you’ll feel like you’re floating",
+      "Built to withstand every day efforts, the soft and responsive PWRRUN cushioning will propel you toward your next personal best",
+      "PWRRUN sockliner offers step-in comfort you can’t deny",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
     category: "running",
     brand: "new balance",
     name: "fuelcell supercomp v3",
@@ -1156,7 +1439,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross tarining",
+    category: "cross training",
     brand: "under armour",
     name: "tribase reign 6",
     amazonLink:
@@ -1276,7 +1559,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross trainin",
+    category: "cross training",
     brand: "nike",
     name: "downshifter",
     amazonLink:
@@ -1326,7 +1609,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "women",
-    category: "cross taining",
+    category: "cross training",
     brand: "nike",
     name: "metcon 4",
     amazonLink:
@@ -1420,36 +1703,6 @@ export const SHOP_DATA: ProductProps[] = [
       "Lining: Pacific front and rear",
       "Midsole: LaSpoFlex 1.1 mm and P3 System",
       "Exterior: Combination of leather with microfibre, tubular construction",
-    ],
-  },
-  {
-    id: uuidv4().toString().replace(/-/g, ""),
-    gender: "women",
-    category: "cross training",
-    brand: "puma",
-    name: "prowl script",
-    amazonLink:
-      "https://www.amazon.com/PUMA-Womens-Script-Training-Sneakers/dp/B0B1FBLVRS/ref=sr_1_274?crid=3K16O6XIL8XFE&dib=eyJ2IjoiMSJ9.R-UywS_AyE116kiaMXtvY_7NMUCHXGPhmu3DCWS2ru-ml3DXsexBGAbMwQUem95amplNeKen-WyArYNdSS8tPgq7Y40pvub1aP0INLuA8gTtKCA2xoOhXaFrzZGGg5qXOaffA9sfOjfXPhjLThcbfsxDHaKcxFbHlPNySL-LQvqE4bEL06EyokgT5bvKXNtt56PGGEc4RbneLXQRtnc4cgh5J2G9dYpTyFrkgEbcxIE57FVbZpEhniTJjc8xUKCpSXZ4z0vUzRVkYN1-YNfQBLvq9MM25jEYcFV1K6k48os.l5l1lFIN_QSPp-wdLQbxtTH1Khb_Hm9yGGb5RbLodWQ&dib_tag=se&keywords=cross+training+shoes&qid=1708637815&refinements=p_n_feature_eighteen_browse-bin%3A14630392011&rnid=14630382011&s=apparel&sprefix=cross+training+shoe%2Caps%2C446&sr=1-274",
-    price: 79.98,
-    sizes: [10],
-    colors: ["grey"],
-    images: [
-      {
-        id: uuidv4().toString().replace(/-/g, ""),
-        color: "grey",
-        imagesUrls: [
-          "https://m.media-amazon.com/images/I/51AcoerpYSL._AC_SL1000_.jpg",
-          "https://m.media-amazon.com/images/I/51PLuBFpBTL._AC_SL1000_.jpg",
-          "https://m.media-amazon.com/images/I/51PY7EkwA-L._AC_SL1000_.jpg",
-          "https://m.media-amazon.com/images/I/51oC6rr+XTL._AC_SL1000_.jpg",
-          "https://m.media-amazon.com/images/I/51g3eOq66GL._AC_SL1000_.jpg",
-        ],
-      },
-    ],
-    details: [
-      "Sole material: Ethylene Vinyl Acetate, Rubber",
-      "Closure type: Pull-On",
-      "Rubber sole",
     ],
   },
   {
@@ -1888,7 +2141,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross trainint",
+    category: "cross training",
     brand: "adidas",
     name: "speed 3.0",
     amazonLink:
@@ -2353,7 +2606,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross taining",
+    category: "cross training",
     brand: "adidas",
     name: "dropset",
     amazonLink:
@@ -2577,38 +2830,38 @@ export const SHOP_DATA: ProductProps[] = [
   },
   {
     id: uuidv4().toString().replace(/-/g, ""),
-    gender: "men",
+    gender: "women",
     category: "cross training",
     brand: "under armour",
     name: "project rock 4",
     amazonLink:
-      "https://www.amazon.com/Under-Armour-Project-Trainers-Sneakers/dp/B0BFJLT6CK/ref=sr_1_49?crid=21SYP2WEQBNEN&dib=eyJ2IjoiMSJ9.HBoWCUAua5sQFmiEm-Uh7CDatp66gFmAm0VDcpz-X5LeB-e-wtBcjk-OdyFJdEbmStQe4xQwyvAA1GQi5UKC3DtbU0zFBWSbof8ODM9xWZ1RPYecsd061K_NCt9O6Okb9h09ihdqyMt5JkJoHq4ohTyEsiPiqtbcLKzBpdJbH8bod2rejMva8WDc2wP0uRGEiwtAIlVadJa41dHuM8lSPLKbWzEDYVJjr52wouKEABRfcD2h6FJpPp2PHfQHdb9XvJPDsgI0rQWQ_AJgi2PNvu_OWc_VwrLMSGsHv93aAas.jyl-gMCFs3ZOfg2xypzjG-vGSfsPrP1HwVVGa9EM6ZA&dib_tag=se&keywords=trainer%2Bshoes&qid=1708734331&refinements=p_n_feature_eighteen_browse-bin%3A14630392011&rnid=14630382011&s=apparel&sprefix=trainer%2Bshoe%2Caps%2C222&sr=1-49&th=1",
+      "https://www.amazon.com/Under-Armour-Training-us_Footwear_Size_System-Numeric_6/dp/B0BMJZWCRR/ref=sr_1_74?crid=YH9TFAS69M60&dib=eyJ2IjoiMSJ9.wbDz0ijMvDP0Pni_5uBGvQgkkrFnHx4qRuqXJXz5y9BLxy91-okZxjCaKDlXnEvFA75vqL2TfwOejiLi-jAVXk8D8O7ia0igIlEqRaH5dq2HUenz1gj91oJgSy1VA2j2TRU7eYKTtrTnxDWPkFawadaGLQ0S40TMCySAN6CMdnYBdK6oINb8YQnOOhP3vMwhrbZSwuqIVh4tZQC9TKivBiRriXMfpYDhLX5onoD-eTXeDkP937ChidYbuwCwtkUMJGO0A06ug69NuqJtc1hCFXdMJ0FELUaFAkyl_pYzfbA.qLkrgMo-0n9xCFYkYkkW-CcTwWJ1IgXD0E6mbDiu4mc&dib_tag=se&keywords=women%2Btraining%2Bshoes&qid=1716467020&rnid=2941120011&s=apparel&sprefix=women%2Btraining%2Bshoes%2Caps%2C195&sr=1-74&th=1",
     badge: "best seller",
     price: 136.32,
-    sizes: [8, 8.5, 9, 10, 10.5],
-    colors: ["teal", "red"],
+    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 10, 10.5],
+    colors: ["beige", "black"],
     images: [
       {
         id: uuidv4().toString().replace(/-/g, ""),
         color: "teal",
         imagesUrls: [
-          "https://m.media-amazon.com/images/I/716RJiFL0aL._AC_SL1500_.jpg",
-          "https://m.media-amazon.com/images/I/71rsDG1j3VL._AC_SL1500_.jpg",
-          "https://m.media-amazon.com/images/I/81ZoVgCLHAL._AC_SL1500_.jpg",
-          "https://m.media-amazon.com/images/I/710uLbPBGmL._AC_SL1500_.jpg",
-          "https://m.media-amazon.com/images/I/81va8C6IsiL._AC_SL1500_.jpg",
-          "https://m.media-amazon.com/images/I/61Gjtlv4KfL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/71N9Xo1d6vL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71fVqdRk3FL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71KfDhB5CaL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71yrUqYKMkL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71xgNG08I9L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71VlRNUYZ8L._AC_SY695_.jpg",
         ],
       },
       {
         id: uuidv4().toString().replace(/-/g, ""),
         color: "red",
         imagesUrls: [
-          "https://m.media-amazon.com/images/I/610W2zNxRnL._AC_SL1425_.jpg",
-          "https://m.media-amazon.com/images/I/61bY1RPVROL._AC_SL1425_.jpg",
-          "https://m.media-amazon.com/images/I/71Ew62Ti+zL._AC_SL1425_.jpg",
-          "https://m.media-amazon.com/images/I/612JXxOy36L._AC_SL1425_.jpg",
-          "https://m.media-amazon.com/images/I/61dg+LfvAHL._AC_SL1425_.jpg",
+          "https://m.media-amazon.com/images/I/51g5GQ9wDuL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51+lXqBJSyL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61x59sA4WhL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61d8jLdxjjL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51kKcMIF1oL._AC_SY695_.jpg",
         ],
       },
     ],
@@ -4931,7 +5184,7 @@ export const SHOP_DATA: ProductProps[] = [
   },
   {
     id: uuidv4().toString().replace(/-/g, ""),
-    gender: "man",
+    gender: "men",
     category: "hiking",
     brand: "adidas",
     name: "agravic ultra",
@@ -5521,6 +5774,45 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "women",
+    category: "cross training",
+    brand: "new balance",
+    name: "dynasoft beaya v1",
+    amazonLink:
+      "https://www.amazon.com/New-Balance-DynaSoft-Trainer-Metallic/dp/B09H3PHDHW/ref=sr_1_22?dib=eyJ2IjoiMSJ9.ZZkvspa9CKQ8kHyTxSuOG2LPUSUTHEuoHg4AdjtHc9LbxzQgVKX3TGHbLD3PN8jkRsCzf8f9-pWEHCseBv1fpweCtACio2_h7b0IRTPkzNrXTnRUfodAfDtpqCHUAsjn1h9rhvMyjUwLDJQlXyvKeHokLL5LKRN2JxSElbXCAaNAQKCSsLQcCzP6PpzIAFwEqM8SatvodJfr5tKESdM8-pbHV_lBYBH_LrR3v55CVD1mShL3dqLfdmy5gUWrbevf1wERunGaLmcIQAXdoybau0jBTZOHaj1iOTn5pflYzRg.9J0-ILFvu9FYoASHqH9kQsnZ7uvkU5OJUodJ6y4s_6I&dib_tag=se&keywords=women%2Bcross%2Btraining%2Bshoes&qid=1716466387&sr=8-22&th=1",
+    badge: "sale",
+    price: 87.9,
+    discount: 18,
+    sizes: [5, 5.5],
+    colors: ["black"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61AMeTs41pL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61iogIlwe-L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61eBkFsc8kL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61Y2pmp-dGL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61zY9d44WoL._AC_SY695_.jpg",
+          "",
+        ],
+      },
+    ],
+    details: [
+      "Origin: Made in the USA or Imported",
+      "Sole material: Rubber",
+      "Outer material: Mesh",
+      "Closure type: Lace-Up",
+      "DynaSoft midsole couples ultra-responsive performance with plush comfort",
+      "Low-profile synthetic and mesh upper",
+      "No sew overlays",
+      "Lightweight design",
+      "Adjustable lace closure for a customized fit",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
     category: "running",
     brand: "nike",
     name: "free run 2",
@@ -5981,7 +6273,7 @@ export const SHOP_DATA: ProductProps[] = [
       "https://www.amazon.com/Nike-Pegasus-Running-Aura-Dark-Grey-Wolf/dp/B0B1QW2SV3/ref=sr_1_22?crid=3UD8KDF40F8QW&dib=eyJ2IjoiMSJ9.K-U9AlU8NOfsVZLyWl2LpEQN1tKshDYAq6pBvHXNpFmBUqK1PFK924ezx8uXot_92JPdqIIrNMo8tMyxu9AHrPNzq5VoxNIvXPfJFq1S3jasBwrOaae7EXPmwpnnTTMWcBwsamWon0CpuZJBAbu5nlT749h109ZD_0XJM3eWYsWttHH3p4e-saWb0w9FBPHGqdgY_-ekELykFf6AERfUjIgqVxrZdh6Cs-AYVkhv4_76LqqvdrioDzwslryhEGcZsPoD8DgmBA4o1mB6u0Uq1-5SJP3ZHg0ar4S0EJIh1Ds.MA-mjWq0QfhxrlG9DcyBJx1LIkW-5z5yAi0bQnyT4VQ&dib_tag=se&keywords=nike%2Bpegasus&qid=1708721988&sprefix=nike%2Bpegasus%2Bmen%2Caps%2C626&sr=8-22&th=1",
     badge: "best seller",
     price: 139.99,
-    sizes: [5, 5.5, 6, 6.5, 7, 0.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
     colors: ["black"],
     images: [
       {
@@ -7311,7 +7603,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross tarining",
+    category: "cross training",
     brand: "nike",
     name: "varsity compete 3",
     amazonLink:
@@ -7345,7 +7637,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross tarining",
+    category: "cross training",
     brand: "under armour",
     name: "tribase thrive",
     amazonLink:
@@ -11419,7 +11711,7 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "men",
-    category: "cross tarining",
+    category: "cross training",
     brand: "inov",
     name: "f lite g 300",
     amazonLink:
