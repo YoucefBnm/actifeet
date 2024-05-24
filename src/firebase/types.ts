@@ -58,3 +58,15 @@ export type FetchOptions = {
   filters: filtersType;
   lastVisible: DocumentData | undefined;
 };
+
+export type AdditionalInfo = {
+  displayName?: string;
+  photoURL?: string;
+};
+
+export type UserData = {
+  createdAt: Date;
+  displayName: string;
+  email: string;
+  photoURL?: string;
+};

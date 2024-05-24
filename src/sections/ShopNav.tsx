@@ -123,7 +123,7 @@ const ShopNavFiltersWrap = () => {
               collapsible
               className="flex flex-1 w-full flex-col gap-2"
             >
-              {SHOP_FILTERS[filterKey][typedKey]?.length > 1 && (
+              {SHOP_FILTERS[filterKey][typedKey].length > 1 && (
                 <AccordionItem value={key}>
                   <AccordionTrigger className="font-heading capitalize">
                     {key}

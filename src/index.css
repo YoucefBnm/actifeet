@@ -95,13 +95,18 @@ input {
 }
 
 .group-sizes {
-  @apply w-8 h-8;
+  @apply size-8;
 }
+
 
 .group-colors {
   @apply items-center justify-start gap-x-2 py-0.5 px-0
 }
 
 .input-colors {
-  @apply relative w-5 h-5 border-none rounded-full border border-neutral-300
+  @apply relative size-4 border-none rounded-full border border-neutral-300
+}
+
+.header {
+  @apply bg-white px-default flex items-center sticky z-50 inset-0 w-screen h-16 justify-between
 }

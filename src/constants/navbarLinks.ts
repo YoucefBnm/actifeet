@@ -15,7 +15,7 @@ export interface NavSubmenu {
   id: string;
   title: string;
   submenu: NavSubmenuItem[];
-  ctaImage: { imageUrl: string; width: number };
+  ctaImage: string;
 }
 
 export const menLinks: NavSubmenu = {
@@ -127,10 +127,7 @@ export const menLinks: NavSubmenu = {
       ],
     },
   ],
-  ctaImage: {
-    imageUrl: CategoryMenImage,
-    width: 260,
-  },
+  ctaImage: CategoryMenImage,
 };
 
 export const womenLinks: NavSubmenu = {
@@ -242,7 +239,7 @@ export const womenLinks: NavSubmenu = {
       ],
     },
   ],
-  ctaImage: { imageUrl: CategoryWomenImage, width: 260 },
+  ctaImage: CategoryWomenImage,
 };
 
 export const sportsLinks: NavSubmenu = {
@@ -394,5 +391,5 @@ export const sportsLinks: NavSubmenu = {
       ],
     },
   ],
-  ctaImage: { imageUrl: CategorySportsImage, width: 440 },
+  ctaImage: CategorySportsImage,
 };

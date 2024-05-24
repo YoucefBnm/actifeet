@@ -2,7 +2,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
@@ -31,8 +30,8 @@ const NavLinkItem = (props: NavSubmenu) => {
               decoding="async"
               alt={`${title} shoes`}
               height={320}
-              width={ctaImage.width}
-              src={ctaImage.imageUrl}
+              width={260}
+              src={ctaImage}
               className="h-full "
             />
           </div>
@@ -89,32 +88,29 @@ const NavLinks = () => {
         />
 
         <NavigationMenuItem>
-          <Link to="/shop/badge/best seller">
-            <NavigationMenuLink
-              className={`${navigationMenuTriggerStyle()} text-sm font-heading capitalize`}
-            >
-              best seller
-            </NavigationMenuLink>
+          <Link
+            className={`${navigationMenuTriggerStyle()} text-sm font-heading capitalize`}
+            to="/shop/badge/best seller"
+          >
+            best seller
           </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link to="/shop/badge/new">
-            <NavigationMenuLink
-              className={`${navigationMenuTriggerStyle()} text-sm font-heading capitalize`}
-            >
-              new
-            </NavigationMenuLink>
+          <Link
+            className={`${navigationMenuTriggerStyle()} text-sm font-heading capitalize`}
+            to="/shop/badge/new"
+          >
+            new
           </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link to="/shop/badge/sale">
-            <NavigationMenuLink
-              className={`${navigationMenuTriggerStyle()} text-sm font-heading capitalize`}
-            >
-              sale
-            </NavigationMenuLink>
+          <Link
+            className={`${navigationMenuTriggerStyle()} text-sm font-heading capitalize`}
+            to="/shop/badge/sale"
+          >
+            sale
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
