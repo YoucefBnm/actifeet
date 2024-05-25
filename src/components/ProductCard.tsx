@@ -6,14 +6,13 @@ import {
   ProductColorsProps,
   ProductDetailsProps,
   ProductImagesProps,
-  ProductPriceProps,
 } from "@/types";
-import { formatPrice, setPrice } from "@/utils/price.utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { memo } from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { Badge } from "./ui/badge";
+import ProductPrice from "./ProductPrice";
 
 const ProductCardImages = memo(function (props: ProductImagesProps) {
   const { productImages, activeColor, activeImage, handleMouse } = props;
@@ -134,34 +133,6 @@ const ProductCardDetails = memo(function ProductCardDetails({
   );
 });
 
-const ProductCardPrice = memo(function ProductCardPrice(
-  props: ProductPriceProps
-) {
-  const { price, discount } = props;
-  return (
-    <div className="flex my-4 px-4 text-base justify-between items-end">
-      {discount ? (
-        <>
-          <div className="flex text-xs md:text-base items-center gap-2 w-full">
-            <p>${setPrice(price, discount)}</p>
-            <p className="text-neutral-500 line-through">
-              ${setPrice(price, null)}
-            </p>
-            <Badge
-              className="rounded-none px-1 py-px text-xs font-heading border-none"
-              variant={"destructive"}
-            >
-              -{discount}%
-            </Badge>
-          </div>
-        </>
-      ) : (
-        <p>${formatPrice(price)}</p>
-      )}
-    </div>
-  );
-});
-
 const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
   const { activeColor, activeImage, handleColorChange, handleMouse } =
     useSetActiveProduct();
@@ -209,7 +180,7 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
         productBrand={product.brand}
       />
 
-      <ProductCardPrice price={product.price} discount={product.discount} />
+      <ProductPrice price={product.price} discount={product.discount} />
     </Link>
   );
 });

@@ -58,9 +58,9 @@ const AuthDropdown = memo(function AuthDropdown({
       ) : (
         <PopoverTrigger
           aria-label="authentication dropdown trigger"
-          className="cursor-pointer p-2"
+          className="cursor-pointer py-2 mx-2"
         >
-          <img width={18} height={22} aria-hidden src={UserIcon} />
+          <img width={24} height={24} aria-hidden src={UserIcon} />
         </PopoverTrigger>
       )}
 

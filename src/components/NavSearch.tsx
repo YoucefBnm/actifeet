@@ -1,5 +1,11 @@
 import { SearchIcon } from "@/assets";
-import { Drawer, DrawerContent, DrawerTrigger } from "./ui/drawer";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTrigger,
+} from "./ui/drawer";
 import { ScrollArea } from "./ui/scroll-area";
 import { ChangeEvent, memo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -88,6 +94,7 @@ const SearchResults = ({ searchQuery }: { searchQuery: string }) => {
     <div className="relative">
       <h3 className="font-heading capitalize mb-2 text-neutral-500">
         {searchResults.length > 0 &&
+          searchQuery !== "" &&
           !isLoading &&
           `(${resultsCount}) Shoes for "${searchQuery}"`}
       </h3>
@@ -99,6 +106,7 @@ const SearchResults = ({ searchQuery }: { searchQuery: string }) => {
       ) : (
         <div className="grid grid-cols-2 gap-4">
           {searchResults.length > 0 &&
+            searchQuery !== "" &&
             searchResults.map((result) => (
               <ProductCard key={result.id} product={result} />
             ))}
@@ -132,18 +140,24 @@ const NavSearch = () => {
     }
   };
 
+  const resetSearch = () => setSearchQuery("");
   return (
-    <Drawer direction={"right"}>
+    <Drawer onClose={resetSearch} direction={"right"}>
       <DrawerTrigger
         asChild
         aria-label="search field trigger"
-        className="cursor-pointer"
+        className="cursor-pointer py-2 mx-2"
       >
         <img width={23} height={23} src={SearchIcon} aria-hidden="true" />
       </DrawerTrigger>
 
       <DrawerContent className="top-0 w-11/12 md:w-3/5 xl:w-2/4 border-none outline-none">
-        <div className="  flex items-center h-16 px-6">
+        <DrawerHeader className=" justify-end h-16">
+          <DrawerClose>
+            <span className="text-2xl text-neutral-500">&times;</span>
+          </DrawerClose>
+        </DrawerHeader>
+        <div className="flex items-center h-16 px-6">
           <SearchField searchQuery={searchQuery} handleChange={handleChange} />
         </div>
 

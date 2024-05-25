@@ -20,35 +20,36 @@ interface NavDrawerProps {
 
 const NavToggleBtn = () => {
   return (
-    <>
+    <div className="py-2 mx-2">
       <svg
-        width="28"
-        height="28"
-        viewBox="0 0 28 28"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
         fill="none"
+        // className=" bg-red-400"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M2 8H26"
+          d="M2 7H24"
           stroke="black"
-          strokeWidth="2.6"
+          strokeWidth="2.4"
           strokeLinecap="round"
         />
         <path
-          d="M2 15H26"
+          d="M2 14H24"
           stroke="black"
-          strokeWidth="2.6"
+          strokeWidth="2.4"
           strokeLinecap="round"
         />
         <path
-          d="M2 22H26"
+          d="M2 21H24"
           stroke="black"
-          strokeWidth="2.6"
+          strokeWidth="2.4"
           strokeLinecap="round"
         />
       </svg>
       <span className="sr-only">toggle navigation</span>
-    </>
+    </div>
   );
 };
 
@@ -87,38 +88,40 @@ const NavMobile = () => {
     <>
       <header className="header">
         <NavLogo />
-        <Drawer direction="right">
-          <DrawerTrigger>
-            <NavToggleBtn />
-          </DrawerTrigger>
-          <DrawerContent>
-            <DrawerHeader className="justify-end">
-              <DrawerClose>x</DrawerClose>
-            </DrawerHeader>
-            <ul className="flex justify-start items-start flex-col px-6 py-4 gap-4">
-              <NavDrawer title="men" submenu={menLinks["submenu"]} />
-              <NavDrawer title="women" submenu={womenLinks["submenu"]} />
-              <Link to="/shop/badge/best seller">
-                <DrawerClose className="font-heading capitalize text-sm">
-                  best seller
-                </DrawerClose>
-              </Link>
+        <div className="flex items-center">
+          <Drawer direction="right">
+            <DrawerTrigger>
+              <NavToggleBtn />
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader className="justify-end">
+                <DrawerClose>x</DrawerClose>
+              </DrawerHeader>
+              <ul className="flex justify-start items-start flex-col px-6 py-4 gap-4">
+                <NavDrawer title="men" submenu={menLinks["submenu"]} />
+                <NavDrawer title="women" submenu={womenLinks["submenu"]} />
+                <Link to="/shop/badge/best seller">
+                  <DrawerClose className="font-heading capitalize text-sm">
+                    best seller
+                  </DrawerClose>
+                </Link>
 
-              <Link to="/shop/badge/new">
-                <DrawerClose className="font-heading capitalize text-sm">
-                  new
-                </DrawerClose>
-              </Link>
+                <Link to="/shop/badge/new">
+                  <DrawerClose className="font-heading capitalize text-sm">
+                    new
+                  </DrawerClose>
+                </Link>
 
-              <Link to="/shop/badge/sale">
-                <DrawerClose className="font-heading capitalize text-sm">
-                  sale
-                </DrawerClose>
-              </Link>
-            </ul>
-          </DrawerContent>
-        </Drawer>
-        <NavUtils />
+                <Link to="/shop/badge/sale">
+                  <DrawerClose className="font-heading capitalize text-sm">
+                    sale
+                  </DrawerClose>
+                </Link>
+              </ul>
+            </DrawerContent>
+          </Drawer>
+          <NavUtils />
+        </div>
       </header>
       <Suspense
         fallback={

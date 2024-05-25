@@ -13,6 +13,9 @@ import Logo from "./icons/logo.svg";
 import UserIcon from "./icons/icon-user.svg";
 import SearchIcon from "./icons/icon-search.svg";
 import CartIcon from "./icons/icon-cart.svg";
+import DeductIcon from "./icons/icon-deduct.svg";
+import AddIcon from "./icons/icon-add.svg";
+import XIcon from "./icons/icon-x.svg";
 
 export {
   Logo,
@@ -29,4 +32,7 @@ export {
   UserIcon,
   SearchIcon,
   CartIcon,
+  DeductIcon,
+  AddIcon,
+  XIcon,
 };

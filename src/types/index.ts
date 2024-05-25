@@ -60,3 +60,38 @@ export type FilterItemProps = {
   isChecked: boolean;
   handleChange: (checked: boolean) => void;
 };
+
+export type ProductItemDetailsProps = {
+  product: ProductProps;
+  activeColor: number;
+  handleColorChange: (index: number) => void;
+};
+
+export interface ProductItemSegmentsProps {
+  gender: ProductProps["gender"];
+  category: ProductProps["category"];
+  brand: ProductProps["brand"];
+  badge?: ProductProps["badge"];
+}
+
+export type ProductItemSizesProps = {
+  sizes: ProductProps["sizes"];
+  selectedSize: number | undefined;
+  setSelectedSize: (size: number) => void;
+};
+
+export type ProductItemColorsProps = {
+  colors: ProductProps["images"];
+  activeColor: number;
+  handleMouseEnter: (index: number) => void;
+};
+
+export type ProductItemDescriptionProps = { details: ProductProps["details"] };
+
+export interface ProductItemImageIndicProps {
+  layoutId: string;
+  imageUrl: string;
+  index: number;
+  activeColor: number;
+  handleMouseEnter: (index: number) => void;
+}
