@@ -162,7 +162,10 @@ const ProductItemDetails = (props: ProductItemDetailsProps) => {
         )}
 
         <div className="flex justify-between gap-4">
-          <h3 className="heading-base text-ellipsis truncate capitalize items-start">
+          <h3
+            title={product.name}
+            className="heading-base text-ellipsis truncate capitalize items-start"
+          >
             {product.name}
           </h3>
           <ProductPrice price={product.price} discount={product.discount} />

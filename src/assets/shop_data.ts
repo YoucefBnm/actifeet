@@ -4,6 +4,130 @@ import { v4 as uuidv4 } from "uuid";
 export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
+    gender: "men",
+    category: "cross training",
+    brand: "nike",
+    name: "varsity compete",
+    amazonLink: "https://www.amazon.com/Nike-Varsity-Compete-Training-Cj0813-002/dp/B07YKP1G88/ref=sr_1_532?dib=eyJ2IjoiMSJ9.fO5ZiEC7GU3cHTh3nOJFzxnoZ9HRkwfkRCopxZMQVxW-4HK-SLty5cY-FgmXzoOc-oOLkpCh6L1UgU_qEJNo0q95tCmrZ18DD9A5Hu8tPDxnbg7x2LZmJS0coRbQ5AXhautTXfacCXf8TTBE_8c_sw.4lYePMddqIba-dfsDjrxCQRgfg5x5u_QKzK-C38Ag4w&dib_tag=se&keywords=training+shoes&qid=1716685097&refinements=p_n_feature_eighteen_browse-bin%3A14630392011&refresh=1&rnid=14630382011&s=apparel&sr=1-532",
+    price: 129.99,
+    sizes: [7.5],
+    colors: ["black"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/51LXNJIksVL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51QE7SAmrSL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51Iw-YVqHVL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51YJI-F3QWL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/51YJI-F3QWL._AC_SY695_.jpg",
+        ]
+      }
+    ],
+    details: [
+      "Sole material Rubber",
+      "Closure type Lace-Up",
+    ]
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "men",
+    category: "running",
+    brand: "nike",
+    name: "free run 5",
+    amazonLink: "https://www.amazon.com/Nike-Training-Shoes-Racer-Black/dp/B07LBW3F81/ref=sr_1_551?dib=eyJ2IjoiMSJ9.W-gLjap1UCRjKyJzS10ziwFAFaNxcmjZkZoMkKTKXa0RxPyE7yJ7WPlAbpmZ8Lbbca0kW9dY2fKvsOJTCAyZHuvLcNt8NzQdi4MKFqfGdvMTX61nVia9WNfVQwPaxx_i33vUx6F476jqDNzEWs-g-4fMyAsFOjx1tVYC2XtHh77M8f-37N4izjftISc0QfEERvnTMYIGe9MGCyOe7nYzMGyzki1zKgWpfRHPaoU7HebBxvt0-ZCA2BcNKHYxNeSyTDxB1QcIpXthUkLuh9JJou2li5DaaLt2kURnQKImn6U.RcQFWLIwGpxFhBAEE1PPtrLRkuAdy5xg8xeumuHxbPo&dib_tag=se&keywords=training%2Bshoes&qid=1716685097&refinements=p_n_feature_eighteen_browse-bin%3A14630392011&refresh=1&rnid=14630382011&s=apparel&sr=1-551&th=1&psc=1",
+    price: 98.95,
+    sizes: [6.5,7.5,8,9,10,10.5],
+    colors: ["blue"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "blue",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/71BDbyvVWsL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/713txVY60fL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71YXj0OJL4L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/81RLx-nQAQL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/71NwGxgcuAL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/61jpe8WuC9L._AC_SY695_.jpg",
+        ]
+      }
+    ],
+    details: [
+      "Care instructions: Machine Wash",
+      "Sole material: Ethylene Vinyl Acetate",
+      "Outer material: Synthetic",
+      "Inner material: Textile",
+      "Lightweight performance",
+      "Comfortable",
+      "Practic",
+    ]
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "men",
+    category: "hiking",
+    brand: "inov",
+    name: "roadclaw 275 v2",
+    amazonLink:
+      "https://www.amazon.com/Inov8-Parkclaw-Trail-Running-Shoes/dp/B07DXGY6RL?ref_=ast_sto_dp&th=1&psc=1",
+    price: 150,
+    sizes: [15],
+    colors: ["black"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "black",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/81fBahyct5L._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/81z5ViiL0jL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/81ycIkzLxlL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/81QRVgvjTNL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/81NoNANetIL._AC_SY695_.jpg",
+          "https://m.media-amazon.com/images/I/8148yII3fFL._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Care instructions: Machine Wash",
+      "Sole material: Rubber",
+      "Outer material: Synthetic",
+      "Closure type: Lace-Up",
+      "Rubber sole",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "women",
+    category: "running",
+    brand: "nike",
+    name: "infinity rn 4",
+    amazonLink:
+      "https://www.amazon.com/Nike-Womens-Infinity-Running-Training/dp/B0CSXQK11F/ref=sr_1_58?dib=eyJ2IjoiMSJ9.YbdFdi4XFMrRhIXcmJdYx7GLBNYniemVPD7_37IqrdnJJfUYLafRMQ55MFvSqokRi-XwQH8UVQrMx-EYT8GnUDzN5B_uBnbHinpL2Jf05gSOw9vZLi5jdCzasGC4j3n4prQerS2zC-hUNACJtc5mhk-6OhS4s-tUYcM-SftEIgx2sdGBJPEJct0YvAWZwC7bbuZ3wpsCFp6DzhOkCPTsapST3Y15mXx-J9_CJlADG2_ypG7HgITrL2Idc99X6tNbWzUcC8RnteUKDbuV9lOept7zH3pI7jUPrTbJG2UP3zk.IknvowOQP1A1tz0u1AuKaDrDafZWPhGRuHvj7BcNnTE&dib_tag=se&keywords=training%2Bshoes&qid=1716684336&refinements=p_n_feature_eighteen_browse-bin%3A14630392011&refresh=1&rnid=14630382011&s=apparel&sr=1-58&th=1",
+    badge: "new",
+    price: 155,
+    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
+    colors: ["darkblue"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "darkblue",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/51HY0MhsyDL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/51n8oWaQlOL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/516Z14ctyKL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/51Ci1Q2P+8L._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/51zKzHJuAcL._AC_SX695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "This version of the Nike InfinityRN 4 still provides a plush and smooth ride, with the new ReactX foam delivering more support. The revamped Flyknit upper and wider toe box help your foot feel stable and secure.",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
     gender: "women",
     category: "hiking",
     brand: "inov",

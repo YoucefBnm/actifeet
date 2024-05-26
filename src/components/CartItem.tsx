@@ -7,7 +7,7 @@ import {
 } from "@/store/cart/cart.action";
 import { AddIcon, DeductIcon } from "@/assets";
 import { setPrice } from "@/utils/price.utils";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CartItemProps } from "@/store/cart/cart.types";
 
 const CartItemGroup = ({
@@ -18,9 +18,9 @@ const CartItemGroup = ({
   value: string;
 }) => {
   return (
-    <div className="flex gap-2 font-semibold text-sm capitalize">
-      <p className=" text-neutral-500">{segment}:</p>
-      <p>{value}</p>
+    <div className="flex gap-2  font-heading text-sm capitalize">
+      <p className=" w-16 text-neutral-500 ">{segment}:</p>
+      <p className=" text-ellipsis truncate">{value}</p>
     </div>
   );
 };
@@ -33,12 +33,12 @@ const CartItemUtils = ({ cartItem }: { cartItem: CartItemProps }) => {
   const removeItem = () => dispatch(removeCartItemStart(cartItems, cartItem));
 
   return (
-    <div className="flex flex-1 gap-4">
-      <div className="flex w-32 items-center justify-center gap-2">
+    <div className="flex flex-col gap-2 w-32">
+      <div className="flex items-center  justify-center gap-1">
         <button
           role="button"
           aria-label="deduct item quantity"
-          className="p-1 transition-opacity hover:opacity-75 rounded-full"
+          className="p-1 rounded-full transition-opacity hover:opacity-30"
           onClick={removeItem}
         >
           <img width={16} height={16} src={DeductIcon} aria-hidden="true" />
@@ -47,7 +47,7 @@ const CartItemUtils = ({ cartItem }: { cartItem: CartItemProps }) => {
         <button
           role="button"
           aria-label="increase item quantity"
-          className=" appearance-none p-1 transition-colors hover:bg-neutral-100 rounded-full"
+          className="p-1 transition-colors hover:bg-neutral-100 rounded-full"
           onClick={addItem}
         >
           <img width={16} height={16} src={AddIcon} aria-hidden="true" />
@@ -67,50 +67,50 @@ const CartItem = ({ cartItem }: { cartItem: CartItemProps }) => {
 
   const clearItem = () => dispatch(clearCartItemStart(cartItems, cartItem));
 
+  const navigate = useNavigate();
+  const navigateToProductPage = () => navigate(`/product/${cartItem.link}`);
+
   return (
-    <>
-      <div className="flex py-3 px-2 flex-col gap-4 relative w-full">
-        <div className="flex justify-between gap-x-4 w-full">
-          <Link
-            title="visit product page"
-            to={`/${cartItem.link}`}
-            className="relative py-4 px-2 flex items-center overflow-hidden justify-center w-32 aspect-square rounded-md"
-          >
+    <div className="flex py-3 px-2 flex-col relative w-full">
+      <div className="flex justify-between gap-x-4 w-full">
+        <div
+          onClick={navigateToProductPage}
+          className="block self-start cursor-pointer"
+          title="visit product page"
+        >
+          <div className="relative p-4 size-32 flex items-center overflow-hidden justify-center  aspect-square rounded-md">
             <img
               className=" align-middle object-contain max-w-full max-h-full"
               src={cartItem.mainImage}
               alt={cartItem.name}
             />
             <div className="absolute inset-0 bg-neutral-950 opacity-5 pointer-events-none" />
-          </Link>
-
-          <div className="flex-1 flex-items-start flex-col gap-2">
-            <div className="flex self-stretch justify-between gap-x-4 items-center">
-              <h4 className="font-semibold  capitalize">{cartItem.name}</h4>
-              <button
-                role="button"
-                aria-label="clear item from cart"
-                title="clear item"
-                className="w-4 h-4 flex bg-neutral-300 items-center justify-center text-xs appearance-none p-1 transition-colors hover:bg-neutral-500 rounded-full"
-                onClick={clearItem}
-              >
-                <span>&times;</span>
-              </button>
-            </div>
-
-            <div className="flex flex-col gap-1">
-              <CartItemGroup segment="gender" value={cartItem.gender} />
-              <CartItemGroup segment="category" value={cartItem.category} />
-              <CartItemGroup segment="brand" value={cartItem.brand} />
-              <CartItemGroup segment="size" value={cartItem.size} />
-              <CartItemGroup segment="color" value={cartItem.color} />
-            </div>
           </div>
         </div>
-
-        <CartItemUtils cartItem={cartItem} />
+        <div className="flex-1 flex-items-start justify-start flex-col gap-2">
+          <div className="flex relative justify-end gap-x-4 items-center">
+            <button
+              role="button"
+              aria-label="clear item from cart"
+              title="clear item"
+              className="size-4 flex bg-neutral-300 items-center justify-center text-xs  p-1 transition-colors hover:bg-neutral-500 rounded-full absolute right-0 top-0"
+              onClick={clearItem}
+            >
+              <span>&times;</span>
+            </button>
+          </div>
+          <div className="flex flex-col  gap-2">
+            <CartItemGroup segment="gender" value={cartItem.gender} />
+            <CartItemGroup segment="category" value={cartItem.category} />
+            <CartItemGroup segment="brand" value={cartItem.brand} />
+            <CartItemGroup segment="name" value={cartItem.name} />
+            <CartItemGroup segment="size" value={cartItem.size} />
+            <CartItemGroup segment="color" value={cartItem.color} />
+          </div>
+        </div>
       </div>
-    </>
+      <CartItemUtils cartItem={cartItem} />
+    </div>
   );
 };
 

@@ -26,6 +26,7 @@ import Spinner from "./Spinner";
 import ProductCard from "./ProductCard";
 import { Button } from "./ui/button";
 import { useWindowHeight } from "@react-hook/window-size/throttled";
+import { useNavigate } from "react-router-dom";
 
 interface SearchFieldProps {
   searchQuery: string;
@@ -62,7 +63,7 @@ const SearchSuggestions = ({
           role="button"
           onClick={() => {
             setSearchQuery(suggestion);
-            dispatch(searchProductsStart(suggestion, 3));
+            dispatch(searchProductsStart(suggestion, 4));
           }}
           key={suggestion}
           disabled={isLoading}
@@ -88,7 +89,9 @@ const SearchResults = ({ searchQuery }: { searchQuery: string }) => {
 
   const dispatch = useDispatch();
   const loadMore = () =>
-    dispatch(searchMoreProductsStart(searchQuery, 3, lastVisible));
+    dispatch(searchMoreProductsStart(searchQuery, 4, lastVisible));
+
+  const navigate = useNavigate();
 
   return (
     <div className="relative">
@@ -108,9 +111,15 @@ const SearchResults = ({ searchQuery }: { searchQuery: string }) => {
           {searchResults.length > 0 &&
             searchQuery !== "" &&
             searchResults.map((result) => (
-              <ProductCard key={result.id} product={result} />
+              <DrawerClose
+                key={result.id}
+                onClick={() => navigate(`/product/${result.id}`)}
+                className="block"
+              >
+                <ProductCard product={result} />
+              </DrawerClose>
             ))}
-          {!allLoaded && searchResults.length !== 0 && (
+          {!allLoaded && searchResults.length !== 0 && searchQuery !== "" && (
             <>
               <br />
               <Button
@@ -136,7 +145,7 @@ const NavSearch = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value.toLocaleLowerCase());
     if (e.target.value !== "") {
-      dispatch(searchProductsStart(searchQuery, 3));
+      dispatch(searchProductsStart(searchQuery, 4));
     }
   };
 
@@ -160,14 +169,13 @@ const NavSearch = () => {
         <div className="flex items-center h-16 px-6">
           <SearchField searchQuery={searchQuery} handleChange={handleChange} />
         </div>
+        <div className="px-6 mb-4">
+          <h4 className="font-heading mb-2 text-neutral-500">Search for</h4>
+          <SearchSuggestions setSearchQuery={setSearchQuery} />
+        </div>
 
-        <ScrollArea style={{ height: windowHeight - 64 }} className="w-full">
-          <div className="px-6 mb-4">
-            <h4 className="font-heading mb-2 text-neutral-500">Search for</h4>
-            <SearchSuggestions setSearchQuery={setSearchQuery} />
-          </div>
-
-          <div className="px-6 py-4">
+        <ScrollArea style={{ height: windowHeight - 220 }} className="w-full">
+          <div className="relative px-6 py-4">
             <SearchResults searchQuery={searchQuery} />
           </div>
         </ScrollArea>

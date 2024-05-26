@@ -22,27 +22,27 @@ const NavToggleBtn = () => {
   return (
     <div className="py-2 mx-2">
       <svg
-        width="26"
-        height="26"
-        viewBox="0 0 26 26"
+        width="22"
+        height="22"
+        viewBox="0 0 22 22"
         fill="none"
         // className=" bg-red-400"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M2 7H24"
+          d="M2 6H20"
           stroke="black"
           strokeWidth="2.4"
           strokeLinecap="round"
         />
         <path
-          d="M2 14H24"
+          d="M2 13H20"
           stroke="black"
           strokeWidth="2.4"
           strokeLinecap="round"
         />
         <path
-          d="M2 21H24"
+          d="M2 20H20"
           stroke="black"
           strokeWidth="2.4"
           strokeLinecap="round"

@@ -21,6 +21,7 @@ import {
   clearItemFromCart,
   removeItemFromCart,
 } from "@/utils/cart.utils";
+import { toast } from "sonner";
 
 function* addCartItemAsync({
   payload: { cartItems, itemToAdd, selectedColor, selectedSize },
@@ -35,10 +36,10 @@ function* addCartItemAsync({
     });
 
     yield put(setCartItemsSuccess(newCartItems));
-    // toast.success('Item Added to cart.')
+    toast.success("Item Added to cart.");
   } catch (error) {
     yield put(setCartItemsFailed(error as Error));
-    // toast.error('Select size to add item to cart.')
+    toast.error("Select size to add item to cart.");
   }
 }
 
@@ -50,10 +51,10 @@ function* increaseItemQtyAsync({
     const newCartItems = yield* call(addCartItem, { cartItems, itemTarget });
 
     yield put(addCartItemSuccess(newCartItems as CartItemProps[]));
-    // toast.success('Item added to cart.')
+    toast.success("Item added to cart.");
   } catch (error) {
     yield put(setCartItemsFailed(error as Error));
-    // toast.error('Could not add item to cart')
+    toast.error("Could not add item to cart");
   }
 }
 
@@ -67,10 +68,10 @@ function* removeCartItemAsync({
       itemTarget,
     });
     yield put(removeCartItemSuccess(newCartItems as CartItemProps[]));
-    // toast.info('Item removed from cart.')
+    toast.info("Item removed from cart.");
   } catch (error) {
     yield put(setCartItemsFailed(error as Error));
-    // toast.error('Could not remove item from cart')
+    toast.error("Could not remove item from cart");
   }
 }
 
@@ -84,10 +85,10 @@ function* clearCartItemAsync({
       itemTarget,
     });
     yield put(clearCartItemSuccess(newCartItems as CartItemProps[]));
-    // toast.info('Item Cleared from cart.')
+    toast.info("Item Cleared from cart.");
   } catch (error) {
     yield put(setCartItemsFailed(error as Error));
-    // toast.error('Could not clear item from cart')
+    toast.error("Could not clear item from cart");
   }
 }
 

@@ -6,6 +6,7 @@ import { ProductProps } from "@/types";
 import { motion, useInView } from "framer-motion";
 import { memo, useRef } from "react";
 import { fadeVariants } from "@/libs/motion/motion.variants";
+import { Link } from "react-router-dom";
 
 const CellSkelton = () => {
   return (
@@ -42,7 +43,6 @@ const GridCell = memo(function GridCell({
     <motion.div variants={fadeVariants("opacity")}>
       {isFetching || !isInView ? (
         <motion.div
-          variants={fadeVariants("opacity")}
           initial={"visible"}
           animate={
             !isInView || isFetching
@@ -50,18 +50,24 @@ const GridCell = memo(function GridCell({
               : { opacity: 0, display: "none" }
           }
         >
-          <div className="mt-auto" ref={targetRef} />
           <CellSkelton />
         </motion.div>
       ) : (
         <motion.div
-          variants={fadeVariants("opacity")}
           initial={"hidden"}
           animate={isInView ? "visible" : "hidden"}
         >
-          <ProductCard product={product} />
+          <Link
+            aria-label={`visit ${product.name} page`}
+            title={`visit ${product.name} page`}
+            to={`/product/${product.id}`}
+            className="block"
+          >
+            <ProductCard product={product} />
+          </Link>
         </motion.div>
       )}
+      <div className="mt-auto " ref={targetRef} />
     </motion.div>
   );
 });

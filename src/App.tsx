@@ -3,10 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import NavDesktop from "./sections/NavDesktop";
 import { useWindowWidth } from "@react-hook/window-size/throttled";
 import NavMobile from "./sections/NavMobile";
+import { useScrollToTop } from "./hooks/useScrollToTop";
 
 const Home = lazy(() => import("@routes/Home"));
 const Shop = lazy(() => import("@routes/Shop"));
 const Product = lazy(() => import("@routes/Product"));
+const Checkout = lazy(() => import("@routes/Checkout"));
 
 const MainNav = () => {
   const windowWidth = useWindowWidth();
@@ -15,6 +17,7 @@ const MainNav = () => {
 };
 
 function App() {
+  useScrollToTop();
   return (
     <>
       <Routes>
@@ -25,6 +28,7 @@ function App() {
             element={<Shop />}
           />
           <Route path="/product/:productId" element={<Product />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </>

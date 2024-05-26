@@ -54,7 +54,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
   return (
     <section
       ref={targetRef}
-      className="section-container grid-rows-[min-content_1fr] px-default py-12 min-h-svh place-content-center"
+      className="section-container grid-rows-[min-content_1fr] px-default py-12 place-content-center"
     >
       <AnimatedText
         text={title}
@@ -81,7 +81,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
         {isInView ? (
           <Suspense
             fallback={
-              <div className="size-full flex items-center justify-center">
+              <div className="w-full h-[366px] flex items-start justify-center">
                 <Spinner />
               </div>
             }
@@ -93,13 +93,20 @@ const ProductsCarousel = memo(function ProductsCarousel({
                     key={product.id}
                     className="basis-1/2 md:basis-1/3 xl:basis-1/4"
                   >
-                    <ProductCard product={product} />
+                    <Link
+                      title={`visit ${product.name} page`}
+                      aria-label={`navigate to ${product.name} page`}
+                      className="block"
+                      to={`/product/${product.id}`}
+                    >
+                      <ProductCard product={product} />
+                    </Link>
                   </CarouselItem>
                 ))}
             </CarouselContent>
           </Suspense>
         ) : (
-          <div className="size-full flex items-center justify-center">
+          <div className="w-full h-[366px] flex items-start justify-center">
             <Spinner />
           </div>
         )}

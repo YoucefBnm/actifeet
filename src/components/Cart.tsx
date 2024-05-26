@@ -3,6 +3,7 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
+  DrawerFooter,
   DrawerHeader,
   DrawerTrigger,
 } from "./ui/drawer";
@@ -15,6 +16,14 @@ import {
 } from "@/store/cart/cart.selector";
 import { ScrollArea } from "./ui/scroll-area";
 import { useWindowHeight } from "@react-hook/window-size/throttled";
+import { CartItemProps } from "@/store/cart/cart.types";
+import CartItem from "./CartItem";
+import Spinner from "./Spinner";
+import { formatPrice } from "@/utils/price.utils";
+import { Button } from "./ui/button";
+import { useNavigate } from "react-router-dom";
+import { selectCurrentUser } from "@/store/user/user.selector";
+import { Separator } from "./ui/separator";
 
 const CartContainer = () => {
   const cartItems = useSelector(selectCartItems);
@@ -23,36 +32,123 @@ const CartContainer = () => {
   const isLoading = useSelector(selectLoading);
   const windowHeight = useWindowHeight();
 
+  const navigate = useNavigate();
+  const navigateToCheckout = () => navigate("/checkout");
+
   return (
-    // classname
-    <DrawerContent>
-      {/* className */}
-      <DrawerHeader className=" h-16 flex px-6 items-center justify-between">
-        <DrawerClose>
+    <DrawerContent className="px-4 ">
+      <DrawerHeader className="border-b border-neutral-300 h-16 flex items-center">
+        <DrawerClose className="  w-full flex items-center justify-between">
+          <span className="font-heading text-neutral-500">
+            Your Cart: <span className=" text-black">{cartCount}</span>
+            &nbsp;item(s)
+          </span>
           <span className="text-2xl">&times;</span>
-          <span className="font-heading">Your Cart: {cartCount}</span>
         </DrawerClose>
       </DrawerHeader>
+
+      <ScrollArea
+        style={{ height: windowHeight - 185 }}
+        className=" pr-2  relative w-full"
+      >
+        {cartItems.map((cartItem: CartItemProps) => {
+          return <CartItem key={cartItem.id} cartItem={cartItem} />;
+        })}
+        {isLoading && (
+          <div className="bg-black bg-opacity-10 flex justify-center items-center absolute inset-0 size-full">
+            <Spinner />
+          </div>
+        )}
+      </ScrollArea>
+
+      <DrawerFooter className="sticky bottom-0  bg-white border-t border-t-neutral-200">
+        <div className="flex flex-col  w-full gap-4">
+          <div className="flex w-full items-center">
+            <h4 className="flex-1  text-neutral-500">Total</h4>
+            <h4 className=" text-xl">${formatPrice(cartTotal)}</h4>
+          </div>
+
+          <DrawerClose onClick={navigateToCheckout} className="block">
+            <Button
+              size={"lg"}
+              className="w-full font-heading text-sm capitalize"
+            >
+              Go to Checkout
+            </Button>
+          </DrawerClose>
+        </div>
+      </DrawerFooter>
     </DrawerContent>
   );
 };
 
+const CartEmpty = () => {
+  const currentUser = useSelector(selectCurrentUser);
+
+  const navigate = useNavigate();
+  const navigateToMenShop = () => navigate("/shop/men");
+  const navigateToWomenShop = () => navigate("/shop/women");
+  const navigateToLoginPage = () => navigate("/auth/login");
+
+  return (
+    <DrawerContent>
+      <DrawerHeader className="relative  text-left pl-8">
+        <DrawerClose className="absolute right-4">
+          <span className=" text-neutral-500 text-2xl">&times;</span>
+        </DrawerClose>
+        <h4 className="font-heading">Your cart is Empty</h4>
+        <p className="text-xs text-neutral-500">
+          Explore our collections through our various shops tailored for you and
+          all your activities.
+        </p>
+      </DrawerHeader>
+
+      <Separator />
+      <div className="flex flex-wrap gap-2 w-full mt-8 px-4">
+        <DrawerClose onClick={navigateToMenShop} className="block">
+          <Button variant={"ghost"} className="text-sm font-heading">
+            Shop Men
+          </Button>
+        </DrawerClose>
+
+        <DrawerClose onClick={navigateToWomenShop} className="block">
+          <Button
+            onClick={navigateToWomenShop}
+            variant={"ghost"}
+            className="text-sm font-heading"
+          >
+            Shop Women
+          </Button>
+        </DrawerClose>
+        {!currentUser && (
+          <DrawerClose onClick={navigateToLoginPage} className="block ">
+            <Button variant={"default"} className="text-sm font-heading">
+              Login
+            </Button>
+          </DrawerClose>
+        )}
+      </div>
+    </DrawerContent>
+  );
+};
 const Cart = () => {
   const cartItemsCount = useSelector(selectCartCount);
 
   return (
-    <Drawer>
+    <Drawer direction="right">
       <div className="relative cursor-pointer py-2 mx-2  flex items-center">
         <DrawerTrigger className="">
           <img width={24} height={24} aria-hidden src={CartIcon} />
         </DrawerTrigger>
 
         {cartItemsCount > 0 && (
-          <div className=" mt-0.5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute pointer-events-none tracking-tighter flex justify-center items-center size-4 rounded-full text-[8px] text-black text-center">
+          <div className=" bg-black text-white absolute -right-1 -top-px -z-0 bg-opacity-80    pointer-events-none tracking-tighter flex justify-center items-center size-4 rounded-full text-[8px]  text-center">
             {cartItemsCount > 10 ? "+10" : cartItemsCount}
           </div>
         )}
       </div>
+
+      {cartItemsCount > 0 ? <CartContainer /> : <CartEmpty />}
     </Drawer>
   );
 };

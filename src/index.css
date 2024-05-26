@@ -108,9 +108,21 @@ input {
 }
 
 .header {
-  @apply bg-white px-default flex items-center sticky z-50 inset-0 w-screen h-16 justify-between border-b border-neutral-50
+  @apply bg-white px-default flex items-center sticky z-50 inset-0 w-screen h-16 justify-between border-b border-neutral-100
 }
 
 .indic-size {
   @apply w-12 h-9 xl:w-16 xl:h-12
+}
+
+.section-col-xl {
+  @apply col-span-12 md:col-span-6 row-start-1 col-start-1
+}
+
+.section-col-md {
+  @apply col-span-12 row-start-2 md:col-span-5 md:col-start-8 md:row-start-1
+}
+
+.flex-center {
+  @apply flex justify-center items-center
 }

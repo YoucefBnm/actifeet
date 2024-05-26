@@ -16,6 +16,7 @@ import CartIcon from "./icons/icon-cart.svg";
 import DeductIcon from "./icons/icon-deduct.svg";
 import AddIcon from "./icons/icon-add.svg";
 import XIcon from "./icons/icon-x.svg";
+import FilterIcon from "./icons/icon-filter.svg";
 
 export {
   Logo,
@@ -35,4 +36,5 @@ export {
   DeductIcon,
   AddIcon,
   XIcon,
+  FilterIcon,
 };

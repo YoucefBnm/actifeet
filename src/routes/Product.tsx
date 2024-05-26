@@ -11,13 +11,13 @@ const Product = () => {
   return (
     <main>
       {product ? (
-        <div className="section-container px-default py-12">
-          <div className=" col-span-12 md:col-span-6 row-start-1 col-start-1 ">
+        <div className="section-container grid-rows-[max-content_max-content] md:grid-rows-1 px-default py-12">
+          <div className="section-col-xl">
             <ProductItemGallery
               productImages={product.images[activeColor].imagesUrls}
             />
           </div>
-          <div className="col-span-12 row-start-2 md:col-span-5 md:col-start-8 md:row-start-1">
+          <div className="section-col-md">
             <ProductItemDetails
               product={product}
               activeColor={activeColor}
@@ -26,7 +26,7 @@ const Product = () => {
           </div>
         </div>
       ) : (
-        <div className="w-screen h-svh flex items-center justify-center">
+        <div className="w-screen h-svh flex-center">
           <Spinner />
         </div>
       )}

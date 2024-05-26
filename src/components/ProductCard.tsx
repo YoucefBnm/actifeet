@@ -9,7 +9,6 @@ import {
 } from "@/types";
 import { AnimatePresence, motion } from "framer-motion";
 import { memo } from "react";
-import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { Badge } from "./ui/badge";
 import ProductPrice from "./ProductPrice";
@@ -40,7 +39,12 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
               <motion.div
                 key={0}
                 variants={clipPathVariants}
-                animate={activeImage === 0 ? "visible" : "hidden"}
+                animate={
+                  activeImage === 0 &&
+                  productImage.id === productImages[activeColor].id
+                    ? "visible"
+                    : "hidden"
+                }
                 transition={{ ease: easeTransition, duration: 0.5 }}
                 className="absolute inset-0 size-full bg-white pointer-events-none"
                 exit="hidden"
@@ -57,7 +61,12 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
               <motion.div
                 key={1}
                 variants={clipPathVariants}
-                animate={activeImage === 1 ? "visible" : "hidden"}
+                animate={
+                  activeImage === 1 &&
+                  productImage.id === productImages[activeColor].id
+                    ? "visible"
+                    : "hidden"
+                }
                 transition={{ ease: easeTransition, duration: 0.5 }}
                 className="absolute inset-0 size-full bg-white pointer-events-none"
                 exit="hidden"
@@ -100,7 +109,7 @@ const ProductCardColors = memo(function ProductCardColors(
             <motion.div
               layoutId={productId}
               className="border-[1.5px] border-black rounded-full w-5 h-5 absolute -top-1 -left-1"
-              transition={{ type: "spring", stiffness: 500, damping: 50 }}
+              // transition={{ type: "spring", stiffness: 500, damping: 50 }}
             />
           )}
         </button>
@@ -109,14 +118,16 @@ const ProductCardColors = memo(function ProductCardColors(
   );
 });
 
-const ProductCardDetails = memo(function ProductCardDetails({
-  productName,
-  productGender,
-  productCategory,
-  productBrand,
-}: ProductDetailsProps) {
+const ProductCardDetails = memo(function ProductCardDetails(
+  props: ProductDetailsProps
+) {
+  const { productName, productGender, productCategory, productBrand } = props;
+
   return (
-    <div className="flex flex-col px-4 gap-2 max-w-full">
+    <div
+      className="flex flex-col px-4 gap-2 max-w-full"
+      aria-label={`navigate to ${productName} page`}
+    >
       <h4
         className="font-heading text-sm uppercase text-ellipsis truncate"
         title={productName}
@@ -138,10 +149,8 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
     useSetActiveProduct();
 
   return (
-    <Link
-      aria-label={`navigate to ${product.name} page`}
+    <div
       title={product.name}
-      to={`/product/${product.id}`}
       className="flex  flex-col relative "
       id={product.id}
     >
@@ -181,7 +190,7 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
       />
 
       <ProductPrice price={product.price} discount={product.discount} />
-    </Link>
+    </div>
   );
 });
 
