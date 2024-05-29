@@ -7,8 +7,9 @@ import {
 } from "@/store/cart/cart.action";
 import { AddIcon, DeductIcon } from "@/assets";
 import { setPrice } from "@/utils/price.utils";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CartItemProps } from "@/store/cart/cart.types";
+import { Badge } from "./ui/badge";
 
 const CartItemGroup = ({
   segment,
@@ -18,9 +19,12 @@ const CartItemGroup = ({
   value: string;
 }) => {
   return (
-    <div className="flex gap-2  font-heading text-sm capitalize">
-      <p className=" w-16 text-neutral-500 ">{segment}:</p>
-      <p className=" text-ellipsis truncate">{value}</p>
+    <div
+      title={value}
+      className="flex gap-2 w-full  font-heading text-sm capitalize"
+    >
+      <p className="  text-neutral-500 ">{segment}:</p>
+      <p className="  text-ellipsis truncate">{value}</p>
     </div>
   );
 };
@@ -53,11 +57,6 @@ const CartItemUtils = ({ cartItem }: { cartItem: CartItemProps }) => {
           <img width={16} height={16} src={AddIcon} aria-hidden="true" />
         </button>
       </div>
-
-      <CartItemGroup
-        segment="Total"
-        value={`$${setPrice(+cartItem.price * cartItem.quantity, null)}`}
-      />
     </div>
   );
 };
@@ -67,39 +66,33 @@ const CartItem = ({ cartItem }: { cartItem: CartItemProps }) => {
 
   const clearItem = () => dispatch(clearCartItemStart(cartItems, cartItem));
 
-  const navigate = useNavigate();
-  const navigateToProductPage = () => navigate(`/product/${cartItem.link}`);
-
   return (
-    <div className="flex py-3 px-2 flex-col relative w-full">
-      <div className="flex justify-between gap-x-4 w-full">
-        <div
-          onClick={navigateToProductPage}
-          className="block self-start cursor-pointer"
-          title="visit product page"
+    <div className="flex w-full py-4 px-2 flex-col relative">
+      <div className="grid grid-cols-10 grid-rows-[min-content_min-content]">
+        <Link
+          to={`/product/${cartItem.link}`}
+          title={cartItem.name}
+          aria-label={`navigate to ${cartItem.name} page`}
+          className="row-start-1 row-span-1 col-span-5 relative px-4 py-8 flex-center overflow-hidden"
         >
-          <div className="relative p-4 size-32 flex items-center overflow-hidden justify-center  aspect-square rounded-md">
-            <img
-              className=" align-middle object-contain max-w-full max-h-full"
-              src={cartItem.mainImage}
-              alt={cartItem.name}
-            />
-            <div className="absolute inset-0 bg-neutral-950 opacity-5 pointer-events-none" />
-          </div>
-        </div>
-        <div className="flex-1 flex-items-start justify-start flex-col gap-2">
-          <div className="flex relative justify-end gap-x-4 items-center">
-            <button
-              role="button"
-              aria-label="clear item from cart"
-              title="clear item"
-              className="size-4 flex bg-neutral-300 items-center justify-center text-xs  p-1 transition-colors hover:bg-neutral-500 rounded-full absolute right-0 top-0"
-              onClick={clearItem}
-            >
-              <span>&times;</span>
-            </button>
-          </div>
-          <div className="flex flex-col  gap-2">
+          <img
+            className=" object-contain  bottom-4 max-h-[65%] mt-auto max-w-[70%] pointer-events-none"
+            src={cartItem.mainImage}
+            alt={cartItem.name}
+          />
+          <button
+            role="button"
+            aria-label="clear item from cart"
+            title="clear item"
+            className=" absolute right-2 top-2 size-4 flex bg-neutral-200 items-center justify-center text-xs p-1 transition-colors hover:bg-neutral-500 rounded-full"
+            onClick={clearItem}
+          >
+            <span>&times;</span>
+          </button>
+          <div className="absolute inset-0 bg-neutral-950 opacity-5 pointer-events-none" />
+        </Link>
+        <div className="overflow-hidden row-start-1 col-span-4 col-start-7 flex items-start justify-start flex-col gap-2  ">
+          <div className="flex  flex-col  gap-2">
             <CartItemGroup segment="gender" value={cartItem.gender} />
             <CartItemGroup segment="category" value={cartItem.category} />
             <CartItemGroup segment="brand" value={cartItem.brand} />
@@ -108,8 +101,19 @@ const CartItem = ({ cartItem }: { cartItem: CartItemProps }) => {
             <CartItemGroup segment="color" value={cartItem.color} />
           </div>
         </div>
+        <div className="col-span-4 row-start-2 col-start-7 my-4 ">
+          <Badge>
+            <CartItemGroup
+              segment="Total"
+              value={`$${setPrice(+cartItem.price * cartItem.quantity, null)}`}
+            />
+          </Badge>
+        </div>
+
+        <div className="my-4 col-span-5 flex-center row-start-2 col-start-1">
+          <CartItemUtils cartItem={cartItem} />
+        </div>
       </div>
-      <CartItemUtils cartItem={cartItem} />
     </div>
   );
 };

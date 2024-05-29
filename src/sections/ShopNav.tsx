@@ -65,9 +65,7 @@ const FilterGroup = memo(function FilterGroup(props: FilterItemProps) {
   const isFetching = useSelector(selectIsFetching);
 
   return (
-    <div
-      className={`flex py-1 justify-center items-center relative group-${type}`}
-    >
+    <div className={`filter-group group-${type}`}>
       <Checkbox
         id={label}
         checked={isChecked}
@@ -84,7 +82,7 @@ const FilterGroup = memo(function FilterGroup(props: FilterItemProps) {
         }
       />
       <Label
-        className={`z-10 capitalize font-heading ${
+        className={`z-10 capitalize  font-normal ${
           isChecked ? "text-black" : "text-neutral-500"
         }`}
         htmlFor={label}

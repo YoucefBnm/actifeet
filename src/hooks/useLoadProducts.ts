@@ -28,7 +28,7 @@ export function useLoadProducts() {
 
   const loadProducts = () =>
     dispatch(
-      loadMoreStart(params, getSortParam, 15, checkedFilters, lastVisible)
+      loadMoreStart(params, getSortParam, 12, checkedFilters, lastVisible)
     );
 
   useEffect(() => {

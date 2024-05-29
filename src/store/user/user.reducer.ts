@@ -6,6 +6,7 @@ import {
   signInSuccess,
   signOutStart,
   signOutSuccess,
+  signUpStart,
   signUpSuccess,
 } from "./user.action";
 import { UserState } from "./user.types";
@@ -20,6 +21,7 @@ export const userReducer = (state = INITIAL_STATE, action: UnknownAction) => {
   if (
     emailSignInStart.match(action) ||
     signUpSuccess.match(action) ||
+    signUpStart.match(action) ||
     googleSignInStart.match(action) ||
     signOutStart.match(action)
   ) {
@@ -50,7 +52,7 @@ export const userReducer = (state = INITIAL_STATE, action: UnknownAction) => {
       ...state,
       loading: false,
       currentUser: null,
-      error: action.payload.message,
+      error: action.payload.code,
     };
   }
 

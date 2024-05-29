@@ -8,14 +8,18 @@ import { Outlet } from "react-router-dom";
 const NavDesktop = () => {
   return (
     <>
-      <header className="header">
-        <NavLogo />
+      <header className="header header-desktop">
+        <div className="header-desktop-logo">
+          <NavLogo />
+        </div>
 
-        <div className="flex flex-1 justify-center items-center">
+        <div className="flex-center flex-1 header-desktop-links ">
           <NavLinks />
         </div>
 
-        <NavUtils />
+        <div className="header-desktop-utils">
+          <NavUtils />
+        </div>
       </header>
 
       <Suspense

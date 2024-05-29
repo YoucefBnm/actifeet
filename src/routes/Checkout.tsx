@@ -19,9 +19,11 @@ const Checkout = () => {
   return (
     <main>
       <section className="py-12 px-default">
-        <div className=" flex flex-col gap-4 items-start">
-          <h2 className="heading-md text-neutral-500">Shopping cart</h2>
-          <span className="heading-base align-middle">{cartCount} Items</span>
+        <div>
+          <h2 className="heading-md mb-6">Shopping cart</h2>
+          <span className="text-neutral-500 heading-base align-middle">
+            {cartCount} Item(s)
+          </span>
         </div>
         <Separator className="my-4" />
 

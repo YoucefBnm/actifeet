@@ -86,7 +86,7 @@ const CategoryWrap = memo(function CategoryWrap({
           >
             <Button
               onClick={navigateToPage}
-              className="btn"
+              className="btn-text"
               size={"lg"}
               variant={"default"}
             >

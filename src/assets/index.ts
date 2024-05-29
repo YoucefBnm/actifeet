@@ -17,6 +17,7 @@ import DeductIcon from "./icons/icon-deduct.svg";
 import AddIcon from "./icons/icon-add.svg";
 import XIcon from "./icons/icon-x.svg";
 import FilterIcon from "./icons/icon-filter.svg";
+import LogoutIcon from "./icons/logout.svg";
 
 export {
   Logo,
@@ -37,4 +38,5 @@ export {
   AddIcon,
   XIcon,
   FilterIcon,
+  LogoutIcon,
 };

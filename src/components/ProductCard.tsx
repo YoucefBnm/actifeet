@@ -39,12 +39,6 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
               <motion.div
                 key={0}
                 variants={clipPathVariants}
-                animate={
-                  activeImage === 0 &&
-                  productImage.id === productImages[activeColor].id
-                    ? "visible"
-                    : "hidden"
-                }
                 transition={{ ease: easeTransition, duration: 0.5 }}
                 className="absolute inset-0 size-full bg-white pointer-events-none"
                 exit="hidden"
@@ -54,7 +48,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                   height={320}
                   loading="lazy"
                   alt="sport shoes"
-                  className="object-contain absolute bottom-4 max-h-[65%] mt-auto max-w-[70%] left-1/2 -translate-x-1/2 pointer-events-none"
+                  className="card-image"
                   src={productImage.imagesUrls[0]}
                 />
               </motion.div>
@@ -77,7 +71,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                   key={1}
                   loading="lazy"
                   alt="sport shoes"
-                  className="object-contain absolute bottom-4 max-h-[70%] mt-auto max-w-[75%] left-1/2 -translate-x-1/2 pointer-events-none"
+                  className="card-image"
                   src={productImage.imagesUrls[1]}
                 />
               </motion.div>
@@ -98,7 +92,7 @@ const ProductCardColors = memo(function ProductCardColors(
     <div className="flex gap-2 px-4 my-4">
       {productColors.map((productColor, index) => (
         <button
-          key={uuidv4()}
+          key={productColor}
           role="button"
           aria-label="show product color"
           className=" appearance-none rounded-full w-3.5 h-3.5 border border-neutral-200 relative"
@@ -109,7 +103,7 @@ const ProductCardColors = memo(function ProductCardColors(
             <motion.div
               layoutId={productId}
               className="border-[1.5px] border-black rounded-full w-5 h-5 absolute -top-1 -left-1"
-              // transition={{ type: "spring", stiffness: 500, damping: 50 }}
+              transition={{ type: "spring", stiffness: 500, damping: 50 }}
             />
           )}
         </button>
@@ -121,13 +115,29 @@ const ProductCardColors = memo(function ProductCardColors(
 const ProductCardDetails = memo(function ProductCardDetails(
   props: ProductDetailsProps
 ) {
-  const { productName, productGender, productCategory, productBrand } = props;
+  const {
+    productBadge,
+    productName,
+    productGender,
+    productCategory,
+    productBrand,
+  } = props;
 
   return (
     <div
       className="flex flex-col px-4 gap-2 max-w-full"
       aria-label={`navigate to ${productName} page`}
     >
+      <div className="flex items-center h-5 ">
+        {productBadge && (
+          <Badge
+            className="rounded-none py-px text-xs font-heading font-normal border-none"
+            variant={"default"}
+          >
+            {productBadge}
+          </Badge>
+        )}
+      </div>
       <h4
         className="font-heading text-sm uppercase text-ellipsis truncate"
         title={productName}
@@ -152,20 +162,10 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
     <div
       title={product.name}
       className="flex  flex-col relative "
-      id={product.id}
+      // id={product.id}
     >
-      <div className="overflow-hidden bg-white h-56 w-full relative flex flex-col items-start justify-between gap-8">
+      <div className="overflow-hidden bg-white h-52 w-full relative flex flex-col items-start justify-between gap-8">
         <div className=" size-full bg-neutral-500 z-10 bg-opacity-5 absolute inset-0 pointer-events-none" />
-        <div className="flex items-start h-5">
-          {product.badge && (
-            <Badge
-              className="rounded-none py-px text-xs font-heading font-normal border-none"
-              variant={"default"}
-            >
-              {product.badge}
-            </Badge>
-          )}
-        </div>
 
         <ProductCardImages
           productImages={product.images}
@@ -184,6 +184,7 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
 
       <ProductCardDetails
         productName={product.name}
+        productBadge={product.badge}
         productGender={product.gender}
         productCategory={product.category}
         productBrand={product.brand}

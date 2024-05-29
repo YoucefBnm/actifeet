@@ -14,7 +14,7 @@ export function useFetchShopProducts() {
   const checkedFilters = getCheckedFilters();
   const dispatch = useDispatch();
   const fetchProducts = () =>
-    dispatch(fetchProductsStart(params, getSortParam, 15, checkedFilters));
+    dispatch(fetchProductsStart(params, getSortParam, 12, checkedFilters));
 
   useEffect(() => {
     fetchProducts();

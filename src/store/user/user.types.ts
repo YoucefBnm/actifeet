@@ -1,7 +1,7 @@
 import { ActionWithPayload } from "@/utils/reducer.utils";
 import { Action } from "redux";
 
-import { User } from "firebase/auth";
+import { AuthError, User } from "firebase/auth";
 import { AdditionalInfo, UserData } from "@/firebase/types";
 
 export enum USER_ACTION_TYPES {
@@ -54,7 +54,7 @@ export type SignOutStart = Action<USER_ACTION_TYPES.SIGN_OUT_START>;
 export type SignOutSuccess = Action<USER_ACTION_TYPES.SIGN_OUT_SUCCESS>;
 export type AuthFailed = ActionWithPayload<
   USER_ACTION_TYPES.AUTH_FAILED,
-  Error
+  AuthError
 >;
 
 export type UserState = {

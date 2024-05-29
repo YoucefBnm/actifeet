@@ -1,5 +1,8 @@
 import { Params } from "react-router";
-
+import { UserData } from "@/firebase/types";
+import { Control, FieldPath } from "react-hook-form";
+import { z } from "zod";
+import { authFormSchema } from "@/utils/authFormSchema.utils";
 export interface ProductProps {
   id: string;
   gender: "men" | "women";
@@ -37,6 +40,7 @@ export interface ProductColorsProps {
 }
 
 export interface ProductDetailsProps {
+  productBadge?: ProductProps["badge"];
   productName: ProductProps["name"];
   productGender: ProductProps["gender"];
   productCategory: ProductProps["category"];
@@ -94,4 +98,15 @@ export interface ProductItemImageIndicProps {
   index: number;
   activeColor: number;
   handleMouseEnter: (index: number) => void;
+}
+export interface UserAvatarProps {
+  currentUser: UserData;
+}
+
+const formSchema = authFormSchema("signup");
+export interface AuthInputProps {
+  control: Control<z.infer<typeof formSchema>>;
+  name: FieldPath<z.infer<typeof formSchema>>;
+  label: string;
+  placeholder: string;
 }

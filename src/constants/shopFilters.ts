@@ -1619,7 +1619,7 @@ export const SHOP_FILTERS: SHOPFILTERSTYPE = {
       "11.5",
       "12",
     ],
-    colors: ["black", "blue", "red"],
+    colors: ["black", "blue", "red", "white"],
   },
   mensalomon: {
     gender: ["men"],
@@ -2518,7 +2518,7 @@ export const SHOP_FILTERS: SHOPFILTERSTYPE = {
       "10",
       "11.5",
     ],
-    colors: ["blue", "green", "teal"],
+    colors: ["blue", "green", "lightblue", "teal"],
   },
   "womenunder armour": {
     gender: ["women"],
@@ -3095,7 +3095,7 @@ export const SHOP_FILTERS: SHOPFILTERSTYPE = {
       "10",
       "11.5",
     ],
-    colors: ["blue", "green", "teal"],
+    colors: ["blue", "green", "lightblue", "teal"],
   },
   "under armour": {
     gender: ["men", "women"],

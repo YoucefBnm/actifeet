@@ -36,7 +36,7 @@ const CartContainer = () => {
   const navigateToCheckout = () => navigate("/checkout");
 
   return (
-    <DrawerContent className="px-4 ">
+    <DrawerContent className="px-4">
       <DrawerHeader className="border-b border-neutral-300 h-16 flex items-center">
         <DrawerClose className="  w-full flex items-center justify-between">
           <span className="font-heading text-neutral-500">

@@ -15,7 +15,7 @@ import {
   USER_ACTION_TYPES,
 } from "./user.types";
 import { AdditionalInfo, UserData } from "@/firebase/types";
-import { User } from "firebase/auth";
+import { AuthError, User } from "firebase/auth";
 
 export const checkUserSession = withMatcher(
   (): CheckUserSession => createAction(USER_ACTION_TYPES.CHECK_USER_SESSION)
@@ -31,6 +31,7 @@ export const emailSignInStart = withMatcher(
   (email: string, password: string): EmailSignInStart =>
     createAction(USER_ACTION_TYPES.EMAIL_SIGN_IN_START, { email, password })
 );
+
 export const signInSuccess = withMatcher(
   (user: UserData & { id: string }): SignInSuccess =>
     createAction(USER_ACTION_TYPES.SIGN_IN_SUCCESS, user)
@@ -63,6 +64,6 @@ export const signOutSuccess = withMatcher(
 );
 
 export const authFailed = withMatcher(
-  (error: Error): AuthFailed =>
+  (error: AuthError): AuthFailed =>
     createAction(USER_ACTION_TYPES.AUTH_FAILED, error)
 );

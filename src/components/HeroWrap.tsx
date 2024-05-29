@@ -89,7 +89,7 @@ const HeroWrap = memo(function HeroWrap({
           <Button
             variant={"secondary"}
             size={"lg"}
-            className="btn"
+            className="btn-text bg-white"
             onClick={navigateToShopPage}
           >
             Shop

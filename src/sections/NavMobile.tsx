@@ -86,7 +86,7 @@ const NavDrawer = memo(function NavDrawer({ title, submenu }: NavDrawerProps) {
 const NavMobile = () => {
   return (
     <>
-      <header className="header">
+      <header className="header header-mobile">
         <NavLogo />
         <div className="flex items-center">
           <Drawer direction="right">
