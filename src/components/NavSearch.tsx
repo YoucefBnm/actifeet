@@ -114,6 +114,7 @@ const SearchResults = ({ searchQuery }: { searchQuery: string }) => {
               <DrawerClose
                 key={result.id}
                 onClick={() => navigate(`/product/${result.id}`)}
+                aria-label={`navigate to ${result.name} page`}
                 className="block"
               >
                 <ProductCard product={result} />

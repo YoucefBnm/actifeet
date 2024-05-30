@@ -91,7 +91,7 @@ const ProductCardColors = memo(function ProductCardColors(
   return (
     <div className="flex gap-2 px-4 my-4">
       {productColors.map((productColor, index) => (
-        <button
+        <span
           key={productColor}
           role="button"
           aria-label="show product color"
@@ -106,7 +106,7 @@ const ProductCardColors = memo(function ProductCardColors(
               transition={{ type: "spring", stiffness: 500, damping: 50 }}
             />
           )}
-        </button>
+        </span>
       ))}
     </div>
   );

@@ -5,6 +5,7 @@ import { useWindowWidth } from "@react-hook/window-size/throttled";
 import NavMobile from "./sections/NavMobile";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 import { useCheckUserSession } from "./hooks/useCheckUserSession";
+import Footer from "./sections/Footer";
 
 const Home = lazy(() => import("@routes/Home"));
 const Shop = lazy(() => import("@routes/Shop"));
@@ -35,6 +36,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
+      <Footer />
     </>
   );
 }

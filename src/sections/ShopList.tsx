@@ -37,7 +37,7 @@ const GridCell = memo(function GridCell({
 
   const isInView = useInView(targetRef, {
     once: true,
-    amount: "all",
+    amount: "some",
   });
   return (
     <motion.div variants={fadeVariants("opacity")}>

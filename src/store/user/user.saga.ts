@@ -82,6 +82,9 @@ export function* signInWithEmail({
       if (error.code === "auth/wrong-password") {
         toast.error("Wrong password");
       }
+      if (error.code === "auth/too-many-requests") {
+        toast.error("too many requests !!");
+      }
     }
   }
 }

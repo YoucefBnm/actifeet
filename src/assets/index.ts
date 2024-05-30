@@ -18,8 +18,10 @@ import AddIcon from "./icons/icon-add.svg";
 import XIcon from "./icons/icon-x.svg";
 import FilterIcon from "./icons/icon-filter.svg";
 import LogoutIcon from "./icons/logout.svg";
+import LogoTextWhite from "./icons/logo-text-white.svg";
 
 export {
+  LogoTextWhite,
   Logo,
   CategoryRunningImage,
   CategoryCrossImage,

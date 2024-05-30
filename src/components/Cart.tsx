@@ -68,7 +68,7 @@ const CartContainer = () => {
             <h4 className=" text-xl">${formatPrice(cartTotal)}</h4>
           </div>
 
-          <DrawerClose onClick={navigateToCheckout} className="block">
+          <DrawerClose asChild onClick={navigateToCheckout} className="block">
             <Button
               size={"lg"}
               className="w-full font-heading text-sm capitalize"
@@ -105,24 +105,24 @@ const CartEmpty = () => {
 
       <Separator />
       <div className="flex flex-wrap gap-2 w-full mt-8 px-4">
-        <DrawerClose onClick={navigateToMenShop} className="block">
-          <Button variant={"ghost"} className="text-sm font-heading">
+        <DrawerClose asChild onClick={navigateToMenShop} className="block">
+          <Button variant={"ghost"} className="link">
             Shop Men
           </Button>
         </DrawerClose>
 
-        <DrawerClose onClick={navigateToWomenShop} className="block">
+        <DrawerClose asChild onClick={navigateToWomenShop} className="block">
           <Button
             onClick={navigateToWomenShop}
             variant={"ghost"}
-            className="text-sm font-heading"
+            className="link"
           >
             Shop Women
           </Button>
         </DrawerClose>
         {!currentUser && (
-          <DrawerClose onClick={navigateToLoginPage} className="block ">
-            <Button variant={"default"} className="text-sm font-heading">
+          <DrawerClose asChild onClick={navigateToLoginPage} className="block ">
+            <Button variant={"default"} className="link">
               Login
             </Button>
           </DrawerClose>

@@ -28,12 +28,11 @@ const AuthFormHeaderLoggedIn = ({ currentUser }: { currentUser: UserData }) => {
   const signout = () => dispatch(signOutStart());
 
   return (
-    <div className="flex items-center gap-4 justify-start">
-      <UserAvatar currentUser={currentUser} />
-
+    <div className="flex items-center flex-wrap gap-4 justify-start">
       <h3 className="heading-base">
         Hello {currentUser.displayName && currentUser.displayName}
       </h3>
+      <UserAvatar currentUser={currentUser} />
 
       <Badge variant={"outline"} className="py-1 px-4 flex-center gap-2">
         <div className="size-4">
@@ -125,7 +124,7 @@ const AuthForm = ({ type }: { type: authType }) => {
         </>
 
         {currentUser ? (
-          <div className=" mt-6">user</div>
+          <div className=" mt-2 text-neutral-500">{currentUser.email}</div>
         ) : (
           <div className="relative py-4 px-6 mx-auto w-4/5 md:w-3/5 xl:w-2/5">
             {loading && (

@@ -46,7 +46,6 @@ const ProductsCarousel = memo(function ProductsCarousel({
     };
 
     fetchCarouselProducts();
-    console.log(carouselProducts);
   }, [isInView]);
 
   const loadCarouselProducts =
