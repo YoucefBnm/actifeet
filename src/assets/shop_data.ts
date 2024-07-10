@@ -71,49 +71,6 @@ export const SHOP_DATA: ProductProps[] = [
   {
     id: uuidv4().toString().replace(/-/g, ""),
     gender: "women",
-    category: "running",
-    brand: "under armour",
-    name: "phantom 3",
-    amazonLink:
-      "https://www.amazon.com/Under-Armour-Phantom-Black-White/dp/B0BNZ39177/ref=sr_1_194?dib=eyJ2IjoiMSJ9.cPQj4TC9EHp-zv5-bOi1QKeBDUMg_27bUoZT15QPGoLZrWlK27yioCRJieBbTl6FciANYcdFfI-1aYhfXFTyn63R6mRE9y5EzoE8PAxPcPOf_eTzScDFkIKSXRIEDGr8y2NHzSC-JnWQA7prIBJNM_AsxNbvBXrtOAl6tcMbDZCPTWv5CSokruA1UDX_GkIouk1UHiMjOrfdmMSWgoPTDiKXfkFZQ7uQfd6dJe98AT1LMCnnmqdGJFW6jI4Ac-jX2HlIK8Ux1BdT0B9-IervNNnGFYuheIQ1_73Av2IcsIE.V0vZxPkL5aETKqcn0BDoLeqAdcYwUklTxfhysWus3zg&dib_tag=se&keywords=under%2Barmour%2Bshoes&qid=1716990918&refinements=p_89%3AUnder%2BArmour&rnid=2528832011&s=apparel&sr=1-194&th=1",
-    badge: "new",
-    price: 96.28,
-    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
-    colors: ["black", "white"],
-    images: [
-      {
-        id: uuidv4().toString().replace(/-/g, ""),
-        color: "black",
-        imagesUrls: [
-          "https://m.media-amazon.com/images/I/61NTX-P0GCL._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/71W880dqEgL._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/7100JHdsf6L._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/81iOzEBf8FL._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/71bgFPNAesL._AC_SY695_.jpg",
-        ],
-      },
-      {
-        id: uuidv4().toString().replace(/-/g, ""),
-        color: "white",
-        imagesUrls: [
-          "https://m.media-amazon.com/images/I/61Db8yYfaXL._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/61SMaR-OfdL._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/712GnUHvJmL._AC_SY695_.jpg",
-          "https://m.media-amazon.com/images/I/614CFb8bHVL._AC_SY695_.jpg",
-        ],
-      },
-    ],
-    details: [
-      "Origin: Made in the USA or Imported",
-      "Sole material: Rubber",
-      "Closure type: Lace Up",
-      "Made in the USA or Imported",
-      "Rubber sole",
-    ],
-  },
-  {
-    id: uuidv4().toString().replace(/-/g, ""),
-    gender: "women",
     category: "climbing",
     brand: "la sportiva",
     name: "katana",
@@ -13198,6 +13155,40 @@ export const SHOP_DATA: ProductProps[] = [
       "Shaft height: Ankle",
       "Outer material: Synthetic",
       "Inner material: Synthetic",
+    ],
+  },
+  {
+    id: uuidv4().toString().replace(/-/g, ""),
+    gender: "men",
+    category: "hiking",
+    brand: "salomon",
+    name: "Techamphibian 5",
+    amazonLink:
+      "https://www.amazon.com/Salomon-L47432400-Techamphibian-Multicoloured-10/dp/B0CCF4MFKH/ref=sr_1_7?dib=eyJ2IjoiMSJ9.X8qnKhAVgaqqUL5OWHWJpmCtJbPdCmZR0n_CUF0bPlxCqNes2Ou73v4qn6oqxD2FlD0IVrvH2sseg_JNqfGZgWQQLHrsffbr2Wz51M6lYl0ZnI46trt0BwRhgMesg_jRsr8T9fXVOFm5Px7S6JTCdasBYWaK_acBFBLPzrMRgZOeqtbOgmpdCXBHLGMy3tnPkdh4YbPLV0NTKTjmvia8qFrI971U7djmrr9jWuALLaZ0jeQc1w4S6eoO32FJqcixQg-zepPPIFYygqAJBVPXJIqFZaRdB9SfpNKGdauPoNI.HaU6iXEBgQ9sm7bRda7f1aNP_gNJy-5aMd4JjpvCFMA&dib_tag=se&keywords=salomon+shoes&qid=1720271016&sr=8-7",
+    price: 110,
+    sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10],
+    colors: ["beige"],
+    images: [
+      {
+        id: uuidv4().toString().replace(/-/g, ""),
+        color: "beige",
+        imagesUrls: [
+          "https://m.media-amazon.com/images/I/61Jlq-hCgAL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/61rHd72xgcL._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/71lAwHRYR2L._AC_SX695_.jpg",
+          "https://m.media-amazon.com/images/I/714Ma+n--8L._AC_SY695_.jpg",
+        ],
+      },
+    ],
+    details: [
+      "Origin: Imported",
+      "Sole material: Rubber",
+      "Outer material: Polyester",
+      "Closure typeBungee",
+      "Fully committed to wet and wild adventuring.",
+      "Foot Protection",
+      "Wet-surface Grip",
+      "Water In, Water Out",
     ],
   },
 ];

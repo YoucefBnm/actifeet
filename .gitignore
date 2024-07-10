@@ -26,3 +26,5 @@ dist-ssr
 /src/assets/shop_data.ts
 /src/hooks/useAddProducts.ts
 /src/constants/getFiltersTags.ts
+
+.env

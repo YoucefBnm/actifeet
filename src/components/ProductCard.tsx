@@ -1,6 +1,5 @@
 import { useSetActiveProduct } from "@/hooks/useSetActiveProduct";
-import { easeTransition } from "@/libs/motion/motion.transitions";
-import { clipPathVariants } from "@/libs/motion/motion.variants";
+import { fadeVariants } from "@/libs/motion/motion.variants";
 import {
   ProductCardProps,
   ProductColorsProps,
@@ -9,7 +8,6 @@ import {
 } from "@/types";
 import { AnimatePresence, motion } from "framer-motion";
 import { memo } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { Badge } from "./ui/badge";
 import ProductPrice from "./ProductPrice";
 
@@ -23,10 +21,9 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
     <div className="size-full flex flex-1 justify-center items-start relative overflow-hidden">
       {productImages.map((productImage, index) => (
         <motion.div
-          key={uuidv4()}
-          variants={clipPathVariants}
+          key={productImage.id}
+          variants={fadeVariants("opacity")}
           animate={index === activeColor ? "visible" : "hidden"}
-          transition={{ ease: easeTransition, duration: 0.5 }}
           className="absolute inset-0 overflow-hidden"
           exit={"hidden"}
         >
@@ -38,9 +35,8 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
             <AnimatePresence>
               <motion.div
                 key={0}
-                variants={clipPathVariants}
-                transition={{ ease: easeTransition, duration: 0.5 }}
-                className="absolute inset-0 size-full bg-white pointer-events-none"
+                variants={fadeVariants("opacity")}
+                className="absolute inset-0 size-full bg-white bg-origin-content origin-bottom pointer-events-none"
                 exit="hidden"
               >
                 <img
@@ -48,20 +44,20 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                   height={320}
                   loading="lazy"
                   alt="sport shoes"
-                  className="card-image"
+                  className="card-image pointer-events-none"
                   src={productImage.imagesUrls[0]}
                 />
               </motion.div>
               <motion.div
                 key={1}
-                variants={clipPathVariants}
+                variants={fadeVariants("opacity")}
                 animate={
                   activeImage === 1 &&
                   productImage.id === productImages[activeColor].id
                     ? "visible"
                     : "hidden"
                 }
-                transition={{ ease: easeTransition, duration: 0.5 }}
+                // transition={{ ease: easeTransition, duration: 0.5 }}
                 className="absolute inset-0 size-full bg-white pointer-events-none"
                 exit="hidden"
               >
@@ -71,7 +67,7 @@ const ProductCardImages = memo(function (props: ProductImagesProps) {
                   key={1}
                   loading="lazy"
                   alt="sport shoes"
-                  className="card-image"
+                  className="card-image pointer-events-none"
                   src={productImage.imagesUrls[1]}
                 />
               </motion.div>
@@ -125,7 +121,7 @@ const ProductCardDetails = memo(function ProductCardDetails(
 
   return (
     <div
-      className="flex flex-col px-4 gap-2 max-w-full"
+      className="flex flex-col px-4 gap-2 max-w-full items-start"
       aria-label={`navigate to ${productName} page`}
     >
       <div className="flex items-center h-5 ">
@@ -139,7 +135,7 @@ const ProductCardDetails = memo(function ProductCardDetails(
         )}
       </div>
       <h4
-        className="font-heading text-sm uppercase text-ellipsis truncate"
+        className="font-heading w-full text-left text-sm uppercase text-ellipsis truncate"
         title={productName}
       >
         {productName}
@@ -164,7 +160,7 @@ const ProductCard = memo(function ProductCard({ product }: ProductCardProps) {
       className="flex  flex-col relative "
       // id={product.id}
     >
-      <div className="overflow-hidden bg-white h-52 w-full relative flex flex-col items-start justify-between gap-8">
+      <div className="overflow-hidden bg-white w-full aspect-[16/12] relative flex flex-col items-start justify-between gap-8">
         <div className=" size-full bg-neutral-500 z-10 bg-opacity-5 absolute inset-0 pointer-events-none" />
 
         <ProductCardImages

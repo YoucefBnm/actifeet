@@ -26,7 +26,7 @@ const Product = () => {
           </div>
         </div>
       ) : (
-        <div className="w-screen h-svh flex-center">
+        <div className="w-full h-svh flex-center">
           <Spinner />
         </div>
       )}

@@ -1,13 +1,15 @@
-import CategoryRunningImage from "./images/category-run.jpg";
-import CategoryCrossImage from "./images/category-cross.jpg";
-import CategoryHikingImage from "./images/category-hiking.jpg";
-import CategoryClimbingImage from "./images/category-climb.jpg";
-import HeroMainImage from "./images/hero-main.jpg";
-import HeroRunningImage from "./images/hero-running.jpg";
-import HeroClimbingImage from "./images/hero-climbing.jpg";
-import CategoryMenImage from "./images/category-men.jpg";
-import CategoryWomenImage from "./images/category-women.jpg";
-import CategorySportsImage from "./images/category-sports.jpg";
+// import CategoryRunningImage from "./images/category-run.jpg?w=400&h=300&format=webp";
+import CategoryRunningImage from "./images/category-run.jpg?w=540&h=675&format=webp&meta&imagetools";
+import CategoryCrossImage from "./images/category-cross.jpg?w=540&h=675&format=webp&meta&imagetools";
+import CategoryHikingImage from "./images/category-hiking.jpg?w=540&h=675&format=webp&meta&imagetools";
+import CategoryClimbingImage from "./images/category-climb.jpg?w=540&h=675&format=webp&meta&imagetools";
+
+import HeroMainImage from "./images/hero-main.jpg?w=1440&h=936&format=webp&meta&imagetools";
+import HeroRunningImage from "./images/hero-running.jpg?w=1440&h=936&format=webp&meta&imagetools";
+import HeroClimbingImage from "./images/hero-climbing.jpg?w=1440&h=936&format=webp&meta&imagetools";
+import CategoryMenImage from "./images/category-men.jpg?w=1440&h=936&format=webp&meta&imagetools";
+import CategoryWomenImage from "./images/category-women.jpg?w=1440&h=936&format=webp&meta&imagetools";
+import CategorySportsImage from "./images/category-sports.jpg?w=1440&h=936&format=webp&meta&imagetools";
 
 import Logo from "./icons/logo.svg";
 import UserIcon from "./icons/icon-user.svg";

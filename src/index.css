@@ -31,13 +31,29 @@
   }
 }
 
+
+
+::selection {
+  @apply bg-zinc-900 text-white
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .font-heading {
   font-weight: 515;
   line-height: 1.2
 }
 
 body {
-  @apply font-body font-normal text-base
+  @apply font-body font-normal text-base;
+
+}
+
+#root {
+  @apply min-h-screen
 }
 
 @layer components {
@@ -112,7 +128,7 @@ input {
 }
 
 .header {
-  @apply bg-white px-default sticky z-50 inset-0 w-screen h-16 justify-between border-b border-neutral-100
+  @apply bg-white px-default sticky z-50 inset-0 w-full h-16 justify-between border-b border-neutral-100
 }
 
 .header-desktop {
@@ -160,5 +176,5 @@ input {
 }
 
 .card-image {
-  @apply object-contain absolute bottom-4 max-h-[50%] mt-auto max-w-[70%] left-1/2 -translate-x-1/2 pointer-events-none
+  @apply object-contain absolute bottom-4 max-h-[50%] mt-auto max-w-[60%] left-1/2 -translate-x-1/2 pointer-events-none
 }

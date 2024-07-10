@@ -33,7 +33,7 @@ const HeroWrap = memo(function HeroWrap({
   return (
     <section
       ref={targetRef}
-      className="min-h-svh w-screen relative px-default flex items-center justify-start"
+      className="min-h-svh w-full relative px-default flex items-center justify-start"
     >
       <motion.div
         className="absolute inset-0 size-full"

@@ -53,7 +53,7 @@ const GenderCard = ({ inView, imageUrl, title, route }: GenderCardProps) => {
         <motion.h3
           className="heading-base mt-4 uppercase "
           variants={fadeVariants("bottom")}
-          transition={{ ease: easeTransition }}
+          transition={{ duration: 0.4 }}
           initial="hidden"
           animate={controls}
         >

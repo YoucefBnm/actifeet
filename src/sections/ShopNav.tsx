@@ -114,6 +114,7 @@ const ShopNavFiltersWrap = () => {
       {filterKey &&
         Object.keys(SHOP_FILTERS[filterKey]).map((key) => {
           const typedKey = key as FilterKeys;
+          const filters = SHOP_FILTERS[filterKey][typedKey];
           return (
             <Accordion
               key={key}
@@ -121,35 +122,32 @@ const ShopNavFiltersWrap = () => {
               collapsible
               className="flex flex-1 w-full flex-col gap-2"
             >
-              {SHOP_FILTERS[filterKey][typedKey].length > 1 && (
+              {filters && filters.length > 1 && (
                 <AccordionItem value={key}>
                   <AccordionTrigger className="font-heading capitalize">
                     {key}
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-wrap gap-1.5">
-                    {SHOP_FILTERS[filterKey][typedKey].map(
-                      (filterItem: string) => (
-                        <FilterGroup
-                          key={filterItem}
-                          label={filterItem}
-                          type={key}
-                          isChecked={
-                            checkedFilters[key]
-                              ? checkedFilters[key]?.includes(filterItem) ??
-                                false
-                              : false
+                    {filters.map((filterItem: string) => (
+                      <FilterGroup
+                        key={filterItem}
+                        label={filterItem}
+                        type={key}
+                        isChecked={
+                          checkedFilters[key]
+                            ? checkedFilters[key]?.includes(filterItem) ?? false
+                            : false
+                        }
+                        handleChange={(checked) => {
+                          if (checked) {
+                            addValue(typedKey, filterItem);
                           }
-                          handleChange={(checked) => {
-                            if (checked) {
-                              addValue(key, filterItem);
-                            }
-                            if (!checked) {
-                              removeValue(key, filterItem);
-                            }
-                          }}
-                        />
-                      )
-                    )}
+                          if (!checked) {
+                            removeValue(key, filterItem);
+                          }
+                        }}
+                      />
+                    ))}
                   </AccordionContent>
                 </AccordionItem>
               )}

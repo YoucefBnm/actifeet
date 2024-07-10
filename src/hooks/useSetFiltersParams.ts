@@ -1,4 +1,4 @@
-import { filtersType } from "@/firebase/types";
+// import { filtersType } from "@/firebase/types";
 import { useSearchParams } from "react-router-dom";
 
 type filtersKeyType =
@@ -17,7 +17,7 @@ type CheckedFiltersType<T extends string> = {
 export function useSetFilterParams() {
   const [filtersParams, setFiltersParams] = useSearchParams();
 
-  const addValue = (key: keyof filtersType, value: string) => {
+  const addValue = (key: string, value: string) => {
     const currentKeyValue = filtersParams.get(key);
     filtersParams.append(key, value);
 

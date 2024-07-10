@@ -48,7 +48,7 @@ const CategoryWrap = memo(function CategoryWrap({
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           onAnimationComplete={startAnimation}
-          className="row-start-2 col-start-1 md:col-start-2 md:col-span-4 col-span-6 md:mb-0 mb-4"
+          className="row-start-2 col-start-1 md:col-start-2 md:col-span-4 col-span-8 md:mb-0 mb-4"
         >
           <picture className="size-full">
             <img

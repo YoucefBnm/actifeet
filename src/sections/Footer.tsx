@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="px-default py-12  bg-black text-white">
+    <footer className="px-default py-12  bg-black text-white sticky w-full top-full">
       <div className="section-container grid-rows-1 md:grid-rows-[max-content_1fr]">
         <div className="flex flex-1 size-fit flex-col gap-4 col-span-8 md:col-span-4">
           <div>
@@ -27,12 +27,9 @@ const Footer = () => {
         <nav className="row-start-2 col-span-12 mt-8 md:mt-0 md:row-start-1 col-start-1 md:col-start-6">
           <ul className="flex flex-wrap justify-between">
             {footerLinks.map((item) => (
-              <li
-                key={item.id}
-                className="link flex flex-col gap-4 last-of-type:ml-8"
-              >
-                <span className=" text-neutral-300">{item.title}</span>
-                <ul className="flex flex-col items-start gap-2">
+              <li key={item.id} className="link flex flex-col gap-6">
+                <span className=" text-neutral-200">{item.title}</span>
+                <ul className="flex flex-col items-start gap-4">
                   {item.links.map((link) => (
                     <li className="" key={link.title}>
                       <Link to={link.route}>{link.title}</Link>
@@ -45,9 +42,9 @@ const Footer = () => {
         </nav>
       </div>
 
-      <Separator className="my-6" />
+      <Separator className="my-6 bg-neutral-500" />
 
-      <small className="text-xs text-neutral-500">
+      <small className="text-xs text-neutral-300">
         &copy;2024 Developed by{" "}
         <a
           className=" text-neutral-300"

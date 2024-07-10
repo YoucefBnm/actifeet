@@ -85,7 +85,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
               </div>
             }
           >
-            <CarouselContent>
+            <CarouselContent className="min-h-[371px]">
               {loadCarouselProducts &&
                 carouselProducts.map((product) => (
                   <CarouselItem
@@ -105,7 +105,7 @@ const ProductsCarousel = memo(function ProductsCarousel({
             </CarouselContent>
           </Suspense>
         ) : (
-          <div className="w-full h-[366px] flex items-start justify-center">
+          <div className="w-full flex items-start justify-center">
             <Spinner />
           </div>
         )}

@@ -65,7 +65,7 @@ const NavAuth = () => {
           <Button variant={"default"}>
             <Link
               className=" text-sm font-heading capitalize"
-              to="/auth/signup"
+              to="/auth/signin"
             >
               Login
             </Link>

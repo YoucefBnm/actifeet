@@ -16,7 +16,11 @@ const Home = () => {
 
   return (
     <>
-      <HeroWrap heroBg={bgImage} heading={heading} route="/shop/all" />
+      <HeroWrap
+        heroBg={bgImage}
+        heading={heading}
+        route="/shop/category/running"
+      />
       <Sports />
       <Gender />
       <ProductsCarousel
@@ -28,7 +32,7 @@ const Home = () => {
         title={hikingCategoryContent.title}
         heading={hikingCategoryContent.heading}
         description={hikingCategoryContent.description}
-        route="/shop/sport/hiking"
+        route="/shop/category/hiking"
         imageUrl={hikingCategoryContent.image}
       />
       <HeroWrap
@@ -36,7 +40,7 @@ const Home = () => {
         heroBg={heroRunningContent.bgImage}
         heading={heroRunningContent.heading}
         description={heroRunningContent.description}
-        route="/shop/sport/running"
+        route="/shop/category/running"
       />
       <ProductsCarousel
         title="new arrivals"
@@ -47,7 +51,7 @@ const Home = () => {
         title={crossTrainingCategoryContent.title}
         heading={crossTrainingCategoryContent.heading}
         description={crossTrainingCategoryContent.description}
-        route="/shop/sport/hiking"
+        route="/shop/category/hiking"
         imageUrl={crossTrainingCategoryContent.image}
       />
       <HeroWrap
@@ -55,7 +59,7 @@ const Home = () => {
         heroBg={heroClimbingContent.bgImage}
         heading={heroClimbingContent.heading}
         description={heroClimbingContent.description}
-        route="/shop/sport/running"
+        route="/shop/category/running"
       />
       <ProductsCarousel
         title="best deals"
