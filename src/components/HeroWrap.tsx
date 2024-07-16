@@ -51,7 +51,7 @@ const HeroWrap = ({
         animate={isInView ? "visible" : "hidden"}
         ref={targetRef}
         className={cn(
-          "min-h-svh w-full relative px-default place-content-center",
+          "min-h-screen w-full relative px-default place-content-center",
           className
         )}
       >
