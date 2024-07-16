@@ -22,7 +22,7 @@ const Word = memo(function Word({ word }: { word: string }) {
         <motion.span
           key={`${char}-${index}`}
           className="inline-block first-of-type:capitalize "
-          variants={fadeVariants("bottom")}
+          variants={fadeVariants("opacity")}
           transition={{ type: "spring", damping: 20 }}
         >
           {char}
