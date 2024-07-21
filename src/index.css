@@ -16,7 +16,7 @@
     font-family: "Outfit";
     src: url("./assets/fonts/Outfit-Medium.ttf") format(ttf);
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
@@ -43,7 +43,7 @@
 }
 
 .font-heading {
-  font-weight: 515;
+  font-weight: 500;
   line-height: 1.2
 }
 
