@@ -8,7 +8,7 @@ import {
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
-  signInWithRedirect,
+  // signInWithRedirect,
   signOut,
 } from "firebase/auth";
 import { AdditionalInfo, UserData } from "../types";
@@ -86,4 +86,4 @@ export const getCurrentUser = (): Promise<User | null> => {
 export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
 export const signInWithGoogleRedirect = () =>
-  signInWithRedirect(auth, googleProvider);
+  signInWithPopup(auth, googleProvider);
