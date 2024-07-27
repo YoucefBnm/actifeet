@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -27,4 +29,6 @@ dist-ssr
 /src/hooks/useAddProducts.ts
 /src/constants/getFiltersTags.ts
 
-.env
+
+# Local Netlify folder
+.netlify

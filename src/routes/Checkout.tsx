@@ -1,4 +1,5 @@
 import CartItem from "@/components/CartItem";
+import PaymentForm from "@/components/PaymentForm";
 import Spinner from "@/components/Spinner";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -27,7 +28,7 @@ const Checkout = () => {
         </div>
         <Separator className="my-4" />
 
-        <div className="section-container">
+        <div className="section-container flex justify-between items-start">
           <div className="section-col-xl">
             <div className="relative py-2 px-4">
               {cartItems.map((cartItem) => (
@@ -47,6 +48,8 @@ const Checkout = () => {
               <h3 className="heading-base">${formatPrice(cartTotal)}</h3>
             </div>
           </div>
+
+          <PaymentForm />
         </div>
       </section>
     </main>

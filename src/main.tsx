@@ -7,14 +7,17 @@ import { Provider } from "react-redux";
 import { persistor, store } from "./store/store.ts";
 import { PersistGate } from "redux-persist/integration/react";
 import { Toaster } from "./components/ui/sonner.tsx";
+import { Elements } from "@stripe/react-stripe-js";
+import { stripePromise } from "./utils/stripe.utils.ts";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
-          <App />
-
+          <Elements stripe={stripePromise}>
+            <App />
+          </Elements>
           <Toaster />
         </BrowserRouter>
       </PersistGate>

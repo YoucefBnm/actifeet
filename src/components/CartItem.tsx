@@ -23,8 +23,8 @@ const CartItemGroup = ({
       title={value}
       className="flex gap-2 w-full  font-heading text-sm capitalize"
     >
-      <p className="  text-neutral-500 ">{segment}:</p>
-      <p className="  text-ellipsis truncate">{value}</p>
+      <p className="text-neutral-500 ">{segment}:</p>
+      <p className="text-ellipsis truncate">{value}</p>
     </div>
   );
 };

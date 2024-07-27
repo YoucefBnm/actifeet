@@ -33,7 +33,7 @@ const GenderCard = ({ inView, imageUrl, title, route }: GenderCardProps) => {
         <Link to={route} className="block">
           <motion.picture
             whileHover={{ scale: 1.2 }}
-            transition={{ ease: easeTransition, duration: 0.35 }}
+            transition={{ ease: easeTransition, duration: 0.5 }}
             className="size-full block"
           >
             <img
@@ -53,7 +53,7 @@ const GenderCard = ({ inView, imageUrl, title, route }: GenderCardProps) => {
         <motion.h3
           className="heading-base mt-4 uppercase "
           variants={fadeVariants("bottom")}
-          transition={{ duration: 0.4 }}
+          transition={{ ease: easeTransition, duration: 0.4 }}
           initial="hidden"
           animate={controls}
         >
